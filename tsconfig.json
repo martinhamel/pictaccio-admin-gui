@@ -1,16 +1,4 @@
 {
-  "extends": "../../tsconfig.base.json",
-  "references": [
-    {
-      "path": "../../lib/shared/tsconfig.json"
-    },
-    {
-      "path": "../../lib/loufairy/tsconfig.json"
-    },
-    {
-      "path": "../../lib/loufairy-client/tsconfig.json"
-    }
-  ],
   "compilerOptions": {
     "composite": true,
     "target": "esnext",
@@ -41,16 +29,78 @@
       "scripthost"
     ]
   },
-  "include": [
-    "src/**/*.ts",
-    "src/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "src/**/*.scss",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
+  "paths": {
+    "@loufa/routing-controllers": [
+      "lib/routing-controllers/src"
+    ],
+    "@loufa/routing-controllers/*": [
+      "lib/routing-controllers/src/*"
+    ],
+    "@pictaccio/grpc-service-contracts/*": [
+      "dist/lib/grpc-service-contracts/*"
+    ],
+    "@pictaccio/shared/*": [
+      "lib/shared/*"
+    ],
+    "@loufa/routing-controllers-openapi": [
+      "lib/routing-controllers-openapi/src"
+    ],
+    "@pictaccio/admin-gui/*": [
+      "*"
+    ],
+    "@pictaccio/print-service/*": [
+      "app/print-service/*"
+    ],
+  },
+  "references": [
+    {
+      "path": "lib/class-validator/tsconfig.json"
+    },
+    {
+      "path": "lib/routing-controllers/tsconfig.json"
+    },
+    {
+      "path": "lib/loufairy-client/tsconfig.json"
+    },
+    {
+      "path": "lib/loufairy/tsconfig.json"
+    },
+    {
+      "path": "lib/loufairy-server/tsconfig.json"
+    },
+    {
+      "path": "lib/shared/tsconfig.json"
+    },
+    {
+      "path": "app/image-service/tsconfig.json"
+    },
+    {
+      "path": "app/print-service/tsconfig.json"
+    },
+    {
+      "path": "tool/clickable-paths/tsconfig.json"
+    },
+    {
+      "path": "app/admin-api/tsconfig.json"
+    },
+    {
+      "path": "app/admin-gui/tsconfig.json"
+    }
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "tmp",
+  ],
+  "include": [
+    "node_modules/entities/lib/*.d.ts",
+    "lib/loufairy-server/src/**/*",
+    "lib/shared/src/**/*",
+    "lib/class-validator/src/**/*",
+    "lib/loufairy-client/src/**/*",
+    "lib/loufairy/src/**/*",
+    "lib/routing-controllers/src/**/*",
+    "app/image-service/src/**/*",
+    "app/print-service/src/**/*",
+    "app/admin-api/src/**/*",
   ]
 }

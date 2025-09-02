@@ -32,6 +32,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "@loufa/loufairy": "https://github.com/martinhamel/pictaccio-loufairy.git",
     "@loufa/loufairy-client": "https://github.com/martinhamel/pictaccio-loufairy-client.git",
+    "@pictaccio/shared": "https://github.com/martinhamel/pictaccio-shared.git",
     "@types/luxon": "^3.3.0",
     "animate.css": "^4.1.1",
     "colorjs.io": "^0.5.0",

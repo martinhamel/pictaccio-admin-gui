@@ -37,8 +37,7 @@ module.exports = {
         resolve: {
             extensions: ['.js', '.ts', '.vue', '.json'],
             alias: {
-                '@pictaccio/admin-gui': resolve(__dirname, '/app/app/admin-gui'),
-                '@pictaccio/shared': resolve(__dirname, '/app/lib/shared'),
+                '@pictaccio/admin-gui': resolve(__dirname, '.')
             }
         },
     },
@@ -47,10 +46,10 @@ module.exports = {
             sass: {
                 additionalData: `
                 @use "sass:math";
-                @import "@pictaccio/admin-gui/src/scss/variables.scss";
-                @import "@pictaccio/admin-gui/src/scss/mixins.scss";
-                @import "@pictaccio/admin-gui/src/scss/functions.scss";
-                @import "@pictaccio/admin-gui/src/scss/style.scss";
+                @import "@pictaccio/admin-gui/scss/variables.scss";
+                @import "@pictaccio/admin-gui/scss/mixins.scss";
+                @import "@pictaccio/admin-gui/scss/functions.scss";
+                @import "@pictaccio/admin-gui/scss/style.scss";
                 `
             }
         }

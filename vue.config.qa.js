@@ -41,10 +41,10 @@ module.exports = {
             sass: {
                 additionalData: `
                 @use "sass:math";
-                @import "@pictaccio/admin-gui/src/scss/variables.scss";
-                @import "@pictaccio/admin-gui/src/scss/mixins.scss";
-                @import "@pictaccio/admin-gui/src/scss/functions.scss";
-                @import "@pictaccio/admin-gui/src/scss/style.scss";
+                @import "@pictaccio/admin-gui/scss/variables.scss";
+                @import "@pictaccio/admin-gui/scss/mixins.scss";
+                @import "@pictaccio/admin-gui/scss/functions.scss";
+                @import "@pictaccio/admin-gui/scss/style.scss";
                 `
             }
         }
