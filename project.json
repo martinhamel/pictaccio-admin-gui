@@ -1,0 +1,104 @@
+{
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "name": "admin-gui",
+    "sourceRoot": "app/admin-gui/src",
+    "projectType": "application",
+
+    "targets": {
+        "compile": {
+            "dependsOn": [
+                {
+                    "projects": ["loufairy-client", "loufairy", "shared"],
+                    "target": "build"
+                }
+            ],
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "nx run admin-gui:build",
+                "parallel": false
+            },
+            "configurations": {
+                "production": {
+                    "command": "nx run admin-gui:build --configuration=production"
+                }
+            }
+        },
+
+        "serve": {
+            "dependsOn": [
+                {
+                    "projects": ["loufairy-client", "loufairy", "shared", "clickable-paths"],
+                    "target": "build"
+                }
+            ],
+            "executor": "nx:run-script",
+            "options": {
+                "script": "serve"
+            }
+        },
+
+        "lint": {
+            "executor": "nx:run-script",
+            "options": {
+                "script": "lint"
+            }
+        },
+
+        "test-unit": {
+            "executor": "nx:run-script",
+            "options": {
+                "script": "test:unit"
+            }
+        },
+
+        "build": {
+            "executor": "nx:run-script",
+            "options": {
+                "script": "build"
+            }
+        },
+
+        "write-app-build": {
+            "executor": "nx:run-commands",
+            "options": {
+                "cwd": "{projectRoot}",
+                "command": "npx gulp writeAppBuild"
+            }
+        },
+
+        "docker-build-alpha": {
+            "executor": "nx:run-script",
+            "options": {
+                "script": "build:docker:alpha"
+            }
+        },
+
+        "docker-build-beta": {
+            "executor": "nx:run-script",
+            "options": {
+                "script": "build:docker:beta"
+            }
+        },
+
+        "docker-build-prod": {
+            "executor": "nx:run-script",
+            "options": {
+                "script": "build:docker:prod"
+            }
+        },
+
+        "docker-build-winter24": {
+            "executor": "nx:run-script",
+            "options": {
+                "script": "build:docker:winter24"
+            }
+        },
+
+        "docker-build-test": {
+            "executor": "nx:run-script",
+            "options": {
+                "script": "build:docker:test"
+            }
+        }
+    }
+}

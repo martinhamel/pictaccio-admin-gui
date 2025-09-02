@@ -1,0 +1,96 @@
+.product-renderer {
+    --product-column-1-width: 15rem;
+    --product-column-2-width: 12.6rem;
+    --product-column-3-width: 100%;
+    --label-color: var(--color-mix-1-4-step-3);
+    --gap: 1rem;
+    --title-height: 2.25rem;
+
+    > .multi-columns {
+        gap: calc(var(--gap) * 2);
+
+        > .column:last-child {
+            position: relative;
+        }
+
+        .multi-columns {
+            .column {
+                ul {
+                    margin-block: 0;
+
+                    li {
+                        font-size: 1.4rem;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.product-info {
+    padding-top: var(--title-height);
+    min-width: var(--product-column-1-width);
+
+    > .multi-columns {
+        width: 100% !important;
+        display: flex;
+        justify-content: space-between;
+
+        >.column {
+            width: min-content;
+
+            ul, li {
+                width: min-content;
+            }
+
+            li.spacer {
+                height: 1.15em;
+            }
+        }
+    }
+
+    .comment-label {
+        padding-top: 0.6rem;
+
+        &::after {
+            content: ':';
+        }
+    }
+
+    .comment {
+        padding-top: 0.1rem;
+        font-size: 1.3rem;
+        word-break: break-word;
+    }
+}
+
+.product-image {
+    padding-top: var(--title-height);
+    width: var(--product-column-2-width);
+
+    img {
+        width: var(--product-column-2-width);
+        aspect-ratio: 1;
+        background-color: var(--color-primary-7);
+    }
+}
+
+.product-title {
+    position: absolute;
+    font-size: 2rem !important;
+    margin: 0 !important;
+    width: calc(var(--product-column-1-width) + var(--product-column-2-width) + (var(--gap) * 4));
+
+    .product-title-name {
+        display: inline-block;
+        text-overflow: ellipsis;
+        overflow: clip;
+        white-space: nowrap;
+        max-width: 30ch;
+    }
+
+    .product-title-quantity {
+        color: var(--color-primary-1);
+    }
+}

@@ -1,0 +1,212 @@
+$activity-control-padding-side: $grid-gap;
+
+.activity-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: transparent;
+    display: grid;
+    padding: 0 2rem 4rem;
+    gap: $grid-gap;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: min-content;
+    grid-auto-flow: dense;
+    transition-duration: .3s;
+    pointer-events: none;
+
+    @include breakpoint($medium-down) {
+        padding: 0 1rem 4rem;
+    }
+
+    > *,
+    :deep(> *) {
+        pointer-events: all;
+    }
+
+    .activity-instructions {
+        width: 100%;
+        color: currentColor;
+
+        .sub-text {
+            color: currentColor;
+            filter: hue-rotate(-35deg);
+        }
+    }
+
+    .activity-control {
+        position: relative;
+        grid-column: span 6 / auto;
+        width: 100%;
+        overflow: auto;
+        max-height: 100svh;
+        background-color: var(--color-background-secondary);
+        border-radius: $ruler-border-radius;
+        padding: $activity-control-padding-side;
+        gap: $grid-gap;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+        grid-auto-flow: dense;
+        pointer-events: none;
+
+        [data-theme-type="line"] & {
+            $line-height: 0.3rem;
+            background-color: transparent;
+            border-radius: 0;
+            padding: #{$activity-control-padding-side * 1.5} 0 $activity-control-padding-side 0;
+
+            &::-webkit-scrollbar-track {
+                margin-top: #{$line-height * 3};
+            }
+        }
+        [data-theme-type="block"] & {
+            background-color: var(--color-background-page-2);
+        }
+
+        .settings-box & {
+            max-height: calc(100vh - (var(--dialog-box-inset) * 2vh));
+        }
+
+        > *,
+        :deep(> *) {
+            pointer-events: all;
+        }
+
+        &.fit-sides {
+            padding: $activity-control-padding-side 0 0;
+        }
+
+        @include breakpoint($small) {
+            grid-template-columns: 1fr;
+
+            >div {
+                grid-column: 1/-1;
+            }
+        }
+
+        > .h5 {
+            white-space: nowrap;
+            width: min-content;
+            height: min-content;
+            margin-right: auto;
+            grid-column: 1/-1;
+            margin-top: 1.3rem;
+            --font-weight: 700;
+        }
+
+        .h6 {
+            --font-weight: 700;
+        }
+
+        p {
+            max-width: 80ch;
+        }
+
+        >div {
+            grid-row: span 1 / auto;
+            height: 100%;
+            border-radius: $ruler-border-radius;
+            //padding: 1rem;
+
+            .overlay-info {
+                grid-column: 1 / span 1;
+                grid-row: 1 / span 1;
+                order: 0;
+
+                @include breakpoint($small) {
+                    order: -1;
+                    grid-column: 1 / -1;
+                }
+            }
+        }
+
+        .settings-line {
+            grid-column: 1/-1;
+            margin: 0;
+            border-bottom: 2px solid var(--color-text-disabled);
+            margin-bottom: 0.3rem;
+        }
+    }
+
+    .span-100 {
+        grid-column: 1 / -1;
+        display: contents;
+
+        &:is(hr) {
+            display: block;
+            width: 100%;
+        }
+
+        > .h5 {
+            grid-column: 1 / -1;
+            margin: 0 !important;
+        }
+    }
+}
+
+.section-ui {
+    height: auto !important;
+    display: flex;
+    gap: 0.5rem;
+
+    @include breakpoint($small) {
+        position: relative !important;
+        top: 0 !important;
+        right: 0 !important;
+        margin-left: auto;
+    }
+
+    &.top-right {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        padding: 1rem 0 1rem 1rem;
+
+        &.sessions {
+            transform: translate(-1.8rem);
+        }
+
+        .activity-wrapper > & {
+            z-index: 100;
+            border-radius: $ruler-border-radius;
+            background-color: unset;
+            padding: 1rem;
+            grid-row: 3 / 4;
+            top: unset;
+            right: unset;
+            justify-self: end;
+            transform: translate(-5.4rem, 1rem);
+
+            @include breakpoint($small) {
+                position: absolute !important;
+                top: unset !important;
+                right: unset !important;
+                margin-left: unset !important;
+                transform: translate(-4.6rem, 1rem);
+            }
+        }
+
+        .pane-sub & {
+            right: 2.5rem;
+        }
+    }
+}
+
+.table-holder {
+    width: 100%;
+
+    [data-theme-type="block"] & {
+        > .h5, .h6 {
+            transform: translateX(-2rem);
+
+            .settings-box & {
+                transform: translateX(0);
+            }
+        }
+    }
+
+    .filter-container {
+        display: contents;
+    }
+}

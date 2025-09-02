@@ -1,0 +1,292 @@
+.forgot-password-screen,
+.login-screen,
+.accept-invitation-screen {
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    height: 100dvh;
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(80rem, 1fr) 1fr;
+    grid-template-rows: 20rem 10rem 1fr 20rem;
+    padding: 0;
+    background-color: var(--color-background-public-2);
+    overflow: hidden;
+
+    [data-theme-color="dark"] & {
+        --color-background-public-1: transparent;
+        --color-background-public-2: transparent;
+    }
+
+    [data-theme-color="light"] & {
+        --color-background-public-1: transparent;
+        --color-background-public-2: transparent;
+    }
+
+    .left-pane {
+        position: relative;
+        background-color: var(--color-background-base);
+        padding: 3rem 3rem 3rem 0;
+        max-width: 100vw;
+        z-index: 50;
+        height: 100vh;
+        height: 100svh;
+        height: 100dvh;
+        display: flex;
+
+        .logo-container {
+            left: 0;
+            top: 0;
+            width: 5rem;
+        }
+
+        :deep(#logo) {
+            position: absolute;
+            max-width: #{$ruler-input-max-width / 1.85};
+            inset: 0 auto auto 0;
+            transform: scale(75%);
+        }
+
+        .login-span {
+            --message-height: 0rem;
+            --login-span-padding: 7rem;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: start;
+            padding-top: var(--login-span-padding);
+
+            &:has(.accept-invite-message) {
+                --message-height: 5rem;
+            }
+        }
+    }
+
+    .right-pane {
+        background-color: var( --color-background-lighter);
+        height: 100vh;
+        height: 100svh;
+        height: 100dvh;
+    }
+
+    .forgot-message {
+        text-align: center;
+        font-size: 2.5rem;
+        width: 100%;
+        max-width: calc(100vw - #{$ruler-scrollbar});
+    }
+
+    .logo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .locale-switch {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+    }
+
+    .side-image {
+        grid-column: 2 / 3;
+        grid-row: 1 / 5;
+        position: relative;
+    }
+}
+
+h1 {
+    color: var(--color-text-normal);
+    margin: 1rem 2rem 2rem;
+    text-align: center;
+}
+
+.image-container {
+    position: absolute;
+    inset: 0;
+
+    .shape-blue {
+        position: fixed;
+        right: -15vw;
+        bottom: -30vh;
+        width: 65vw;
+        z-index: 48;
+    }
+    .shape-grey {
+        position: fixed;
+        left: 40vw;
+        top: -25vh;
+        width: 80vw;
+        transform: rotate(10deg);
+        z-index: 49;
+    }
+    .shape-dark {
+        position: fixed;
+        left: 40vw;
+        top: -28vh;
+        width: 90vw;
+        z-index: 47;
+    }
+    .shape-cream {
+        position: fixed;
+        right: -25vw;
+        bottom: -25vh;
+        z-index: 46;
+        width: 80vw;
+    }
+}
+
+.accept-invite-message {
+    position: absolute;
+    top: calc(22svh - (var(--message-height) - 3rem));
+    height: var(--message-height);
+}
+
+.invite-interface-accept,
+.invite-interface-totp,
+.forgot-interface-code,
+.forgot-interface-reset,
+.forgot-interface-email,
+.login-interface-auth,
+.login-interface-login {
+    $margin: calc(calc(100% - $ruler-input-max-width) / 2);
+    --button-margin: 10rem;
+    width: 100%;
+    max-width: calc(100vw - #{$ruler-scrollbar});
+    padding-top: calc(22svh - (var(--login-span-padding)));
+    text-align: left;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+
+    .h3 {
+        color: var(--color-text-accent-secondary);
+        margin: 1rem 2rem 2rem 0;
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .h4 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .separator {
+        width: 95%;
+        border: 0.1rem solid var(--color-text-accent-secondary);
+        transform: translateY(-12px);
+        border-radius: $ruler-border-radius;
+    }
+
+    .fa-lock-alt {
+        color: var(--color-text-normal);
+        fill: var(--color-text-normal);
+        font-size: 8rem;
+    }
+
+    button {
+        margin: var(--button-margin) auto 1rem 0;
+        justify-content: center;
+
+        @include respond-to('input-max-width') {
+            margin: 1rem 1rem 1rem auto;
+        }
+    }
+
+    .info-box-container,
+    .login-credentials,
+    .auth-interface,
+    .invite-setup-password,
+    .forgot-setup-password,
+    .collect-email,
+    .confirm-code,
+    .reset-code,
+    .oauth-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 95%;
+
+        input {
+            margin: 0;
+        }
+    }
+
+    .login-credentials {
+        &:deep(.secret-container) {
+            text-align: unset;
+
+            & input {
+                margin: 0;
+            }
+        }
+    }
+
+    .forgot-pass {
+        font-size: 1.3rem;
+        margin: 1rem 0 0 0;
+    }
+
+    .auth-interface {
+
+    }
+
+    .oauth-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 1.5rem;
+
+        .qrcode-box {
+            .qrcode-box-wrapper {
+                max-width: 25rem;
+            }
+        }
+
+        .oauth-wrapper {
+            padding-top: 1.1rem;
+
+            .oauth-box {
+                width: 3rem;
+                height: 4rem;
+                min-width: unset;
+                max-width: unset;
+                min-height: unset;
+                max-height: unset;
+                margin: 0 0.5rem;
+            }
+
+            button {
+                margin: 1.5rem 0 0 0;
+            }
+        }
+    }
+
+    .set-auth-steps {
+        padding-left: 2rem;
+        li {
+            list-style: decimal;
+        }
+    }
+
+    :deep(.reset-password) {
+        .btn-submit {
+            margin: var(--button-margin) 0 1rem 0;
+        }
+    }
+
+    .invite-setup-password {
+    }
+
+    .collect-email {
+
+    }
+
+    .confirm-code {
+    }
+
+    .reset-code {
+        margin-top: 1.5rem;
+    }
+}

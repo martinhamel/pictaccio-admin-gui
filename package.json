@@ -1,0 +1,165 @@
+{
+  "name": "@pictaccio/admin-gui",
+  "version": "0.0.4",
+  "description": "GUI service for admin app",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "concurrently --kill-others \"npm run watch\" \"npm run serve\"",
+    "watch": "npx gulp watch",
+    "serve": "npx vue-cli-service serve",
+    "build": "npx vue-cli-service build --mode development",
+    "build:docker": "npx vue-cli-service build && docker build -t pictaccio-app-gui .",
+    "build:docker:alpha": "npx gulp buildAlpha",
+    "build:docker:beta": "npx gulp buildBeta",
+    "build:docker:prod": "npx gulp buildProd",
+    "build:docker:winter24": "npx gulp buildWinter24",
+    "build:docker:test": "npx gulp buildTest",
+    "merge:alphaBeta": "npx gulp mergeAlphaBeta",
+    "merge:alphaBetaProd": "npx gulp mergeAlphaBetaProd",
+    "merge:hotfixes": "npx gulp mergeHotfixes",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/pro-duotone-svg-icons": "^6.4.0",
+    "@fortawesome/pro-light-svg-icons": "^6.4.0",
+    "@fortawesome/pro-regular-svg-icons": "^6.4.0",
+    "@fortawesome/pro-solid-svg-icons": "^6.4.0",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
+    "@loufa/loufairy": "https://github.com/martinhamel/pictaccio-loufairy.git",
+    "@loufa/loufairy-client": "https://github.com/martinhamel/pictaccio-loufairy-client.git",
+    "@types/luxon": "^3.3.0",
+    "animate.css": "^4.1.1",
+    "colorjs.io": "^0.5.0",
+    "core-js": "^3.30.2",
+    "csv-parse": "^5.4.0",
+    "exifreader": "^4.12.1",
+    "jschardet": "^3.0.0",
+    "luxon": "^3.3.0",
+    "mathjs": "^13.0.3",
+    "mitt": "^3.0.0",
+    "normalize.css": "^8.0.1",
+    "qrcode": "^1.5.3",
+    "register-service-worker": "^1.7.2",
+    "socket.io-client": "^4.7.2",
+    "stream-browserify": "^3.0.0",
+    "vue": "^3.3.4",
+    "vue-class-component": "^8.0.0-0",
+    "vue-facing-decorator": "^3.0.2",
+    "vue-i18n": "^9.2.2",
+    "vue-router": "^4.2.2",
+    "vuex": "^4.1.0",
+    "vuex-module-decorators": "^2.0.0"
+  },
+  "devDependencies": {
+    "@intlify/vue-i18n-loader": "^4.2.0",
+    "@types/chai": "^4.3.5",
+    "@types/fetch-mock": "^7.3.5",
+    "@types/node": "^20.2.5",
+    "@types/node-fetch": "^2.6.4",
+    "@types/qrcode": "^1.5.0",
+    "@types/sinon-chai": "^3.2.9",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "@vue/cli-plugin-babel": "~5.0.8",
+    "@vue/cli-plugin-e2e-cypress": "~5.0.8",
+    "@vue/cli-plugin-eslint": "~5.0.8",
+    "@vue/cli-plugin-pwa": "~5.0.8",
+    "@vue/cli-plugin-router": "~5.0.8",
+    "@vue/cli-plugin-typescript": "~5.0.8",
+    "@vue/cli-plugin-unit-mocha": "~5.0.8",
+    "@vue/cli-plugin-vuex": "~5.0.8",
+    "@vue/cli-service": "~5.0.8",
+    "@vue/compiler-sfc": "^3.3.4",
+    "@vue/eslint-config-standard": "^8.0.1",
+    "@vue/eslint-config-typescript": "^11.0.3",
+    "@vue/test-utils": "^2.3.2",
+    "@volar/vue-language-server": "^1.6.5",
+    "chai": "^4.3.7",
+    "chai-fetch": "^0.3.1",
+    "concurrently": "^8.1.0",
+    "eslint": "^8.42.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-standard": "^4.1.0",
+    "eslint-plugin-vue": "^9.14.1",
+    "fetch-mock": "^9.11.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "node-fetch": "^3.3.1",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "node-pty": "^1.0.0",
+    "null-loader": "^4.0.1",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.3.1",
+    "sinon-chai": "^3.7.0",
+    "ts-mock-imports": "^1.3.8",
+    "typescript": "~5.1.3",
+    "vue-loader": "^17.2.2",
+    "webpack": "^5.85.0",
+    "worker-loader": "^3.0.8",
+    "yaml-loader": "^0.8.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "@vue/standard",
+      "@vue/typescript/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "rules": {
+      "indent": [
+        "off",
+        4,
+        {
+          "SwitchCase": 0,
+          "FunctionExpression": {
+            "parameters": "first"
+          }
+        }
+      ],
+      "semi": "off",
+      "space-before-function-paren": "off",
+      "typescript-eslint/explicit-module-boundary-types": "off",
+      "no-multiple-empty-lines": "off",
+      "lines-between-class-members": "off",
+      "@typescript-eslint/ban-ts-comment": "off",
+      "no-debugger": "warn",
+      "no-unused-expressions": "off",
+      "dot-notation": "off",
+      "spaced-comment": "off",
+      "no-sequences": "warn",
+      "no-useless-constructor": "off",
+      "accessor-pairs": "off",
+      "import/no-webpack-loader-syntax": "off",
+      "no-return-assign": "off"
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "mocha": true
+        }
+      }
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

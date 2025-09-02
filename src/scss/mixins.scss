@@ -1,0 +1,199 @@
+@mixin animation($value) {
+  @include prefix(animation, $value, webkit spec);
+}
+
+@mixin breakpoint($media-query) {
+  $breakpoint-found: false;
+
+  @each $breakpoint in $grid-breakpoints {
+    $name: nth($breakpoint, 1);
+    $declaration: nth($breakpoint, 2);
+
+    @if $media-query == $name and $declaration {
+      $breakpoint-found: true;
+
+      @media only screen and #{$declaration} {
+        @content;
+      }
+    }
+  }
+
+  @if $breakpoint-found == false {
+    @warn 'Breakpoint "#{$media-query}" does not exist';
+  }
+}
+
+@mixin center($xy:xy) {
+  @if $xy == xy {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
+}
+
+@mixin exclusive($device) {
+  @if $device == Firefox {
+    @supports (grid: subgrid / subgrid) {
+      @content;
+    }
+  } @else if $device == iOS {
+    @supports (-webkit-touch-callout: none) {
+      @content;
+    }
+  } @else if $device == Safari {
+    @supports (hanging-punctuation: none) {
+      @content;
+    }
+  } @else  {
+      @warn 'Unrecognized prefix, try Firefox, iOS, Safari';
+    }
+}
+
+@mixin font-parameter() {
+  font-weight: var(--font-weight);
+  font-variation-settings: var(--font-variation-settings);
+}
+
+@mixin simple-keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+
+  @-o-keyframes #{$name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin overlay($z-index: null) {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    @if ($z-index) {
+      z-index: $z-index;
+    }
+  }
+}
+
+@mixin placeholder($color, $opacity: 1) {
+  &::-webkit-input-placeholder {
+    color: $color;
+    opacity: $opacity;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+    opacity: $opacity;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+    opacity: $opacity;
+  }
+
+  &::placeholder {
+    color: $color;
+    opacity: $opacity;
+  }
+}
+
+@mixin prefix($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+    @if $prefix == webkit {
+      -webkit-#{$property}: $value;
+    } @else if $prefix == moz {
+      -moz-#{$property}: $value;
+    } @else if $prefix == ms {
+      -ms-#{$property}: $value;
+    } @else if $prefix == o {
+      -o-#{$property}: $value;
+    } @else if $prefix == spec {
+      #{$property}: $value;
+    } @else  {
+      @warn 'Unrecognized prefix: #{$prefix}';
+    }
+  }
+}
+
+@mixin respond-to($breakpoint) {
+    // If the key exists in the map
+    @if map-has-key($breakpoints, $breakpoint) {
+      // Prints a media query based on the value
+      @media (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+      }
+    }
+
+    // If the key doesn't exist in the map
+    @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+          + "Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+}
+
+@mixin underlined($color, $width: 2px) {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-bottom: $width solid $color;
+    right: 0.05rem;
+    bottom: 0;
+  }
+}
+
+@mixin visually-hidden() {
+  position: absolute !important; // sass-lint:disable-line no-important
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+@mixin visually-shown() {
+  position: inherit !important;  // sass-lint:disable-line no-important
+  overflow: auto;
+  clip: unset;
+  width: auto;
+  height: auto;
+  margin: 0;
+}

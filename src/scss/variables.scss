@@ -1,0 +1,424 @@
+/* START VARIABLES */
+
+// =============================================================================================================== FONTS
+// IMPORTS //
+
+@use "sass:map";
+@use "sass:string";
+@use "sass:list";
+@use "sass:math";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght@8..144,-10..0,25..151,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+
+// FONT VARIABLES //
+$font-size-base                         : 62.5%;
+:root {
+    --font-weight: 400; // Use a value from 100 to 1000
+    --font-width: 100; // Use a value from 25 to 151
+    --font-slant: 0; // Use a value from -10 to 0
+    --font-variation-settings:
+            "slnt" var(--font-slant),
+            "wdth" var(--font-width),
+            "GRAD" 0,
+            "XTRA" 468,
+            "YOPQ" 79,
+            "YTAS" 750,
+            "YTDE" -203,
+            "YTFI" 738,
+            "YTLC" 514,
+            "YTUC" 712;
+
+    font-size: $font-size-base;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: var(--font-weight);
+    font-style: normal;
+    font-variation-settings: var(--font-variation-settings);
+}
+
+// ==================================================================================================== COLORS VARIABLES
+// https://sass-lang.com/documentation/modules/color
+
+@mixin define-color-hsl($color, $hue, $saturation, $lightness, $base: ''){
+  #{$color}: string.unquote("hsl(#{$hue}, #{$saturation}#{$base}, #{$lightness}#{$base})");
+  #{$color}-h: #{$hue};
+  #{$color}-s: string.unquote("#{$saturation}#{$base}");
+  #{$color}-l: string.unquote("#{$lightness}#{$base}");
+}
+
+@function returnOperation($sub-hue-min-index, $sub-compared-min-index, $array, $increment) {
+    @if $sub-hue-min-index == $sub-compared-min-index {
+        @return (list.nth($array, $sub-hue-min-index) + $increment);
+    } @else {
+        @return (list.nth($array, $sub-hue-min-index) - $increment);
+    }
+}
+
+@function hueCalculation($sub-hue-array, $sub-hue-min-index, $sub-hue-max-index, $sub-hue-increment, $name-array) {
+    @each $neutral in $color-primary-neutral-collection {
+        @if list.index($name-array, $neutral) {
+            @return list.nth($sub-hue-array, $sub-hue-max-index);
+        }
+    }
+    @return (list.nth($sub-hue-array, $sub-hue-min-index) + $sub-hue-increment);
+}
+
+// ===================================== PRIMARY
+
+$color-primary-1: 'color-primary-1' 32 85 63;
+$color-primary-1-original: hsl(32, 85%, 63%);
+
+$color-primary-2: 'color-primary-2' 37 80 96;
+$color-primary-2-original: hsl(37, 80%, 96%);
+
+$color-primary-3: 'color-primary-3' 37 47 85;
+$color-primary-3-original: hsl(37, 47%, 85%);
+
+$color-primary-4: 'color-primary-4' 89 42 51;
+$color-primary-4-original: hsl(89, 42%, 51%);
+
+$color-primary-5: 'color-primary-5' 130 5 26;
+$color-primary-5-original: hsl(130, 5%, 26%);
+
+$color-primary-6: 'color-primary-6' 0 0 0;
+$color-primary-6-original: hsl(0, 0%, 0%);
+
+$color-primary-7: 'color-primary-7' 0 0 100;
+$color-primary-7-original: hsl(0, 0%, 100%);
+
+$color-primary-8-original: hsl(46, 70%, 64%);
+
+// ===================================== VARIATIONS
+
+$color-primary-collection:
+        $color-primary-1,
+        $color-primary-2,
+        $color-primary-3,
+        $color-primary-4,
+        $color-primary-5,
+        $color-primary-6,
+        $color-primary-7
+;
+
+$color-primary-neutral-collection: '6', '7';
+
+$steps: 3;
+
+:root {
+    @each $name, $hue, $saturation, $lightness in $color-primary-collection {
+        @include define-color-hsl(--#{$name}, $hue, $saturation, $lightness, '%');
+        @for $color-primary from 1 through list.length($color-primary-collection) {
+              @if list.nth(list.nth($color-primary-collection, $color-primary), 1) != $name {
+                    @for $step from 1 through $steps {
+                        $sub-hue-array: list.nth(list.nth($color-primary-collection, $color-primary), 2), $hue;
+                        $sub-saturation-array: list.nth(list.nth($color-primary-collection, $color-primary), 3), $saturation;
+                        $sub-lightness-array: list.nth(list.nth($color-primary-collection, $color-primary), 4), $lightness;
+
+                        $sub-hue-min: math.min(
+                                        list.nth($sub-hue-array, 1),
+                                        list.nth($sub-hue-array, 2)
+                        );
+                        $sub-hue-min-index: list.index((
+                                        list.nth($sub-hue-array, 1),
+                                        list.nth($sub-hue-array, 2)),
+                                $sub-hue-min
+                        );
+                        $sub-hue-max: math.max(
+                                        list.nth($sub-hue-array, 1),
+                                        list.nth($sub-hue-array, 2)
+                        );
+                        $sub-hue-max-index: list.index((
+                                        list.nth($sub-hue-array, 1),
+                                        list.nth($sub-hue-array, 2)),
+                                $sub-hue-max
+                        );
+
+                        $sub-saturation-min: math.min(
+                                        list.nth($sub-saturation-array, 1),
+                                        list.nth($sub-saturation-array, 2)
+                        );
+                        $sub-saturation-min-index: list.index((
+                                        list.nth($sub-saturation-array, 1),
+                                        list.nth($sub-saturation-array, 2)),
+                                $sub-saturation-min
+                        );
+                        $sub-saturation-max: math.max(
+                                        list.nth($sub-saturation-array, 1),
+                                        list.nth($sub-saturation-array, 2)
+                        );
+                        $sub-saturation-max-index: list.index((
+                                        list.nth($sub-saturation-array, 1),
+                                        list.nth($sub-saturation-array, 2)),
+                                $sub-saturation-max
+                        );
+
+                        $sub-lightness-min: math.min(
+                                        list.nth($sub-lightness-array, 1),
+                                        list.nth($sub-lightness-array, 2)
+                        );
+                        $sub-lightness-min-index: list.index((
+                                        list.nth($sub-lightness-array, 1),
+                                        list.nth($sub-lightness-array, 2)),
+                                $sub-lightness-min
+                        );
+                        $sub-lightness-max: math.max(
+                                        list.nth($sub-lightness-array, 1),
+                                        list.nth($sub-lightness-array, 2)
+                        );
+                        $sub-lightness-max-index: list.index((
+                                        list.nth($sub-lightness-array, 1),
+                                        list.nth($sub-lightness-array, 2)),
+                                $sub-lightness-max
+                        );
+
+                        $name1: string.slice($name, -1);
+                        $name2: string.slice(list.nth(list.nth($color-primary-collection, $color-primary), 1), -1);
+
+                        $sub-hue-increment: math.div(($sub-hue-max - $sub-hue-min), ($steps + 1)) * $step;
+                        $sub-saturation-increment: math.div(($sub-saturation-max - $sub-saturation-min), ($steps + 1)) * $step;
+                        $sub-lightness-increment: math.div(($sub-lightness-max - $sub-lightness-min), ($steps + 1)) * $step;
+
+                        $sub-hue: hueCalculation(
+                                        $sub-hue-array,
+                                        $sub-hue-min-index,
+                                        $sub-hue-max-index,
+                                        $sub-hue-increment,
+                                        [$name1, $name2]
+                        );
+                        $sub-saturation: returnOperation(
+                                        $sub-hue-min-index,
+                                        $sub-saturation-min-index,
+                                        $sub-saturation-array,
+                                        $sub-saturation-increment
+                        );
+                        $sub-lightness: returnOperation(
+                                        $sub-hue-min-index,
+                                        $sub-lightness-min-index,
+                                        $sub-lightness-array,
+                                        $sub-lightness-increment
+                        );
+
+                        @include define-color-hsl(
+                                        --color-mix-#{$name1}-#{$name2}-step-#{$step},
+                                        $sub-hue,
+                                        $sub-saturation,
+                                        $sub-lightness,
+                                        '%'
+                        );
+                    }
+              }
+        }
+  }
+
+    @include define-color-hsl(--color-primary-8, 46, 70, 64, '%');
+}
+
+[data-theme-color='light'] {
+    input {
+        color-scheme: light;
+    }
+
+    // =========================================================== SEMANTICS
+    --color-semantic-success: hsl(90, 34%, 54%);
+    --color-semantic-error: hsl(355, 51%, 49%);
+    --color-semantic-warning: hsl(42, 61%, 65%);
+    --color-semantic-info: hsl(178, 25%, 49%);
+    --color-semantic-important-info: var(--color-semantic-error);
+    --color-semantic-disabled: hsl(36, 14%, 79%);
+    --color-semantic-destructive: var(--color-semantic-error);
+    --color-semantic-untouched: var(--color-semantic-disabled);
+    --color-semantic-progress: var(--color-semantic-info);
+    --color-semantic-waiting: var(--color-semantic-warning);
+
+    // =========================================================== LAYOUTS
+    // Base
+    &[data-theme-type="line"] {
+        --color-background-base: var(--color-primary-7);
+    }
+    &[data-theme-type="block"] {
+        --color-background-base: var(--color-mix-2-3-step-3);
+    }
+    --color-background-highlight: var(--color-primary-4);
+    --color-background-scrollbar-track: transparent;
+    --color-background-scrollbar-thumb: hsl(
+                    var(--color-primary-7-h),
+                    0%,
+                    var(--color-primary-7-l)
+    );
+    --color-background-scrollbar-thumb-hover: var(--color-primary-2);
+
+    --color-background-badge-primary: var(--color-primary-4);
+    --color-text-badge-primary: var(--color-primary-5);
+
+    --color-background-badge-secondary: var(--color-primary-1);
+    --color-text-badge-secondary: var(--color-primary-5);
+
+    // Page
+    --color-background-page-1: var(--color-primary-7);
+    --color-background-page-2: var(--color-mix-7-3-step-1);
+    --color-background-page-3: var(--color-primary-7);
+
+    // Text
+    --color-text-normal: var(--color-mix-7-6-step-1);
+    --color-text-normal-reversed: var(--color-primary-2);
+    --color-text-accent-primary: var(--color-primary-1);
+    --color-text-accent-secondary: var(--color-primary-4);
+    --color-text-disabled: var(--color-mix-5-7-step-3);
+    --color-text-button: var(--color-primary-4);
+    --color-text-button-hover: hsl(
+                    var(--color-primary-4-h),
+                    var(--color-primary-4-s),
+                    calc(var(--color-primary-4-s) * 1.15)
+    );
+    --color-text-highlight: var(--color-primary-2);
+    --color-text-link-highlight: var(--color-mix-1-4-step-1);
+
+    --color-text-link-primary: var(--color-primary-1);
+    --color-text-link-hover-primary: hsl(
+                    var(--color-primary-1-h),
+                    var(--color-primary-1-s),
+                    76%
+    );
+
+    --color-text-link-secondary: var(--color-primary-4);
+    --color-text-link-hover-secondary: hsl(
+                    var(--color-primary-4-h),
+                    var(--color-primary-4-s),
+                    76%
+    );
+}
+
+[data-theme-color='dark'] {
+    input {
+        color-scheme: dark;
+    }
+
+    // =========================================================== SEMANTICS
+    --color-semantic-success: hsl(90, 34%, 54%);
+    --color-semantic-error: hsl(355, 51%, 49%);
+    --color-semantic-warning: hsl(42, 61%, 65%);
+    --color-semantic-info: hsl(178, 25%, 49%);
+    --color-semantic-important-info: var(--color-semantic-error);
+    --color-semantic-disabled: hsl(138, 8%, 49%);
+    --color-semantic-destructive: var(--color-semantic-error);
+    --color-semantic-untouched: var(--color-semantic-disabled);
+    --color-semantic-progress: var(--color-semantic-info);
+    --color-semantic-waiting: var(--color-semantic-warning);
+
+    // =========================================================== LAYOUTS
+    // Base
+    --color-background-base: var(--color-mix-6-5-step-2);
+    --color-background-lighter: var(--color-primary-5);
+    --color-background-highlight: var(--color-primary-4);
+    --color-background-scrollbar-track: transparent;
+    --color-background-scrollbar-thumb: hsl(
+                    var(--color-primary-2-h),
+                    0%,
+                    var(--color-primary-2-l)
+    );
+    --color-background-scrollbar-thumb-hover: var(--color-primary-2);
+
+    --color-background-badge-primary: var(--color-primary-4);
+    --color-text-badge-primary: var(--color-primary-2);
+
+    --color-background-badge-secondary: var(--color-primary-1);
+    --color-text-badge-secondary: var(--color-primary-2);
+
+    // Page
+    --color-background-page-1: var(--color-mix-6-5-step-2);
+    --color-background-page-2: var(--color-mix-7-6-step-1);
+    --color-background-page-3: var(--color-mix-5-6-step-3);
+
+    // Text
+    --color-text-normal: var(--color-primary-2);
+    --color-text-normal-reversed: var(--color-primary-5);
+    --color-text-accent-primary: var(--color-primary-1);
+    --color-text-accent-secondary: var(--color-primary-4);
+    --color-text-disabled: var(--color-mix-6-7-step-2);
+
+    --color-text-highlight: var(--color-primary-5);
+    --color-text-link-highlight: var(--color-mix-1-4-step-1);
+
+    --color-text-link-primary: var(--color-primary-1);
+    --color-text-link-hover-primary: hsl(
+                    var(--color-primary-1-h),
+                    var(--color-primary-1-s),
+                    76%
+    );
+
+    --color-text-link-secondary: var(--color-primary-4);
+    --color-text-link-hover-secondary: hsl(
+                    var(--color-primary-4-h),
+                    var(--color-primary-4-s),
+                    76%
+    );
+}
+
+// ANIMATION =============================
+$animation-transition-duration: 0.3s;
+
+// RULERS =============================
+
+$ruler-scrollbar                        : 12px;
+$ruler-default-scrollbar                : 17.3px;
+$ruler-input-max-width                  : 514px;
+$ruler-input-height                     : 34px;
+$ruler-checkbox-size                    : 2.2rem;
+$ruler-table-data                       : 20px;
+$ruler-image-fileupload-width           : 20rem;
+$ruler-list-component-height            : 35rem;
+$ruler-input-section-gap-horizontal     : 0.9rem;
+$ruler-input-spacing-above              : 0.3rem;
+
+$ruler-border-radius                    : .8rem;
+$ruler-border-radius-inner              : math.div($ruler-border-radius, 1.8);
+$grid-gap                               : 1.5rem;
+
+$ruler-outer-content-height             : 22rem;
+
+$ruler-h-text-margin                    : 0 0 1rem;
+
+// SIDE BAR NAV =============================
+$icon-font-size: 2.4rem;
+$icon-pastille-size: 3rem;
+$item-padding: 1rem;
+$item-expended-padding: #{$item-padding * 3};
+$list-padding: 1rem;
+$nav-item-transition-duration: $animation-transition-duration;
+
+// HEADER =============================
+$ruler-header-height                    : 6.6rem;
+
+// ========================================================================================================= BREAKPOINTS
+// https://gs.statcounter.com/screen-resolution-stats
+$grid-medium: 750px;
+$grid-large: 990px;
+$grid-widescreen: 1400px;
+$grid-gutter: 20px;
+
+$small: 'small';
+$medium: 'medium';
+$medium-down: 'medium-down';
+$medium-up: 'medium-up';
+$large: 'large';
+$large-down: 'large-down';
+$large-up: 'large-up';
+$widescreen: 'widescreen';
+
+$grid-breakpoints: (
+        $small '(max-width: #{$grid-medium - 1})',
+        $medium '(min-width: #{$grid-medium}) and (max-width: #{$grid-large - 1})',
+        $medium-down '(max-width: #{$grid-large - 1})',
+        $medium-up '(min-width: #{$grid-medium})',
+        $large '(min-width: #{$grid-large}) and (max-width: #{$grid-widescreen - 1})',
+        $large-down '(max-width: #{$grid-widescreen - 1})',
+        $large-up '(min-width: #{$grid-large})',
+        $widescreen '(min-width: #{$grid-widescreen})'
+);
+
+$breakpoints: (
+        'input-max-width': calc($ruler-input-max-width + $ruler-scrollbar)
+) !default;
+
+/* END VARIABLES */
