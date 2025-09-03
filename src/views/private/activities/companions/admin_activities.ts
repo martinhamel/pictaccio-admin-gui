@@ -1,10 +1,10 @@
-import { decodeExtra } from '@pictaccio/admin-gui/src/utils/route_extra';
-import DataTable from '@pictaccio/admin-gui/src/views/private/activities/companions/DataTable.vue';
-import Filters from '@pictaccio/admin-gui/src/views/private/activities/companions/Filters.vue';
-import TutorialText from '@pictaccio/admin-gui/src/views/private/activities/companions/TutorialText.vue';
-import { StoreLanguageItem } from '@pictaccio/shared/src/types/store_language_item';
+import { decodeExtra } from '@pictaccio/admin-gui/utils/route_extra';
+import DataTable from '@pictaccio/admin-gui/views/private/activities/companions/DataTable.vue';
+import Filters from '@pictaccio/admin-gui/views/private/activities/companions/Filters.vue';
+import TutorialText from '@pictaccio/admin-gui/views/private/activities/companions/TutorialText.vue';
+import { StoreLanguageItem } from '@pictaccio/shared/types/store_language_item';
 import { ComponentBase, Prop, Vue } from 'vue-facing-decorator';
-import DialogBox from '@pictaccio/admin-gui/src/views/components/layout/DialogBox.vue';
+import DialogBox from '@pictaccio/admin-gui/views/components/layout/DialogBox.vue';
 
 @ComponentBase({
     components: [

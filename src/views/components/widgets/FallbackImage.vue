@@ -40,7 +40,7 @@ img {
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 @Component({

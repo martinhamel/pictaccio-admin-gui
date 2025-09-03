@@ -1,4 +1,4 @@
-import { ColorObject } from '@pictaccio/admin-gui/src/core/types/color_object';
+import { ColorObject } from '@pictaccio/admin-gui/core/types/color_object';
 
 export const ORDER_STATUS_COLORS: Record<string, ColorObject> = {
     pending: {

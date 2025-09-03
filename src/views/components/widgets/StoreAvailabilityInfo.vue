@@ -33,9 +33,9 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import InformationBox from '@pictaccio/admin-gui/src/views/components/widgets/InformationBox.vue';
-import { StoreConfigurationStatus } from '@pictaccio/shared/src/types/store_status';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import InformationBox from '@pictaccio/admin-gui/views/components/widgets/InformationBox.vue';
+import { StoreConfigurationStatus } from '@pictaccio/shared/types/store_status';
 import { Component, Vue } from 'vue-facing-decorator';
 
 @Component({

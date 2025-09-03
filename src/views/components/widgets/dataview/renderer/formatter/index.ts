@@ -1,12 +1,12 @@
 import DataviewRendererAlignmentFormatter from
-    '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/formatter/DataviewRendererAlignmentFormatter.vue';
+    '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/formatter/DataviewRendererAlignmentFormatter.vue';
 import DataviewRendererCurrencyFormatter
-    from '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/formatter/DataviewRendererCurrencyFormatter.vue';
+    from '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/formatter/DataviewRendererCurrencyFormatter.vue';
 import DataviewRendererLocaleFormatter
-    from '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/formatter/DataviewRendererLocaleFormatter.vue';
+    from '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/formatter/DataviewRendererLocaleFormatter.vue';
 import DataviewRendererStringFormatter from
-    '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/formatter/DataviewRendererStringFormatter.vue';
-import { StoreLanguageItem } from '@pictaccio/shared/src/types/store_language_item';
+    '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/formatter/DataviewRendererStringFormatter.vue';
+import { StoreLanguageItem } from '@pictaccio/shared/types/store_language_item';
 import { VueCons, Base } from 'vue-facing-decorator';
 import { PropsConfig } from 'vue-facing-decorator/dist/option/props';
 

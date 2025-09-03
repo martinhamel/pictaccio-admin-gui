@@ -1,7 +1,7 @@
-import { DateRange } from '@pictaccio/shared/src/types/date_range';
-import { Operator } from '@pictaccio/shared/src/types/operator';
-import { ReportRendererType } from '@pictaccio/shared/src/types/report';
-import { SortDirection } from '@pictaccio/shared/src/types/sort_direction';
+import { DateRange } from '@pictaccio/shared/types/date_range';
+import { Operator } from '@pictaccio/shared/types/operator';
+import { ReportRendererType } from '@pictaccio/shared/types/report';
+import { SortDirection } from '@pictaccio/shared/types/sort_direction';
 
 export type DatasourceFilterType = 'leaf' | 'filter' | 'or' | 'and';
 

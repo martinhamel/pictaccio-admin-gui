@@ -14,8 +14,8 @@
 </template>
 
 <script lang="ts">
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
-import { OrderStatus, OrderStatuses } from '@pictaccio/shared/src/types/order_status';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
+import { OrderStatus, OrderStatuses } from '@pictaccio/shared/types/order_status';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 @Component({

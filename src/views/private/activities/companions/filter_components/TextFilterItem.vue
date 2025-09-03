@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/filter_popup.scss';
+@import '@pictaccio/admin-gui/scss/filter_popup.scss';
 </style>
 
 <template>
@@ -60,13 +60,13 @@
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { isEmpty } from '@loufa/loufairy';
-import { FilterType } from '@pictaccio/admin-gui/src/core/types/filters/filter_type';
-import { FilterTypeText } from '@pictaccio/admin-gui/src/core/types/filters/type_text';
-import { SerializedFilterItem } from '@pictaccio/admin-gui/src/core/types/serialized_params';
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
-import StickyLabel from '@pictaccio/admin-gui/src/views/components/widgets/StickyLabel.vue';
-import FilterItem from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/filter_item';
-import FilterPopup from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/FilterPopup.vue';
+import { FilterType } from '@pictaccio/admin-gui/core/types/filters/filter_type';
+import { FilterTypeText } from '@pictaccio/admin-gui/core/types/filters/type_text';
+import { SerializedFilterItem } from '@pictaccio/admin-gui/core/types/serialized_params';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
+import StickyLabel from '@pictaccio/admin-gui/views/components/widgets/StickyLabel.vue';
+import FilterItem from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/filter_item';
+import FilterPopup from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/FilterPopup.vue';
 import { Component } from 'vue-facing-decorator';
 
 @Component({

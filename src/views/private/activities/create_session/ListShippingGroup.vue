@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 .list-interface {
     --list-top-space: 4.5rem;
@@ -160,32 +160,32 @@
 </template>
 
 <script lang="ts">
-import { DataSourceOption } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { DataSourceEventListeners } from '@pictaccio/admin-gui/src/core/types/data_source_event_listeners';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import Spinner from '@pictaccio/admin-gui/src/views/components/widgets/Spinner.vue';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
-import { LocalizedString } from '@pictaccio/shared/src/types/localized_string';
-import { StoreLanguageItem } from '@pictaccio/shared/src/types/store_language_item';
+import { DataSourceOption } from '@pictaccio/admin-gui/core/types/data_source';
+import { DataSourceEventListeners } from '@pictaccio/admin-gui/core/types/data_source_event_listeners';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import Spinner from '@pictaccio/admin-gui/views/components/widgets/Spinner.vue';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
+import { LocalizedString } from '@pictaccio/shared/types/localized_string';
+import { StoreLanguageItem } from '@pictaccio/shared/types/store_language_item';
 import { DateTime } from 'luxon';
 import { Component } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { ReaderResponse } from '@pictaccio/admin-gui/src/core/reader_response';
-import { METHODS } from '@pictaccio/admin-gui/src/core/shipping_method_map';
-import { CRUDStatus } from '@pictaccio/admin-gui/src/core/types/crud_status';
-import { GenericDataSource } from '@pictaccio/admin-gui/src/datasources/generic_data_source';
-import { DbDeliveryGroup } from '@pictaccio/admin-gui/src/models/db_delivery_group';
-import { DbDeliveryOption, DeliveryOptionExtra } from '@pictaccio/admin-gui/src/models/db_delivery_option';
-import CrudDialog from '@pictaccio/admin-gui/src/views/private/activities/companions/CrudDialog.vue';
+import { ReaderResponse } from '@pictaccio/admin-gui/core/reader_response';
+import { METHODS } from '@pictaccio/admin-gui/core/shipping_method_map';
+import { CRUDStatus } from '@pictaccio/admin-gui/core/types/crud_status';
+import { GenericDataSource } from '@pictaccio/admin-gui/datasources/generic_data_source';
+import { DbDeliveryGroup } from '@pictaccio/admin-gui/models/db_delivery_group';
+import { DbDeliveryOption, DeliveryOptionExtra } from '@pictaccio/admin-gui/models/db_delivery_option';
+import CrudDialog from '@pictaccio/admin-gui/views/private/activities/companions/CrudDialog.vue';
 import {
     SHIPPING_GROUP_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/shipping_group_columns';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/shipping_group_columns';
 import {
     SHIPPING_OPTION_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/shipping_option_columns';
-import Filters from '@pictaccio/admin-gui/src/views/private/activities/companions/Filters.vue';
-import CreateSessionsSteps from '@pictaccio/admin-gui/src/views/private/activities/create_session/create_sessions_steps';
-import ListSelector from '@pictaccio/admin-gui/src/views/components/widgets/ListSelector.vue';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/shipping_option_columns';
+import Filters from '@pictaccio/admin-gui/views/private/activities/companions/Filters.vue';
+import CreateSessionsSteps from '@pictaccio/admin-gui/views/private/activities/create_session/create_sessions_steps';
+import ListSelector from '@pictaccio/admin-gui/views/components/widgets/ListSelector.vue';
 
 @Component({
     name: 'List Shipping Group',

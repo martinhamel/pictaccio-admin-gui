@@ -16,19 +16,19 @@
 </template>
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { DataSource } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { GenericDataSource } from '@pictaccio/admin-gui/src/datasources/generic_data_source';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { DbCrosssell } from '@pictaccio/admin-gui/src/models/db_crosssell';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
+import { DataSource } from '@pictaccio/admin-gui/core/types/data_source';
+import { GenericDataSource } from '@pictaccio/admin-gui/datasources/generic_data_source';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { DbCrosssell } from '@pictaccio/admin-gui/models/db_crosssell';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
 import ActivityCrudDialog
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialogs/activity_crud_dialog';
-import CrudDialog from '@pictaccio/admin-gui/src/views/private/activities/companions/CrudDialog.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialogs/activity_crud_dialog';
+import CrudDialog from '@pictaccio/admin-gui/views/private/activities/companions/CrudDialog.vue';
 import {
     CROSSSELL_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/crosssell_columns';
-import { validateInternalNameCharacters } from '@pictaccio/shared/src/utils/internal_name_constraint';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/crosssell_columns';
+import { validateInternalNameCharacters } from '@pictaccio/shared/utils/internal_name_constraint';
 import { Component } from 'vue-facing-decorator';
 
 @Component({

@@ -1,6 +1,6 @@
-import { Address } from '@pictaccio/admin-gui/src/models/address';
-import { NamedEmail } from '@pictaccio/admin-gui/src/models/named_email';
-import { NamedPhone } from '@pictaccio/admin-gui/src/models/named_phone';
+import { Address } from '@pictaccio/admin-gui/models/address';
+import { NamedEmail } from '@pictaccio/admin-gui/models/named_email';
+import { NamedPhone } from '@pictaccio/admin-gui/models/named_phone';
 
 export enum TaxLocality {
     Quebec = 'ca-qc',

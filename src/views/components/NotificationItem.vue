@@ -200,10 +200,10 @@
 </template>
 
 <script lang="ts">
-import ProgressBar from '@pictaccio/admin-gui/src/views/components/widgets/ProgressBar.vue';
+import ProgressBar from '@pictaccio/admin-gui/views/components/widgets/ProgressBar.vue';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { NotificationItem as Item } from '@pictaccio/admin-gui/src/core/types/notification_item';
+import { NotificationItem as Item } from '@pictaccio/admin-gui/core/types/notification_item';
 
 @Component({
     name: 'Notification item',

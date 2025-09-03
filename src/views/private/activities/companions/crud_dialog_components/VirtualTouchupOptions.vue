@@ -12,19 +12,19 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { CURRENCY } from '@pictaccio/admin-gui/src/core/currency';
-import { CrudComponentInterface } from '@pictaccio/admin-gui/src/core/types/crud_component_interface';
-import { CRUDStatus } from '@pictaccio/admin-gui/src/core/types/crud_status';
-import { DataSource } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { UpdateState } from '@pictaccio/admin-gui/src/core/types/update_state';
-import { Currency } from '@pictaccio/admin-gui/src/utils/constraint_behaviors/currency';
-import { GenericConstraint } from '@pictaccio/admin-gui/src/utils/generic_constraint';
-import UnitDecorator from '@pictaccio/admin-gui/src/views/components/widgets/UnitDecorator.vue';
+import { CURRENCY } from '@pictaccio/admin-gui/core/currency';
+import { CrudComponentInterface } from '@pictaccio/admin-gui/core/types/crud_component_interface';
+import { CRUDStatus } from '@pictaccio/admin-gui/core/types/crud_status';
+import { DataSource } from '@pictaccio/admin-gui/core/types/data_source';
+import { UpdateState } from '@pictaccio/admin-gui/core/types/update_state';
+import { Currency } from '@pictaccio/admin-gui/utils/constraint_behaviors/currency';
+import { GenericConstraint } from '@pictaccio/admin-gui/utils/generic_constraint';
+import UnitDecorator from '@pictaccio/admin-gui/views/components/widgets/UnitDecorator.vue';
 import {
     CrudComponents
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/CrudComponents';
+} from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/CrudComponents';
 import VirtualTouchupOption
-    from '@pictaccio/admin-gui/src/views/private/activities/create_session/widgets/VirtualTouchupOption.vue';
+    from '@pictaccio/admin-gui/views/private/activities/create_session/widgets/VirtualTouchupOption.vue';
 import { types } from 'sass';
 import { Component, Prop } from 'vue-facing-decorator';
 import Boolean = types.Boolean;

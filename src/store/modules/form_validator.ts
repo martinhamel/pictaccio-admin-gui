@@ -1,5 +1,5 @@
-import { ReaderResponse } from '@pictaccio/admin-gui/src/core/reader_response';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
+import { ReaderResponse } from '@pictaccio/admin-gui/core/reader_response';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
 
 type FormValues = Record<string, string | number | string[] | number[]>;

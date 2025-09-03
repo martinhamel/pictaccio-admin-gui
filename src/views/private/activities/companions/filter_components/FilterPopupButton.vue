@@ -40,7 +40,7 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import Badge from '@pictaccio/admin-gui/src/views/components/widgets/Badge.vue';
+import Badge from '@pictaccio/admin-gui/views/components/widgets/Badge.vue';
 import { dasherize, isEmpty } from '@loufa/loufairy';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 

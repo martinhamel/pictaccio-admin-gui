@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 .h3 {
     grid-column: 1/-1;
     padding: 2rem 0 1.5rem;
@@ -160,20 +160,20 @@
 </template>
 
 <script lang="ts">
-import router from '@pictaccio/admin-gui/src/router';
-import storeConfigService from '@pictaccio/admin-gui/src/services/store_config_service';
-import { store } from '@pictaccio/admin-gui/src/store';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
+import router from '@pictaccio/admin-gui/router';
+import storeConfigService from '@pictaccio/admin-gui/services/store_config_service';
+import { store } from '@pictaccio/admin-gui/store';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
 import { Component, Hook } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
-import DisabledTooltip from '@pictaccio/admin-gui/src/views/components/widgets/DisabledTooltip.vue';
-import ProductSection from '@pictaccio/admin-gui/src/views/private/activities/create_session/ProductSection.vue';
-import Photos from '@pictaccio/admin-gui/src/views/private/activities/create_session/Photos.vue';
-import ShippingSection from '@pictaccio/admin-gui/src/views/private/activities/create_session/ShippingSection.vue';
-import SessionInfo from '@pictaccio/admin-gui/src/views/private/activities/create_session/SessionInfo.vue';
-import ImportSubjects from '@pictaccio/admin-gui/src/views/private/activities/create_session/ImportSubjects.vue';
-import DocsLink from '@pictaccio/admin-gui/src/views/private/activities/companions/DocsLink.vue';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
+import DisabledTooltip from '@pictaccio/admin-gui/views/components/widgets/DisabledTooltip.vue';
+import ProductSection from '@pictaccio/admin-gui/views/private/activities/create_session/ProductSection.vue';
+import Photos from '@pictaccio/admin-gui/views/private/activities/create_session/Photos.vue';
+import ShippingSection from '@pictaccio/admin-gui/views/private/activities/create_session/ShippingSection.vue';
+import SessionInfo from '@pictaccio/admin-gui/views/private/activities/create_session/SessionInfo.vue';
+import ImportSubjects from '@pictaccio/admin-gui/views/private/activities/create_session/ImportSubjects.vue';
+import DocsLink from '@pictaccio/admin-gui/views/private/activities/companions/DocsLink.vue';
 import { onBeforeRouteLeave } from 'vue-router';
 
 const STEPS_INTERFACE: string[] = ['session-info', 'product-section', 'shipping-section', 'import-subjects', 'photos'];

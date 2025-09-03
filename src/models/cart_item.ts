@@ -1,5 +1,5 @@
-import { ProductPhoto } from '@pictaccio/admin-gui/src/models/product_photo';
-import { VirtualProduct } from '@pictaccio/shared/src/types/virtual_product';
+import { ProductPhoto } from '@pictaccio/admin-gui/models/product_photo';
+import { VirtualProduct } from '@pictaccio/shared/types/virtual_product';
 
 export class CartItem {
     public cartItemId?: string;

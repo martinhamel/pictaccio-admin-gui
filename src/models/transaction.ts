@@ -1,5 +1,5 @@
-import { CanadianTaxLocality } from '@pictaccio/admin-gui/src/models/canadian_tax_locality';
-import { TransactionInfo } from '@pictaccio/admin-gui/src/models/transaction_info';
+import { CanadianTaxLocality } from '@pictaccio/admin-gui/models/canadian_tax_locality';
+import { TransactionInfo } from '@pictaccio/admin-gui/models/transaction_info';
 
 export class Transaction {
     public subtotal: number;

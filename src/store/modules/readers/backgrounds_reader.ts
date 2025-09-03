@@ -1,11 +1,11 @@
-import { DbBackground } from '@pictaccio/admin-gui/src/models/db_background';
-import { KeyValue } from '@pictaccio/shared/src/types/key_value';
-import { Tag } from '@pictaccio/shared/src/types/tags';
+import { DbBackground } from '@pictaccio/admin-gui/models/db_background';
+import { KeyValue } from '@pictaccio/shared/types/key_value';
+import { Tag } from '@pictaccio/shared/types/tags';
 import { Module as Mod } from 'vuex';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
-import { ReaderResponse } from '@pictaccio/admin-gui/src/core/reader_response';
-import { createDataTableService, DataTableService } from '@pictaccio/admin-gui/src/services/data_table_service';
-import backgroundService from '@pictaccio/admin-gui/src/services/background_service';
+import { ReaderResponse } from '@pictaccio/admin-gui/core/reader_response';
+import { createDataTableService, DataTableService } from '@pictaccio/admin-gui/services/data_table_service';
+import backgroundService from '@pictaccio/admin-gui/services/background_service';
 
 @Module({ namespaced: true })
 export default class BackgroundsReader extends VuexModule {

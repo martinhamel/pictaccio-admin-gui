@@ -16,22 +16,22 @@
 </template>
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { METHODS } from '@pictaccio/admin-gui/src/core/shipping_method_map';
-import { DataSource, DataSourceOption } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { DataSourceEventListeners } from '@pictaccio/admin-gui/src/core/types/data_source_event_listeners';
-import { GenericDataSource } from '@pictaccio/admin-gui/src/datasources/generic_data_source';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { DbDeliveryOption, DeliveryOptionExtra } from '@pictaccio/admin-gui/src/models/db_delivery_option';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
+import { METHODS } from '@pictaccio/admin-gui/core/shipping_method_map';
+import { DataSource, DataSourceOption } from '@pictaccio/admin-gui/core/types/data_source';
+import { DataSourceEventListeners } from '@pictaccio/admin-gui/core/types/data_source_event_listeners';
+import { GenericDataSource } from '@pictaccio/admin-gui/datasources/generic_data_source';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { DbDeliveryOption, DeliveryOptionExtra } from '@pictaccio/admin-gui/models/db_delivery_option';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
 import ActivityCrudDialog
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialogs/activity_crud_dialog';
-import CrudDialog from '@pictaccio/admin-gui/src/views/private/activities/companions/CrudDialog.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialogs/activity_crud_dialog';
+import CrudDialog from '@pictaccio/admin-gui/views/private/activities/companions/CrudDialog.vue';
 import {
     SHIPPING_OPTION_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/shipping_option_columns';
-import { DeliveryMethod } from '@pictaccio/shared/src/types/delivery_method';
-import { LocalizedString } from '@pictaccio/shared/src/types/localized_string';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/shipping_option_columns';
+import { DeliveryMethod } from '@pictaccio/shared/types/delivery_method';
+import { LocalizedString } from '@pictaccio/shared/types/localized_string';
 import { camelize } from '@loufa/loufairy';
 import { DateTime } from 'luxon';
 import { Component } from 'vue-facing-decorator';

@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 
-import { DbBaseModel } from '@pictaccio/admin-gui/src/models/db_base_model';
+import { DbBaseModel } from '@pictaccio/admin-gui/models/db_base_model';
 
 export class Subject extends DbBaseModel<number> {
     public sessionId: string;

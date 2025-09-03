@@ -1,7 +1,7 @@
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
-import { SubjectCodeGenerateQuery } from '@pictaccio/admin-gui/src/models/subject_code_generate_query';
-import { SubjectCodeList } from '@pictaccio/admin-gui/src/types/subject_code_list';
-import subjectCodeService from '@pictaccio/admin-gui/src/services/subject_code_service';
+import { SubjectCodeGenerateQuery } from '@pictaccio/admin-gui/models/subject_code_generate_query';
+import { SubjectCodeList } from '@pictaccio/admin-gui/types/subject_code_list';
+import subjectCodeService from '@pictaccio/admin-gui/services/subject_code_service';
 
 @Module({ namespaced: true })
 export default class SubjectCodes extends VuexModule {

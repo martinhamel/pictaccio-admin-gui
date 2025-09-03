@@ -29,8 +29,8 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { NotificationItem } from '@pictaccio/admin-gui/src/core/types/notification_item';
-import NotificationItemComponent from '@pictaccio/admin-gui/src/views/components/NotificationItem.vue';
+import { NotificationItem } from '@pictaccio/admin-gui/core/types/notification_item';
+import NotificationItemComponent from '@pictaccio/admin-gui/views/components/NotificationItem.vue';
 
 @Component({
     name: 'Notification Container',

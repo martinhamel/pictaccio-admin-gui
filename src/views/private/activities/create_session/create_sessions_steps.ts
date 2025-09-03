@@ -1,6 +1,6 @@
 import { createValidator } from '@loufa/loufairy-client';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import DialogBox from '@pictaccio/admin-gui/src/views/components/layout/DialogBox.vue';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import DialogBox from '@pictaccio/admin-gui/views/components/layout/DialogBox.vue';
 import { ComponentBase, Vue } from 'vue-facing-decorator';
 
 const SESSION_STEPS = [

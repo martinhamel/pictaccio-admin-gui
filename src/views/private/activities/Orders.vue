@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 .session-color {
     margin-top: -0.5rem;
@@ -112,48 +112,48 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { DataSourceOption } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { FilterDescriptor } from '@pictaccio/admin-gui/src/core/types/filter_descriptors';
-import { GenericDataSource } from '@pictaccio/admin-gui/src/datasources/generic_data_source';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import orderService from '@pictaccio/admin-gui/src/services/order_service';
-import { BooleanFilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/boolean_filter_function';
-import { DateFilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/date_filter_function';
-import { FilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/filter_function';
-import { IdFilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/id_filter_function';
-import { StringFilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/string_filter_function';
-import { UuidFilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/uuid_filter_function';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import { RemoteStore } from '@pictaccio/admin-gui/src/utils/remote_store';
-import { formatExtraKey, shouldExtraSilenceRead } from '@pictaccio/admin-gui/src/utils/route_extra';
-import ActivitiesTabs from '@pictaccio/admin-gui/src/views/components/widgets/ActivitiesTabs.vue';
-import EllipsisMenu from '@pictaccio/admin-gui/src/views/components/widgets/EllipsisMenu.vue';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
+import { DataSourceOption } from '@pictaccio/admin-gui/core/types/data_source';
+import { FilterDescriptor } from '@pictaccio/admin-gui/core/types/filter_descriptors';
+import { GenericDataSource } from '@pictaccio/admin-gui/datasources/generic_data_source';
+import { environment } from '@pictaccio/admin-gui/environment';
+import orderService from '@pictaccio/admin-gui/services/order_service';
+import { BooleanFilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/boolean_filter_function';
+import { DateFilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/date_filter_function';
+import { FilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/filter_function';
+import { IdFilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/id_filter_function';
+import { StringFilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/string_filter_function';
+import { UuidFilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/uuid_filter_function';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import { RemoteStore } from '@pictaccio/admin-gui/utils/remote_store';
+import { formatExtraKey, shouldExtraSilenceRead } from '@pictaccio/admin-gui/utils/route_extra';
+import ActivitiesTabs from '@pictaccio/admin-gui/views/components/widgets/ActivitiesTabs.vue';
+import EllipsisMenu from '@pictaccio/admin-gui/views/components/widgets/EllipsisMenu.vue';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
 import {
     ORDERS_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/orders_columns';
-import DataTable from '@pictaccio/admin-gui/src/views/private/activities/companions/DataTable.vue';
-import DocsLink from '@pictaccio/admin-gui/src/views/private/activities/companions/DocsLink.vue';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/orders_columns';
+import DataTable from '@pictaccio/admin-gui/views/private/activities/companions/DataTable.vue';
+import DocsLink from '@pictaccio/admin-gui/views/private/activities/companions/DocsLink.vue';
 import AssigneeFilterItem
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/AssigneeFilterItem.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/AssigneeFilterItem.vue';
 import BooleanFilterItem
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/BooleanFilterItem.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/BooleanFilterItem.vue';
 import DateFilterItem
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/DateFilterItem.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/DateFilterItem.vue';
 import MainTextFilterItem
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/MainTextFilterItem.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/MainTextFilterItem.vue';
 import MultiListFilterItem
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/MultiListFilterItem.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/MultiListFilterItem.vue';
 import TextFilterItem
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/TextFilterItem.vue';
-import Filters from '@pictaccio/admin-gui/src/views/private/activities/companions/Filters.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/TextFilterItem.vue';
+import Filters from '@pictaccio/admin-gui/views/private/activities/companions/Filters.vue';
 import PlaceholderDataTable
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/placeholders/PlaceholderDataTable.vue';
-import SelectAssignee from '@pictaccio/admin-gui/src/views/private/activities/companions/SelectAssignee.vue';
-import TutorialText from '@pictaccio/admin-gui/src/views/private/activities/companions/TutorialText.vue';
-import { Language } from '@pictaccio/shared/src/types/language';
-import { SpreadsheetExportFormat } from '@pictaccio/shared/src/types/spreadsheet_export_type';
+    from '@pictaccio/admin-gui/views/private/activities/companions/placeholders/PlaceholderDataTable.vue';
+import SelectAssignee from '@pictaccio/admin-gui/views/private/activities/companions/SelectAssignee.vue';
+import TutorialText from '@pictaccio/admin-gui/views/private/activities/companions/TutorialText.vue';
+import { Language } from '@pictaccio/shared/types/language';
+import { SpreadsheetExportFormat } from '@pictaccio/shared/types/spreadsheet_export_type';
 import { Component, Hook } from 'vue-facing-decorator';
 
 /**

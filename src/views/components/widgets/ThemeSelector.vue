@@ -88,8 +88,8 @@
 </template>
 
 <script lang="ts">
-import { Theme, ThemeColors, ThemeTypes } from '@pictaccio/admin-gui/src/core/types/color_theme';
-import { environment } from '@pictaccio/admin-gui/src/environment/environment';
+import { Theme, ThemeColors, ThemeTypes } from '@pictaccio/admin-gui/core/types/color_theme';
+import { environment } from '@pictaccio/admin-gui/environment/environment';
 import { Component, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 

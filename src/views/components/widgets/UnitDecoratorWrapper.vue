@@ -38,7 +38,7 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import UnitDecorator from '@pictaccio/admin-gui/src/views/components/widgets/UnitDecorator.vue';
+import UnitDecorator from '@pictaccio/admin-gui/views/components/widgets/UnitDecorator.vue';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 @Component({

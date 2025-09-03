@@ -68,12 +68,12 @@
 </template>
 
 <script lang="ts">
-import { environment } from '@pictaccio/admin-gui/src/environment';
+import { environment } from '@pictaccio/admin-gui/environment';
 import { Component, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { Bus } from '@pictaccio/admin-gui/src/utils/bus';
-import { toastLevelIcon } from '@pictaccio/admin-gui/src/core/toast_level_icon'
-import { GlobalToastLevel, GlobalToastLevels } from '@pictaccio/admin-gui/src/utils/global_toast';
+import { Bus } from '@pictaccio/admin-gui/utils/bus';
+import { toastLevelIcon } from '@pictaccio/admin-gui/core/toast_level_icon'
+import { GlobalToastLevel, GlobalToastLevels } from '@pictaccio/admin-gui/utils/global_toast';
 
 @Component({
     name: 'Toast',

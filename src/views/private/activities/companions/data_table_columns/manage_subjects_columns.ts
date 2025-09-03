@@ -1,4 +1,4 @@
-import { environment } from '@pictaccio/admin-gui/src/environment';
+import { environment } from '@pictaccio/admin-gui/environment';
 
 export const MANAGE_SUBJECTS_COLUMNS = {
     headers: [

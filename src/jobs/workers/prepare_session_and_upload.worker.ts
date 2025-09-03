@@ -1,11 +1,11 @@
 import { isEmpty } from '@loufa/loufairy';
 import { load } from 'exifreader';
-import { GroupTransfer } from '@pictaccio/admin-gui/src/core/types/group_transfer';
-import { GroupPhotos } from '@pictaccio/admin-gui/src/core/types/group_photos';
-import { SubjectPhotos } from '@pictaccio/admin-gui/src/core/types/subject_photos';
-import { SubjectTransfer } from '@pictaccio/admin-gui/src/core/types/subject_transfer';
-import { ProcessedPhotos } from '@pictaccio/admin-gui/src/core/types/processed_photos';
-import { Job } from '@pictaccio/admin-gui/src/jobs/job';
+import { GroupTransfer } from '@pictaccio/admin-gui/core/types/group_transfer';
+import { GroupPhotos } from '@pictaccio/admin-gui/core/types/group_photos';
+import { SubjectPhotos } from '@pictaccio/admin-gui/core/types/subject_photos';
+import { SubjectTransfer } from '@pictaccio/admin-gui/core/types/subject_transfer';
+import { ProcessedPhotos } from '@pictaccio/admin-gui/core/types/processed_photos';
+import { Job } from '@pictaccio/admin-gui/jobs/job';
 
 const IMAGE_PORTRAIT_SIZE = 2000;
 const IMAGE_LANDSCAPE_SIZE = 3000;
@@ -24,8 +24,8 @@ class PrepareSessionAndUpload extends Job {
     }
 
     public async init(): Promise<void> {
-        await import('@pictaccio/admin-gui/src/store');
-        this.sessionUploadService = (await import('@pictaccio/admin-gui/src/services/session_upload_service')).default;
+        await import('@pictaccio/admin-gui/store');
+        this.sessionUploadService = (await import('@pictaccio/admin-gui/services/session_upload_service')).default;
     }
 
     /* MESSAGE HANDLERS */

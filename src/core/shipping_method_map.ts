@@ -1,4 +1,4 @@
-import { DeliveryMethod } from '@pictaccio/shared/src/types/delivery_method';
+import { DeliveryMethod } from '@pictaccio/shared/types/delivery_method';
 
 export const METHODS: { [key: number]: DeliveryMethod } = {
     1: 'fixed-rate',

@@ -1,5 +1,5 @@
-import { i18n } from '@pictaccio/admin-gui/src/i18n';
-import { internalName } from '@pictaccio/admin-gui/src/utils/datatable_column_renderers/internal_name';
+import { i18n } from '@pictaccio/admin-gui/i18n';
+import { internalName } from '@pictaccio/admin-gui/utils/datatable_column_renderers/internal_name';
 
 export const SHIPPING_GROUP_COLUMNS = {
     headers: [

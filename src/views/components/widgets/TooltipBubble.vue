@@ -110,7 +110,7 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { Coords, getCoords } from '@pictaccio/admin-gui/src/utils/get_coords';
+import { Coords, getCoords } from '@pictaccio/admin-gui/utils/get_coords';
 
 const ARROW_SIZE = 12;
 const ARROW_AMP = 1.2;

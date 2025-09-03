@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/public.scss';
+@import '@pictaccio/admin-gui/scss/public.scss';
 </style>
 
 <template>

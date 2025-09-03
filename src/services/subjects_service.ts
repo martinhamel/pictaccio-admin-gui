@@ -1,8 +1,8 @@
-import { SubjectSwapLog } from '@pictaccio/admin-gui/src/core/types/subject_swap_log';
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { SubjectCodeList } from '@pictaccio/admin-gui/src/types/subject_code_list';
-import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/src/utils/error';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
+import { SubjectSwapLog } from '@pictaccio/admin-gui/core/types/subject_swap_log';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { SubjectCodeList } from '@pictaccio/admin-gui/types/subject_code_list';
+import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/utils/error';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
 
 class SubjectsService extends BaseService {
     public async addVersion(id: number, original: string, version: File): Promise<void> {

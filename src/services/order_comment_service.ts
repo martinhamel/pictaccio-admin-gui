@@ -1,6 +1,6 @@
-import { CommentItemData } from '@pictaccio/admin-gui/src/core/types/comment_item_data';
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/src/utils/error';
+import { CommentItemData } from '@pictaccio/admin-gui/core/types/comment_item_data';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/utils/error';
 
 class OrderCommentService extends BaseService {
     public async addComment(orderId: number, comment: string): Promise<boolean> {

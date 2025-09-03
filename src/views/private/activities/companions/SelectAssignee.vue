@@ -97,13 +97,13 @@
 </template>
 
 <script lang="ts">
-import { UserInfo } from '@pictaccio/admin-gui/src/core/types/user_info';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import FallbackImage from '@pictaccio/admin-gui/src/views/components/widgets/FallbackImage.vue';
+import { UserInfo } from '@pictaccio/admin-gui/core/types/user_info';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import FallbackImage from '@pictaccio/admin-gui/views/components/widgets/FallbackImage.vue';
 import { Component, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import userService from '@pictaccio/admin-gui/src/services/user_service';
+import userService from '@pictaccio/admin-gui/services/user_service';
 
 @Component({
     name: 'Select Assignee',

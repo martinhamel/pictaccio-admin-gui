@@ -1,4 +1,4 @@
-import { store } from '@pictaccio/admin-gui/src/store';
+import { store } from '@pictaccio/admin-gui/store';
 
 export function validateCapability(query: string): boolean {
     const [resource, access] = query.split(':');

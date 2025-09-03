@@ -1,10 +1,10 @@
-import { DbCrosssell } from '@pictaccio/admin-gui/src/models/db_crosssell';
-import { DbDeliveryGroup } from '@pictaccio/admin-gui/src/models/db_delivery_group';
-import { DbProductCatalog } from '@pictaccio/admin-gui/src/models/db_product_catalog';
-import { DbWorkflow } from '@pictaccio/admin-gui/src/models/db_workflow';
-import { internalName } from '@pictaccio/admin-gui/src/utils/datatable_column_renderers/internal_name';
-import { formatDateForUser } from '@pictaccio/admin-gui/src/utils/user_date';
-import { localesData } from '@pictaccio/admin-gui/src/utils/datatable_column_renderers/locales_data';
+import { DbCrosssell } from '@pictaccio/admin-gui/models/db_crosssell';
+import { DbDeliveryGroup } from '@pictaccio/admin-gui/models/db_delivery_group';
+import { DbProductCatalog } from '@pictaccio/admin-gui/models/db_product_catalog';
+import { DbWorkflow } from '@pictaccio/admin-gui/models/db_workflow';
+import { internalName } from '@pictaccio/admin-gui/utils/datatable_column_renderers/internal_name';
+import { formatDateForUser } from '@pictaccio/admin-gui/utils/user_date';
+import { localesData } from '@pictaccio/admin-gui/utils/datatable_column_renderers/locales_data';
 
 export const MANAGE_SESSIONS_COLUMNS = {
     headers: [

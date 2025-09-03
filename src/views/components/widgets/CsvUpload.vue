@@ -173,9 +173,9 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
 import { dasherize, detectExcelEncoding, fixExcelEncoding } from '@loufa/loufairy';
-import { environment } from '@pictaccio/admin-gui/src/environment';
+import { environment } from '@pictaccio/admin-gui/environment';
 import { parse } from 'csv-parse';
 import { detect } from 'jschardet';
 import { Component, Prop, Vue } from 'vue-facing-decorator';

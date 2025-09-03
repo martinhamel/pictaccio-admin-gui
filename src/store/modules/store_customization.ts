@@ -1,7 +1,7 @@
-import { CustomExternalUrls } from '@pictaccio/shared/src/types/custom_external_urls';
-import { StoreCustomizationColors } from '@pictaccio/shared/src/types/store_customization_colors';
+import { CustomExternalUrls } from '@pictaccio/shared/types/custom_external_urls';
+import { StoreCustomizationColors } from '@pictaccio/shared/types/store_customization_colors';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
-import storeCustomizationService from '@pictaccio/admin-gui/src/services/store_customization_service';
+import storeCustomizationService from '@pictaccio/admin-gui/services/store_customization_service';
 
 @Module({ namespaced: true })
 export default class StoreCustomization extends VuexModule {

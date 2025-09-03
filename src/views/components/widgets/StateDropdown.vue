@@ -28,7 +28,7 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-facing-decorator';
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
 
 @Component({
     components: {

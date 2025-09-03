@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 .content {
     grid-column: 1 / -1;
@@ -102,21 +102,21 @@
 </template>
 
 <script lang="ts">
-import { pushBreadcrumb } from '@pictaccio/admin-gui/src/utils/global_breadcrumb';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import ActivitiesTabs from '@pictaccio/admin-gui/src/views/components/widgets/ActivitiesTabs.vue';
-import InformationBox from '@pictaccio/admin-gui/src/views/components/widgets/InformationBox.vue';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
-import Filters from '@pictaccio/admin-gui/src/views/private/activities/companions/Filters.vue';
-import TutorialOverlay from '@pictaccio/admin-gui/src/views/private/activities/companions/TutorialOverlay.vue';
-import TutorialText from '@pictaccio/admin-gui/src/views/private/activities/companions/TutorialText.vue';
+import { pushBreadcrumb } from '@pictaccio/admin-gui/utils/global_breadcrumb';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import ActivitiesTabs from '@pictaccio/admin-gui/views/components/widgets/ActivitiesTabs.vue';
+import InformationBox from '@pictaccio/admin-gui/views/components/widgets/InformationBox.vue';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
+import Filters from '@pictaccio/admin-gui/views/private/activities/companions/Filters.vue';
+import TutorialOverlay from '@pictaccio/admin-gui/views/private/activities/companions/TutorialOverlay.vue';
+import TutorialText from '@pictaccio/admin-gui/views/private/activities/companions/TutorialText.vue';
 import { Component, Hook } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
-import PaneContainer from '@pictaccio/admin-gui/src/views/components/PaneContainer.vue';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
-import DocsLink from '@pictaccio/admin-gui/src/views/private/activities/companions/DocsLink.vue';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
+import PaneContainer from '@pictaccio/admin-gui/views/components/PaneContainer.vue';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
+import DocsLink from '@pictaccio/admin-gui/views/private/activities/companions/DocsLink.vue';
 
 @Component({
     name: 'Free Shipping',

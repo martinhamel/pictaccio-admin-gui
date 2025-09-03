@@ -175,11 +175,11 @@
 </template>
 
 <script lang="ts">
-import TooltipBubble from '@pictaccio/admin-gui/src/views/components/widgets/TooltipBubble.vue';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
+import TooltipBubble from '@pictaccio/admin-gui/views/components/widgets/TooltipBubble.vue';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { camelize } from '@loufa/loufairy';
-import { DateRange } from '@pictaccio/shared/src/types/date_range';
+import { DateRange } from '@pictaccio/shared/types/date_range';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 const TIMING_TIMEOUT = 0;

@@ -1,10 +1,10 @@
-import { DataSource } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { FilterFunctionDescriptor } from '@pictaccio/admin-gui/src/core/types/filter_descriptors';
-import { AllFilterTypes } from '@pictaccio/admin-gui/src/core/types/filters/all_filter_types';
-import { FilterType } from '@pictaccio/admin-gui/src/core/types/filters/filter_type';
-import { SerializedFilterItem } from '@pictaccio/admin-gui/src/core/types/serialized_params';
-import { FilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/filter_function';
-import FilterPopup from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/FilterPopup.vue';
+import { DataSource } from '@pictaccio/admin-gui/core/types/data_source';
+import { FilterFunctionDescriptor } from '@pictaccio/admin-gui/core/types/filter_descriptors';
+import { AllFilterTypes } from '@pictaccio/admin-gui/core/types/filters/all_filter_types';
+import { FilterType } from '@pictaccio/admin-gui/core/types/filters/filter_type';
+import { SerializedFilterItem } from '@pictaccio/admin-gui/core/types/serialized_params';
+import { FilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/filter_function';
+import FilterPopup from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/FilterPopup.vue';
 import { ComponentBase, Prop, Vue } from 'vue-facing-decorator';
 
 export type FiltersOption = {

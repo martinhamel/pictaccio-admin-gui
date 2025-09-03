@@ -1,7 +1,7 @@
-import { FilterType } from '@pictaccio/admin-gui/src/core/types/filters/filter_type';
-import { FilterBuilder } from '@pictaccio/admin-gui/src/utils/filter_builder';
-import { FilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/filter_function';
-import { DateRange } from '@pictaccio/shared/src/types/date_range';
+import { FilterType } from '@pictaccio/admin-gui/core/types/filters/filter_type';
+import { FilterBuilder } from '@pictaccio/admin-gui/utils/filter_builder';
+import { FilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/filter_function';
+import { DateRange } from '@pictaccio/shared/types/date_range';
 
 /**
  * Will check if the value in the column 'date' is identical to the provided value

@@ -18,15 +18,15 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { CrudComponentInterface } from '@pictaccio/admin-gui/src/core/types/crud_component_interface';
-import { CRUDStatus } from '@pictaccio/admin-gui/src/core/types/crud_status';
-import { DataSource } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { LocalizedString } from '@pictaccio/admin-gui/src/core/types/localized_string';
-import { UpdateState } from '@pictaccio/admin-gui/src/core/types/update_state';
+import { CrudComponentInterface } from '@pictaccio/admin-gui/core/types/crud_component_interface';
+import { CRUDStatus } from '@pictaccio/admin-gui/core/types/crud_status';
+import { DataSource } from '@pictaccio/admin-gui/core/types/data_source';
+import { LocalizedString } from '@pictaccio/admin-gui/core/types/localized_string';
+import { UpdateState } from '@pictaccio/admin-gui/core/types/update_state';
 import {
     CrudComponents
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/CrudComponents';
-import { StoreLanguageItem } from '@pictaccio/shared/src/types/store_language_item';
+} from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/CrudComponents';
+import { StoreLanguageItem } from '@pictaccio/shared/types/store_language_item';
 import { Component, Prop } from 'vue-facing-decorator';
 
 @Component({

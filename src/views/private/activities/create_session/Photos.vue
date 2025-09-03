@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 .step-interface {
     grid-template-columns: 1fr !important;
@@ -103,22 +103,22 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import storeConfigService from '@pictaccio/admin-gui/src/services/store_config_service';
-import ConfirmationButton from '@pictaccio/admin-gui/src/views/components/widgets/ConfirmationButton.vue';
+import storeConfigService from '@pictaccio/admin-gui/services/store_config_service';
+import ConfirmationButton from '@pictaccio/admin-gui/views/components/widgets/ConfirmationButton.vue';
 import { toRaw } from 'vue';
 import { Component } from 'vue-facing-decorator';
-import notificationService from '@pictaccio/admin-gui/src/services/notification_service';
-import { store } from '@pictaccio/admin-gui/src/store';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import { JobWorker } from '@pictaccio/admin-gui/src/utils/job_worker';
-import { PhotoProcessor } from '@pictaccio/admin-gui/src/utils/photo_processor';
-import ImageUpload from '@pictaccio/admin-gui/src/views/components/widgets/ImageUpload.vue';
-import Spinner from '@pictaccio/admin-gui/src/views/components/widgets/Spinner.vue';
-import CreateSessionsSteps from '@pictaccio/admin-gui/src/views/private/activities/create_session/create_sessions_steps';
-import ShippingSection from '@pictaccio/admin-gui/src/views/private/activities/create_session/ShippingSection.vue';
-import SessionInfo from '@pictaccio/admin-gui/src/views/private/activities/create_session/SessionInfo.vue';
-import SessionPreview from '@pictaccio/admin-gui/src/views/private/activities/create_session/SessionPreview.vue';
-import PrepareSessionAndUpload from 'worker-loader!@pictaccio/admin-gui/src/jobs/workers/prepare_session_and_upload.worker';
+import notificationService from '@pictaccio/admin-gui/services/notification_service';
+import { store } from '@pictaccio/admin-gui/store';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import { JobWorker } from '@pictaccio/admin-gui/utils/job_worker';
+import { PhotoProcessor } from '@pictaccio/admin-gui/utils/photo_processor';
+import ImageUpload from '@pictaccio/admin-gui/views/components/widgets/ImageUpload.vue';
+import Spinner from '@pictaccio/admin-gui/views/components/widgets/Spinner.vue';
+import CreateSessionsSteps from '@pictaccio/admin-gui/views/private/activities/create_session/create_sessions_steps';
+import ShippingSection from '@pictaccio/admin-gui/views/private/activities/create_session/ShippingSection.vue';
+import SessionInfo from '@pictaccio/admin-gui/views/private/activities/create_session/SessionInfo.vue';
+import SessionPreview from '@pictaccio/admin-gui/views/private/activities/create_session/SessionPreview.vue';
+import PrepareSessionAndUpload from 'worker-loader!@pictaccio/admin-gui/jobs/workers/prepare_session_and_upload.worker';
 
 @Component({
     name: 'Photos',

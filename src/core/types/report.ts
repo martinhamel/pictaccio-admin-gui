@@ -2,7 +2,7 @@ import {
     SalesReportAggregateSeriesFeatureEntry,
     SalesReportProductSeriesFeatureEntry,
     SalesReportSalesSeriesFeatureEntry
-} from '@pictaccio/shared/src/types/report';
+} from '@pictaccio/shared/types/report';
 
 export type SalesReportStreams = {
     salesSeries: SalesReportSalesSeriesFeatureEntry;

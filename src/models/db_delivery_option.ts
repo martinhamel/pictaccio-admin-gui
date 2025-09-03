@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
-import { DbBaseModel } from '@pictaccio/admin-gui/src/models/db_base_model';
-import { DeliveryMethod } from '@pictaccio/shared/src/types/delivery_method';
-import { LocalizedString } from '@pictaccio/shared/src/types/localized_string';
+import { DbBaseModel } from '@pictaccio/admin-gui/models/db_base_model';
+import { DeliveryMethod } from '@pictaccio/shared/types/delivery_method';
+import { LocalizedString } from '@pictaccio/shared/types/localized_string';
 
 export type DeliveryOptionExtra = {
     info: { [key: string]: string | number | string[] },

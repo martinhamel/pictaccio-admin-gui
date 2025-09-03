@@ -1,25 +1,25 @@
-import { InitiateInviteData } from '@pictaccio/admin-gui/src/core/initiate_invite_data';
-import { AccountCreatedDataInterface } from '@pictaccio/admin-gui/src/core/types/account_created_data_interface';
-import { CompleteInviteDataInterface } from '@pictaccio/admin-gui/src/core/types/complete_invite_data_interface';
+import { InitiateInviteData } from '@pictaccio/admin-gui/core/initiate_invite_data';
+import { AccountCreatedDataInterface } from '@pictaccio/admin-gui/core/types/account_created_data_interface';
+import { CompleteInviteDataInterface } from '@pictaccio/admin-gui/core/types/complete_invite_data_interface';
 import {
     CompletePasswordResetDataInterface
-} from '@pictaccio/admin-gui/src/core/types/complete_password_reset_data_interface';
-import { CreateAccountDataInterface } from '@pictaccio/admin-gui/src/core/types/create_account_data_interface';
-import { FinishInviteDataInterface } from '@pictaccio/admin-gui/src/core/types/finish_invite_data_interface';
+} from '@pictaccio/admin-gui/core/types/complete_password_reset_data_interface';
+import { CreateAccountDataInterface } from '@pictaccio/admin-gui/core/types/create_account_data_interface';
+import { FinishInviteDataInterface } from '@pictaccio/admin-gui/core/types/finish_invite_data_interface';
 import {
     InitiatePasswordResetDataInterface
-} from '@pictaccio/admin-gui/src/core/types/initiate_password_reset_data_interface';
-import { LoginDataInterface } from '@pictaccio/admin-gui/src/core/types/login_data_interface';
-import { ValidateInviteTokenDataInterface } from '@pictaccio/admin-gui/src/core/types/validate_invite_token_data_interface';
+} from '@pictaccio/admin-gui/core/types/initiate_password_reset_data_interface';
+import { LoginDataInterface } from '@pictaccio/admin-gui/core/types/login_data_interface';
+import { ValidateInviteTokenDataInterface } from '@pictaccio/admin-gui/core/types/validate_invite_token_data_interface';
 import {
     ValidatePasswordResetCodeDataInterface
-} from '@pictaccio/admin-gui/src/core/types/validate_password_reset_code_data_interface';
-import { USER_LOCAL_STORAGE_KEY } from '@pictaccio/admin-gui/src/core/user_local_storage_key';
-import { User } from '@pictaccio/admin-gui/src/models/user';
-import authService from '@pictaccio/admin-gui/src/services/auth_service';
-import localStorageService from '@pictaccio/admin-gui/src/services/local_storage_service';
-import { store } from '@pictaccio/admin-gui/src/store';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
+} from '@pictaccio/admin-gui/core/types/validate_password_reset_code_data_interface';
+import { USER_LOCAL_STORAGE_KEY } from '@pictaccio/admin-gui/core/user_local_storage_key';
+import { User } from '@pictaccio/admin-gui/models/user';
+import authService from '@pictaccio/admin-gui/services/auth_service';
+import localStorageService from '@pictaccio/admin-gui/services/local_storage_service';
+import { store } from '@pictaccio/admin-gui/store';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
 import { Module as Mod } from 'vuex';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
 

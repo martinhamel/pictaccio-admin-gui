@@ -63,15 +63,15 @@
 </template>
 
 <script lang="ts">
-import { DataSource } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { DataSourceMap } from '@pictaccio/admin-gui/src/core/types/data_source_map';
-import DialogBox from '@pictaccio/admin-gui/src/views/components/layout/DialogBox.vue';
+import { DataSource } from '@pictaccio/admin-gui/core/types/data_source';
+import { DataSourceMap } from '@pictaccio/admin-gui/core/types/data_source_map';
+import DialogBox from '@pictaccio/admin-gui/views/components/layout/DialogBox.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
-import { CRUDStatus } from '@pictaccio/admin-gui/src/core/types/crud_status';
-import { DataTableColumns } from '@pictaccio/admin-gui/src/core/types/data_table_columns';
-import CrudDialogContent from '@pictaccio/admin-gui/src/views/private/activities/companions/CrudDialogContent.vue';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
+import { CRUDStatus } from '@pictaccio/admin-gui/core/types/crud_status';
+import { DataTableColumns } from '@pictaccio/admin-gui/core/types/data_table_columns';
+import CrudDialogContent from '@pictaccio/admin-gui/views/private/activities/companions/CrudDialogContent.vue';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
 
 @Component({
     name: 'CRUD Dialog',

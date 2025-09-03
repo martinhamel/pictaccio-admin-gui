@@ -60,8 +60,8 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { getCoords, TwoPointCoords } from '@pictaccio/admin-gui/src/utils/get_coords';
-import Badge, { BadgeEmitExist, BadgeEmitOptions } from '@pictaccio/admin-gui/src/views/components/widgets/Badge.vue';
+import { getCoords, TwoPointCoords } from '@pictaccio/admin-gui/utils/get_coords';
+import Badge, { BadgeEmitExist, BadgeEmitOptions } from '@pictaccio/admin-gui/views/components/widgets/Badge.vue';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 type BadgeCoords = {

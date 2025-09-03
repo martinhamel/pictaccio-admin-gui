@@ -224,20 +224,20 @@
 </template>
 
 <script lang="ts">
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import DialogBox from '@pictaccio/admin-gui/src/views/components/layout/DialogBox.vue';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
-import ChangePasswordDialog from '@pictaccio/admin-gui/src/views/private/profile/ChangePasswordDialog.vue';
-import TotpDialog from '@pictaccio/admin-gui/src/views/private/profile/TotpDialog.vue';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import DialogBox from '@pictaccio/admin-gui/views/components/layout/DialogBox.vue';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
+import ChangePasswordDialog from '@pictaccio/admin-gui/views/private/profile/ChangePasswordDialog.vue';
+import TotpDialog from '@pictaccio/admin-gui/views/private/profile/TotpDialog.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { Component, Vue } from 'vue-facing-decorator';
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
-import ImageUpload from '@pictaccio/admin-gui/src/views/components/widgets/ImageUpload.vue';
-import AuthenticatorInput from '@pictaccio/admin-gui/src/views/components/widgets/AuthenticatorInput.vue';
-import PasswordRequirements from '@pictaccio/admin-gui/src/views/components/PasswordRequirements.vue';
-import Secret from '@pictaccio/admin-gui/src/views/components/widgets/Secret.vue';
-import AvatarDialog from '@pictaccio/admin-gui/src/views/private/profile/AvatarDialog.vue';
-import { UserInfo } from '@pictaccio/admin-gui/src/core/types/user_info';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
+import ImageUpload from '@pictaccio/admin-gui/views/components/widgets/ImageUpload.vue';
+import AuthenticatorInput from '@pictaccio/admin-gui/views/components/widgets/AuthenticatorInput.vue';
+import PasswordRequirements from '@pictaccio/admin-gui/views/components/PasswordRequirements.vue';
+import Secret from '@pictaccio/admin-gui/views/components/widgets/Secret.vue';
+import AvatarDialog from '@pictaccio/admin-gui/views/private/profile/AvatarDialog.vue';
+import { UserInfo } from '@pictaccio/admin-gui/core/types/user_info';
 
 @Component({
     name: 'User Profile',

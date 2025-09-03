@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 .step-interface {
     grid-template-columns: 1fr auto !important;
@@ -102,20 +102,20 @@
 </template>
 
 <script lang="ts">
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { SubjectInfo } from '@pictaccio/admin-gui/src/models/subject_info';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import InformationBox from '@pictaccio/admin-gui/src/views/components/widgets/InformationBox.vue';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { SubjectInfo } from '@pictaccio/admin-gui/models/subject_info';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import InformationBox from '@pictaccio/admin-gui/views/components/widgets/InformationBox.vue';
 import { Component } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { getFormInputValues } from '@loufa/loufairy-client';
 import { camelize, isEmpty } from '@loufa/loufairy';
-import { SubjectColMappings } from '@pictaccio/admin-gui/src/core/subject_col_mapping';
-import { mapColumns } from '@pictaccio/admin-gui/src/utils/map_columns';
-import CreateSessionsSteps from '@pictaccio/admin-gui/src/views/private/activities/create_session/create_sessions_steps';
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
-import CsvUpload from '@pictaccio/admin-gui/src/views/components/widgets/CsvUpload.vue';
+import { SubjectColMappings } from '@pictaccio/admin-gui/core/subject_col_mapping';
+import { mapColumns } from '@pictaccio/admin-gui/utils/map_columns';
+import CreateSessionsSteps from '@pictaccio/admin-gui/views/private/activities/create_session/create_sessions_steps';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
+import CsvUpload from '@pictaccio/admin-gui/views/components/widgets/CsvUpload.vue';
 
 @Component({
     name: 'Import Subjects',

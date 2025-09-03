@@ -1,7 +1,7 @@
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/src/utils/error';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import { ShippingPromoDescriptor } from '@pictaccio/shared/src/types/shipping_promo_descriptor';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/utils/error';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import { ShippingPromoDescriptor } from '@pictaccio/shared/types/shipping_promo_descriptor';
 
 class ShippingPromoService extends BaseService {
     public async readShippingPromo(): Promise<ShippingPromoDescriptor> {

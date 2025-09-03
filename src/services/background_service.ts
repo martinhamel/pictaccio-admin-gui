@@ -1,9 +1,9 @@
-import { DbBackground } from '@pictaccio/admin-gui/src/models/db_background';
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/src/utils/error';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import { AllProductionIdentifier } from '@pictaccio/shared/src/types/all_production_identifier';
-import { Tag } from '@pictaccio/shared/src/types/tags';
+import { DbBackground } from '@pictaccio/admin-gui/models/db_background';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/utils/error';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import { AllProductionIdentifier } from '@pictaccio/shared/types/all_production_identifier';
+import { Tag } from '@pictaccio/shared/types/tags';
 
 class BackgroundService extends BaseService {
     public async getProductionIdentifiers(): Promise<AllProductionIdentifier> {

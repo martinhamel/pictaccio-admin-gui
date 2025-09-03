@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 .overlay-ui {
     position: absolute;
@@ -128,17 +128,17 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import InformationBox from '@pictaccio/admin-gui/src/views/components/widgets/InformationBox.vue';
-import StateDropdown from '@pictaccio/admin-gui/src/views/components/widgets/StateDropdown.vue';
-import UnitDecorator from '@pictaccio/admin-gui/src/views/components/widgets/UnitDecorator.vue';
-import UnitDecoratorWrapper from '@pictaccio/admin-gui/src/views/components/widgets/UnitDecoratorWrapper.vue';
+import InformationBox from '@pictaccio/admin-gui/views/components/widgets/InformationBox.vue';
+import StateDropdown from '@pictaccio/admin-gui/views/components/widgets/StateDropdown.vue';
+import UnitDecorator from '@pictaccio/admin-gui/views/components/widgets/UnitDecorator.vue';
+import UnitDecoratorWrapper from '@pictaccio/admin-gui/views/components/widgets/UnitDecoratorWrapper.vue';
 import { bignumber, multiply } from 'mathjs';
 import { Component } from 'vue-facing-decorator';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
-import PaneContainer from '@pictaccio/admin-gui/src/views/components/PaneContainer.vue';
-import { TaxLocality } from '@pictaccio/admin-gui/src/models/store_config';
-import DocsLink from '@pictaccio/admin-gui/src/views/private/activities/companions/DocsLink.vue';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
+import PaneContainer from '@pictaccio/admin-gui/views/components/PaneContainer.vue';
+import { TaxLocality } from '@pictaccio/admin-gui/models/store_config';
+import DocsLink from '@pictaccio/admin-gui/views/private/activities/companions/DocsLink.vue';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
 
 @Component({
     name: 'TaxId',

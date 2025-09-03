@@ -1,4 +1,4 @@
-import { DataviewHost } from '@pictaccio/admin-gui/src/views/components/widgets/dataview/dataview_host';
+import { DataviewHost } from '@pictaccio/admin-gui/views/components/widgets/dataview/dataview_host';
 
 export const DataviewComponentTypes = [
     'datasource',

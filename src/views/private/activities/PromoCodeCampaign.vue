@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 </style>
 
@@ -82,30 +82,30 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { FilterDescriptor } from '@pictaccio/admin-gui/src/core/types/filter_descriptors';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { DbPromoCodeCampaign } from '@pictaccio/admin-gui/src/models/db_promo_code_campaign';
-import { FilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/filter_function';
-import { IdFilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/id_filter_function';
-import { StringFilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/string_filter_function';
-import { pushBreadcrumb } from '@pictaccio/admin-gui/src/utils/global_breadcrumb';
-import { RemoteStore } from '@pictaccio/admin-gui/src/utils/remote_store';
-import { formatExtraKey, shouldExtraSilenceRead } from '@pictaccio/admin-gui/src/utils/route_extra';
-import ActivitiesTabs from '@pictaccio/admin-gui/src/views/components/widgets/ActivitiesTabs.vue';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
+import { FilterDescriptor } from '@pictaccio/admin-gui/core/types/filter_descriptors';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { DbPromoCodeCampaign } from '@pictaccio/admin-gui/models/db_promo_code_campaign';
+import { FilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/filter_function';
+import { IdFilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/id_filter_function';
+import { StringFilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/string_filter_function';
+import { pushBreadcrumb } from '@pictaccio/admin-gui/utils/global_breadcrumb';
+import { RemoteStore } from '@pictaccio/admin-gui/utils/remote_store';
+import { formatExtraKey, shouldExtraSilenceRead } from '@pictaccio/admin-gui/utils/route_extra';
+import ActivitiesTabs from '@pictaccio/admin-gui/views/components/widgets/ActivitiesTabs.vue';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
 import CrudDialogCampaign
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialogs/CrudDialogCampaign.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialogs/CrudDialogCampaign.vue';
 import {
     CAMPAIGN_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/campaign_columns';
-import DataTable from '@pictaccio/admin-gui/src/views/private/activities/companions/DataTable.vue';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/campaign_columns';
+import DataTable from '@pictaccio/admin-gui/views/private/activities/companions/DataTable.vue';
 import MainTextFilterItem
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/MainTextFilterItem.vue';
-import Filters from '@pictaccio/admin-gui/src/views/private/activities/companions/Filters.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/MainTextFilterItem.vue';
+import Filters from '@pictaccio/admin-gui/views/private/activities/companions/Filters.vue';
 import PlaceholderDataTable
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/placeholders/PlaceholderDataTable.vue';
-import TutorialOverlay from '@pictaccio/admin-gui/src/views/private/activities/companions/TutorialOverlay.vue';
-import TutorialText from '@pictaccio/admin-gui/src/views/private/activities/companions/TutorialText.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/placeholders/PlaceholderDataTable.vue';
+import TutorialOverlay from '@pictaccio/admin-gui/views/private/activities/companions/TutorialOverlay.vue';
+import TutorialText from '@pictaccio/admin-gui/views/private/activities/companions/TutorialText.vue';
 import { Component, Hook } from 'vue-facing-decorator';
 
 @Component({

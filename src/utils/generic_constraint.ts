@@ -1,12 +1,12 @@
-import { ConstraintBehavior } from '@pictaccio/admin-gui/src/utils/constraint_behaviors/constraint_behavior';
+import { ConstraintBehavior } from '@pictaccio/admin-gui/utils/constraint_behaviors/constraint_behavior';
 import {
     isKeycodeAlpha,
     isKeycodeAlphaNumeric,
     isKeycodeDigit,
     isKeycodeNumeric
-} from '@pictaccio/admin-gui/src/utils/keycode_string_detection';
+} from '@pictaccio/admin-gui/utils/keycode_string_detection';
 import { mergeObjects } from '@loufa/loufairy';
-import { Event } from '@pictaccio/admin-gui/src/utils/event';
+import { Event } from '@pictaccio/admin-gui/utils/event';
 
 const PREDEFINED_CONSTRAINT = {
     alpha: 'aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ',

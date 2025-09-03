@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts">
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
 import { Component, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 

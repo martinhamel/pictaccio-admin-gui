@@ -106,7 +106,7 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { SessionColor } from '@pictaccio/admin-gui/src/models/session_color';
+import { SessionColor } from '@pictaccio/admin-gui/models/session_color';
 import Color from 'colorjs.io';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 

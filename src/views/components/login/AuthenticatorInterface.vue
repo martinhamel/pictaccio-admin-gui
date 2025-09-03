@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/public.scss';
+@import '@pictaccio/admin-gui/scss/public.scss';
 </style>
 
 <template>
@@ -18,7 +18,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import AuthenticatorInput from '@pictaccio/admin-gui/src/views/components/widgets/AuthenticatorInput.vue';
+import AuthenticatorInput from '@pictaccio/admin-gui/views/components/widgets/AuthenticatorInput.vue';
 
 @Component({
     name: 'Authenticator Interface',

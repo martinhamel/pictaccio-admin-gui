@@ -8,7 +8,7 @@
 
 <script lang="ts">
 
-import { store } from '@pictaccio/admin-gui/src/store';
+import { store } from '@pictaccio/admin-gui/store';
 import { DateTime } from 'luxon';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 

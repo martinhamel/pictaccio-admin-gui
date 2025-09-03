@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 .list-interface {
     --list-top-space: 4.5rem;
@@ -169,39 +169,39 @@
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { isEmpty } from '@loufa/loufairy';
-import { ReaderResponse } from '@pictaccio/admin-gui/src/core/reader_response';
-import { CRUDStatus } from '@pictaccio/admin-gui/src/core/types/crud_status';
-import { DataSourceOption } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { DataSourceEventListeners } from '@pictaccio/admin-gui/src/core/types/data_source_event_listeners';
-import { GenericDataSource } from '@pictaccio/admin-gui/src/datasources/generic_data_source';
-import { DbProduct } from '@pictaccio/admin-gui/src/models/db_product';
-import { DbProductCatalog } from '@pictaccio/admin-gui/src/models/db_product_catalog';
-import { DbProductCategory } from '@pictaccio/admin-gui/src/models/db_product_category';
-import { DbProductThemeSet } from '@pictaccio/admin-gui/src/models/db_product_theme_set';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import ListSelector from '@pictaccio/admin-gui/src/views/components/widgets/ListSelector.vue';
-import Spinner from '@pictaccio/admin-gui/src/views/components/widgets/Spinner.vue';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
+import { ReaderResponse } from '@pictaccio/admin-gui/core/reader_response';
+import { CRUDStatus } from '@pictaccio/admin-gui/core/types/crud_status';
+import { DataSourceOption } from '@pictaccio/admin-gui/core/types/data_source';
+import { DataSourceEventListeners } from '@pictaccio/admin-gui/core/types/data_source_event_listeners';
+import { GenericDataSource } from '@pictaccio/admin-gui/datasources/generic_data_source';
+import { DbProduct } from '@pictaccio/admin-gui/models/db_product';
+import { DbProductCatalog } from '@pictaccio/admin-gui/models/db_product_catalog';
+import { DbProductCategory } from '@pictaccio/admin-gui/models/db_product_category';
+import { DbProductThemeSet } from '@pictaccio/admin-gui/models/db_product_theme_set';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import ListSelector from '@pictaccio/admin-gui/views/components/widgets/ListSelector.vue';
+import Spinner from '@pictaccio/admin-gui/views/components/widgets/Spinner.vue';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
 import CrudDialogCatalog
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialogs/CrudDialogCatalog.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialogs/CrudDialogCatalog.vue';
 import CrudDialogProductCustom
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialogs/CrudDialogProductCustom.vue';
-import CrudDialog from '@pictaccio/admin-gui/src/views/private/activities/companions/CrudDialog.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialogs/CrudDialogProductCustom.vue';
+import CrudDialog from '@pictaccio/admin-gui/views/private/activities/companions/CrudDialog.vue';
 import {
     PRODUCT_CATEGORIES_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/product_categories_columns';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/product_categories_columns';
 import {
     PRODUCT_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/product_columns';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/product_columns';
 import {
     PRODUCT_THEMES_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/product_themes_columns';
-import Filters from '@pictaccio/admin-gui/src/views/private/activities/companions/Filters.vue';
-import CreateSessionsSteps from '@pictaccio/admin-gui/src/views/private/activities/create_session/create_sessions_steps';
-import { LocalizedString } from '@pictaccio/shared/src/types/localized_string';
-import { ProductOptions } from '@pictaccio/shared/src/types/product_options';
-import { ProductType } from '@pictaccio/shared/src/types/product_type';
-import { StoreLanguageItem } from '@pictaccio/shared/src/types/store_language_item';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/product_themes_columns';
+import Filters from '@pictaccio/admin-gui/views/private/activities/companions/Filters.vue';
+import CreateSessionsSteps from '@pictaccio/admin-gui/views/private/activities/create_session/create_sessions_steps';
+import { LocalizedString } from '@pictaccio/shared/types/localized_string';
+import { ProductOptions } from '@pictaccio/shared/types/product_options';
+import { ProductType } from '@pictaccio/shared/types/product_type';
+import { StoreLanguageItem } from '@pictaccio/shared/types/store_language_item';
 import { Component } from 'vue-facing-decorator';
 
 @Component({

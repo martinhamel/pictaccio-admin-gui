@@ -1,5 +1,5 @@
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/src/utils/error';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/utils/error';
 
 class PromoService extends BaseService {
     public async createBulkCode(campaignId: number, count: number): Promise<void> {

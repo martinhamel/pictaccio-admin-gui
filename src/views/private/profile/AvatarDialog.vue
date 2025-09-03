@@ -38,10 +38,10 @@
 </template>
 
 <script lang="ts">
-import { isFile } from '@pictaccio/admin-gui/src/utils/is_file';
-import DialogBox from '@pictaccio/admin-gui/src/views/components/layout/DialogBox.vue';
+import { isFile } from '@pictaccio/admin-gui/utils/is_file';
+import DialogBox from '@pictaccio/admin-gui/views/components/layout/DialogBox.vue';
 import { Component, Vue } from 'vue-facing-decorator';
-import ImageUpload from '@pictaccio/admin-gui/src/views/components/widgets/ImageUpload.vue';
+import ImageUpload from '@pictaccio/admin-gui/views/components/widgets/ImageUpload.vue';
 
 @Component({
     name: 'Avatar dialog',

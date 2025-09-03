@@ -1,3 +1,3 @@
-import { GroupPhotos } from '@pictaccio/admin-gui/src/core/types/group_photos';
+import { GroupPhotos } from '@pictaccio/admin-gui/core/types/group_photos';
 
 export type NamedGroupPhotos = { [key: string]: GroupPhotos };

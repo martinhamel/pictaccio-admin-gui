@@ -47,8 +47,8 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { i18n } from '@pictaccio/admin-gui/src/i18n';
-import { Language, Languages } from '@pictaccio/admin-gui/src/core/types/languages'
+import { i18n } from '@pictaccio/admin-gui/i18n';
+import { Language, Languages } from '@pictaccio/admin-gui/core/types/languages'
 
 @Component({
     name: 'Locale Selector',

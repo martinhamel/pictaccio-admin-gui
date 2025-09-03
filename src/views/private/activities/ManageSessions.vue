@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 .session-color {
     div {
@@ -124,44 +124,44 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { DataSourceOption } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { FilterDescriptor } from '@pictaccio/admin-gui/src/core/types/filter_descriptors';
-import { GenericDataSource } from '@pictaccio/admin-gui/src/datasources/generic_data_source';
-import { DbSession } from '@pictaccio/admin-gui/src/models/db_session';
-import router from '@pictaccio/admin-gui/src/router';
-import { BooleanFilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/boolean_filter_function';
-import { DateFilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/date_filter_function';
-import { FilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/filter_function';
-import { IdFilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/id_filter_function';
-import { RemoteStore } from '@pictaccio/admin-gui/src/utils/remote_store';
-import { formatExtraKey, shouldExtraSilenceRead } from '@pictaccio/admin-gui/src/utils/route_extra';
-import ActivitiesTabs from '@pictaccio/admin-gui/src/views/components/widgets/ActivitiesTabs.vue';
-import StoreAvailabilityInfo from '@pictaccio/admin-gui/src/views/components/widgets/StoreAvailabilityInfo.vue';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
-import TooltipBubble from '@pictaccio/admin-gui/src/views/components/widgets/TooltipBubble.vue';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
+import { DataSourceOption } from '@pictaccio/admin-gui/core/types/data_source';
+import { FilterDescriptor } from '@pictaccio/admin-gui/core/types/filter_descriptors';
+import { GenericDataSource } from '@pictaccio/admin-gui/datasources/generic_data_source';
+import { DbSession } from '@pictaccio/admin-gui/models/db_session';
+import router from '@pictaccio/admin-gui/router';
+import { BooleanFilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/boolean_filter_function';
+import { DateFilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/date_filter_function';
+import { FilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/filter_function';
+import { IdFilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/id_filter_function';
+import { RemoteStore } from '@pictaccio/admin-gui/utils/remote_store';
+import { formatExtraKey, shouldExtraSilenceRead } from '@pictaccio/admin-gui/utils/route_extra';
+import ActivitiesTabs from '@pictaccio/admin-gui/views/components/widgets/ActivitiesTabs.vue';
+import StoreAvailabilityInfo from '@pictaccio/admin-gui/views/components/widgets/StoreAvailabilityInfo.vue';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
+import TooltipBubble from '@pictaccio/admin-gui/views/components/widgets/TooltipBubble.vue';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
 import CrudDialogManageSession
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialogs/CrudDialogManageSession.vue';
-import CrudDialog from '@pictaccio/admin-gui/src/views/private/activities/companions/CrudDialog.vue';
-import CrudDialogContent from '@pictaccio/admin-gui/src/views/private/activities/companions/CrudDialogContent.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialogs/CrudDialogManageSession.vue';
+import CrudDialog from '@pictaccio/admin-gui/views/private/activities/companions/CrudDialog.vue';
+import CrudDialogContent from '@pictaccio/admin-gui/views/private/activities/companions/CrudDialogContent.vue';
 import {
     MANAGE_SESSIONS_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/manage_sessions_columns';
-import DataTable from '@pictaccio/admin-gui/src/views/private/activities/companions/DataTable.vue';
-import DocsLink from '@pictaccio/admin-gui/src/views/private/activities/companions/DocsLink.vue';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/manage_sessions_columns';
+import DataTable from '@pictaccio/admin-gui/views/private/activities/companions/DataTable.vue';
+import DocsLink from '@pictaccio/admin-gui/views/private/activities/companions/DocsLink.vue';
 import BooleanFilterItem
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/BooleanFilterItem.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/BooleanFilterItem.vue';
 import DateFilterItem
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/DateFilterItem.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/DateFilterItem.vue';
 import MainTextFilterItem
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/MainTextFilterItem.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/MainTextFilterItem.vue';
 import MultiListFilterItem
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/MultiListFilterItem.vue';
-import Filters from '@pictaccio/admin-gui/src/views/private/activities/companions/Filters.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/MultiListFilterItem.vue';
+import Filters from '@pictaccio/admin-gui/views/private/activities/companions/Filters.vue';
 import PlaceholderDataTable
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/placeholders/PlaceholderDataTable.vue';
-import TutorialText from '@pictaccio/admin-gui/src/views/private/activities/companions/TutorialText.vue';
-import { StoreConfigurationStatus } from '@pictaccio/shared/src/types/store_status';
+    from '@pictaccio/admin-gui/views/private/activities/companions/placeholders/PlaceholderDataTable.vue';
+import TutorialText from '@pictaccio/admin-gui/views/private/activities/companions/TutorialText.vue';
+import { StoreConfigurationStatus } from '@pictaccio/shared/types/store_status';
 import { Component, Hook } from 'vue-facing-decorator';
 
 @Component({

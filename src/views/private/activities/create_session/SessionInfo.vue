@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 .step-interface {
     width: 100%;
@@ -130,22 +130,22 @@
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { getFormInputValues } from '@loufa/loufairy-client';
-import { ReaderResponse } from '@pictaccio/admin-gui/src/core/reader_response';
-import { CRUDStatus } from '@pictaccio/admin-gui/src/core/types/crud_status';
-import { GenericDataSource } from '@pictaccio/admin-gui/src/datasources/generic_data_source';
-import { DbWorkflow } from '@pictaccio/admin-gui/src/models/db_workflow';
-import { SessionGeneralInfo } from '@pictaccio/admin-gui/src/models/session_general_info';
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
-import FormValidator from '@pictaccio/admin-gui/src/views/components/widgets/FormValidator.vue';
-import InputFormatterTwoColumns from '@pictaccio/admin-gui/src/views/components/widgets/InputFormatterTwoColumns.vue';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
-import CrudDialog from '@pictaccio/admin-gui/src/views/private/activities/companions/CrudDialog.vue';
+import { ReaderResponse } from '@pictaccio/admin-gui/core/reader_response';
+import { CRUDStatus } from '@pictaccio/admin-gui/core/types/crud_status';
+import { GenericDataSource } from '@pictaccio/admin-gui/datasources/generic_data_source';
+import { DbWorkflow } from '@pictaccio/admin-gui/models/db_workflow';
+import { SessionGeneralInfo } from '@pictaccio/admin-gui/models/session_general_info';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
+import FormValidator from '@pictaccio/admin-gui/views/components/widgets/FormValidator.vue';
+import InputFormatterTwoColumns from '@pictaccio/admin-gui/views/components/widgets/InputFormatterTwoColumns.vue';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
+import CrudDialog from '@pictaccio/admin-gui/views/private/activities/companions/CrudDialog.vue';
 import {
     WORKFLOWS_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/workflows_columns';
-import DocsLink from '@pictaccio/admin-gui/src/views/private/activities/companions/DocsLink.vue';
-import CreateSessionsSteps from '@pictaccio/admin-gui/src/views/private/activities/create_session/create_sessions_steps';
-import ColorSelector from '@pictaccio/admin-gui/src/views/private/activities/create_session/widgets/ColorSelector.vue';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/workflows_columns';
+import DocsLink from '@pictaccio/admin-gui/views/private/activities/companions/DocsLink.vue';
+import CreateSessionsSteps from '@pictaccio/admin-gui/views/private/activities/create_session/create_sessions_steps';
+import ColorSelector from '@pictaccio/admin-gui/views/private/activities/create_session/widgets/ColorSelector.vue';
 import { DateTime } from 'luxon';
 import { Component } from 'vue-facing-decorator';
 

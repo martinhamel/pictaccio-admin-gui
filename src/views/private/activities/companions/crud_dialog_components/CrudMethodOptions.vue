@@ -50,22 +50,22 @@ label {
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { camelize } from '@loufa/loufairy';
-import { METHODS, METHODS_LOCALE_PATH } from '@pictaccio/admin-gui/src/core/shipping_method_map';
-import { CrudComponentInterface } from '@pictaccio/admin-gui/src/core/types/crud_component_interface';
-import { CRUDStatus } from '@pictaccio/admin-gui/src/core/types/crud_status';
-import { DataSource } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { UpdateState } from '@pictaccio/admin-gui/src/core/types/update_state';
-import { isLocalizedString } from '@pictaccio/shared/src/utils/guards/is_localized_string';
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
+import { METHODS, METHODS_LOCALE_PATH } from '@pictaccio/admin-gui/core/shipping_method_map';
+import { CrudComponentInterface } from '@pictaccio/admin-gui/core/types/crud_component_interface';
+import { CRUDStatus } from '@pictaccio/admin-gui/core/types/crud_status';
+import { DataSource } from '@pictaccio/admin-gui/core/types/data_source';
+import { UpdateState } from '@pictaccio/admin-gui/core/types/update_state';
+import { isLocalizedString } from '@pictaccio/shared/utils/guards/is_localized_string';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
 import {
     CrudComponents
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/CrudComponents';
+} from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/CrudComponents';
 import CanadaPost
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/shipping_method_options/Canadapost.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/shipping_method_options/Canadapost.vue';
 import PickUp
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/shipping_method_options/PickUp.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/shipping_method_options/PickUp.vue';
 import Establishment
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/shipping_method_options/Establishment.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/shipping_method_options/Establishment.vue';
 import { Component, Prop } from 'vue-facing-decorator';
 
 @Component({

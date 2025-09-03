@@ -143,13 +143,13 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { UserInfo } from '@pictaccio/admin-gui/src/core/types/user_info';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import userService from '@pictaccio/admin-gui/src/services/user_service';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
-import FallbackImage from '@pictaccio/admin-gui/src/views/components/widgets/FallbackImage.vue';
-import ListSelector from '@pictaccio/admin-gui/src/views/components/widgets/ListSelector.vue';
+import { UserInfo } from '@pictaccio/admin-gui/core/types/user_info';
+import { environment } from '@pictaccio/admin-gui/environment';
+import userService from '@pictaccio/admin-gui/services/user_service';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
+import FallbackImage from '@pictaccio/admin-gui/views/components/widgets/FallbackImage.vue';
+import ListSelector from '@pictaccio/admin-gui/views/components/widgets/ListSelector.vue';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 @Component({

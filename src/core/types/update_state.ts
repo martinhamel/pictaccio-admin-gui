@@ -1,5 +1,5 @@
-import { DataSource } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { CRUDStatus } from '@pictaccio/admin-gui/src/core/types/crud_status';
+import { DataSource } from '@pictaccio/admin-gui/core/types/data_source';
+import { CRUDStatus } from '@pictaccio/admin-gui/core/types/crud_status';
 
 export class UpdateState<T> {
     public item?: T;

@@ -23,7 +23,7 @@
 </template>
 
 <script lang="ts">
-import { Coords, getCoords } from '@pictaccio/admin-gui/src/utils/get_coords';
+import { Coords, getCoords } from '@pictaccio/admin-gui/utils/get_coords';
 import { toRaw } from 'vue';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';

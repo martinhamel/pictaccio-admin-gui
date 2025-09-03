@@ -1,7 +1,7 @@
-import { UserName } from '@pictaccio/admin-gui/src/core/types/user_name';
-import { environment } from '@pictaccio/admin-gui/src/environment';
+import { UserName } from '@pictaccio/admin-gui/core/types/user_name';
+import { environment } from '@pictaccio/admin-gui/environment';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
-import userInfoService from '@pictaccio/admin-gui/src/services/user_info_service';
+import userInfoService from '@pictaccio/admin-gui/services/user_info_service';
 
 @Module({ namespaced: true })
 export default class UserInfo extends VuexModule {

@@ -1,5 +1,5 @@
-import { i18n } from '@pictaccio/admin-gui/src/i18n';
-import { localesData } from '@pictaccio/admin-gui/src/utils/datatable_column_renderers/locales_data';
+import { i18n } from '@pictaccio/admin-gui/i18n';
+import { localesData } from '@pictaccio/admin-gui/utils/datatable_column_renderers/locales_data';
 
 export const PRODUCT_THEMES_COLUMNS = {
     headers: [

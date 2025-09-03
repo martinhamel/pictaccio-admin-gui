@@ -1,13 +1,13 @@
-import { DatatableCreateError } from '@pictaccio/admin-gui/src/errors/datatable_create_error';
-import { DatatableDeleteError } from '@pictaccio/admin-gui/src/errors/datatable_delete_error';
-import { DatatableEndpointNotFoundError } from '@pictaccio/admin-gui/src/errors/datatable_endpoint_not_found_error';
-import { DatatableReadError } from '@pictaccio/admin-gui/src/errors/datatable_read_error';
-import { DatatableUpdateError } from '@pictaccio/admin-gui/src/errors/datatable_update_error';
-import { NotAuthenticatedError } from '@pictaccio/admin-gui/src/errors/not_authenticated_error';
-import { ServerError } from '@pictaccio/admin-gui/src/errors/server_error';
-import { i18n } from '@pictaccio/admin-gui/src/i18n';
-import { ApiResponse } from '@pictaccio/admin-gui/src/models/api_response';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
+import { DatatableCreateError } from '@pictaccio/admin-gui/errors/datatable_create_error';
+import { DatatableDeleteError } from '@pictaccio/admin-gui/errors/datatable_delete_error';
+import { DatatableEndpointNotFoundError } from '@pictaccio/admin-gui/errors/datatable_endpoint_not_found_error';
+import { DatatableReadError } from '@pictaccio/admin-gui/errors/datatable_read_error';
+import { DatatableUpdateError } from '@pictaccio/admin-gui/errors/datatable_update_error';
+import { NotAuthenticatedError } from '@pictaccio/admin-gui/errors/not_authenticated_error';
+import { ServerError } from '@pictaccio/admin-gui/errors/server_error';
+import { i18n } from '@pictaccio/admin-gui/i18n';
+import { ApiResponse } from '@pictaccio/admin-gui/models/api_response';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
 
 export function checkForResponseError(data: ApiResponse) {
     if (data.status === 'error') {

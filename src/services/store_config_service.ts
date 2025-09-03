@@ -1,10 +1,10 @@
 import { isEmpty } from '@loufa/loufairy';
-import { StoreConfig } from '@pictaccio/admin-gui/src/models/store_config';
-import { StoreStatus } from '@pictaccio/admin-gui/src/models/store_status';
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/src/utils/error';
-import { StoreLanguageItem } from '@pictaccio/shared/src/types/store_language_item';
-import { StoreConfigurationStatus } from '@pictaccio/shared/src/types/store_status';
+import { StoreConfig } from '@pictaccio/admin-gui/models/store_config';
+import { StoreStatus } from '@pictaccio/admin-gui/models/store_status';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/utils/error';
+import { StoreLanguageItem } from '@pictaccio/shared/types/store_language_item';
+import { StoreConfigurationStatus } from '@pictaccio/shared/types/store_status';
 
 class StoreConfigService extends BaseService {
     public async load(): Promise<StoreConfig> {

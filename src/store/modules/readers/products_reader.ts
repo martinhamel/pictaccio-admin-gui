@@ -1,12 +1,12 @@
-import { BooleanFilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/boolean_filter_function';
-import { Operator } from '@pictaccio/shared/src/types/operator';
-import { Tag } from '@pictaccio/shared/src/types/tags';
+import { BooleanFilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/boolean_filter_function';
+import { Operator } from '@pictaccio/shared/types/operator';
+import { Tag } from '@pictaccio/shared/types/tags';
 import { Module as Mod } from 'vuex';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
-import { ReaderResponse } from '@pictaccio/admin-gui/src/core/reader_response';
-import { createDataTableService, DataTableService } from '@pictaccio/admin-gui/src/services/data_table_service';
-import { DbProduct } from '@pictaccio/admin-gui/src/models/db_product';
-import productService from '@pictaccio/admin-gui/src/services/product_service';
+import { ReaderResponse } from '@pictaccio/admin-gui/core/reader_response';
+import { createDataTableService, DataTableService } from '@pictaccio/admin-gui/services/data_table_service';
+import { DbProduct } from '@pictaccio/admin-gui/models/db_product';
+import productService from '@pictaccio/admin-gui/services/product_service';
 
 @Module({ namespaced: true })
 export default class ProductsReader extends VuexModule {

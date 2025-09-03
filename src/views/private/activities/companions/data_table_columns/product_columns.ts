@@ -1,7 +1,7 @@
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { DbProduct } from '@pictaccio/admin-gui/src/models/db_product';
-import { localesData } from '@pictaccio/admin-gui/src/utils/datatable_column_renderers/locales_data';
-import { formatPricing } from '@pictaccio/admin-gui/src/utils/pricing_formatter';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { DbProduct } from '@pictaccio/admin-gui/models/db_product';
+import { localesData } from '@pictaccio/admin-gui/utils/datatable_column_renderers/locales_data';
+import { formatPricing } from '@pictaccio/admin-gui/utils/pricing_formatter';
 
 export const PRODUCT_COLUMNS = {
     headers: [

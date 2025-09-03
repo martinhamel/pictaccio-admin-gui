@@ -49,7 +49,7 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { ClientConfigSchema } from '@pictaccio/shared/src/types/client_config_schema';
+import { ClientConfigSchema } from '@pictaccio/shared/types/client_config_schema';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 @Component({

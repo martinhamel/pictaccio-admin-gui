@@ -16,21 +16,21 @@
 </template>
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { DataSource, DataSourceOption } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { DataSourceEventListeners } from '@pictaccio/admin-gui/src/core/types/data_source_event_listeners';
-import { GenericDataSource } from '@pictaccio/admin-gui/src/datasources/generic_data_source';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { DbProductCatalog } from '@pictaccio/admin-gui/src/models/db_product_catalog';
-import ProductCatalogs from '@pictaccio/admin-gui/src/store/modules/product_catalogs';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
+import { DataSource, DataSourceOption } from '@pictaccio/admin-gui/core/types/data_source';
+import { DataSourceEventListeners } from '@pictaccio/admin-gui/core/types/data_source_event_listeners';
+import { GenericDataSource } from '@pictaccio/admin-gui/datasources/generic_data_source';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { DbProductCatalog } from '@pictaccio/admin-gui/models/db_product_catalog';
+import ProductCatalogs from '@pictaccio/admin-gui/store/modules/product_catalogs';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
 import ActivityCrudDialog
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialogs/activity_crud_dialog';
-import CrudDialog from '@pictaccio/admin-gui/src/views/private/activities/companions/CrudDialog.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialogs/activity_crud_dialog';
+import CrudDialog from '@pictaccio/admin-gui/views/private/activities/companions/CrudDialog.vue';
 import {
     PRODUCT_CATALOG_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/product_catalog_columns';
-import { validateInternalNameCharacters } from '@pictaccio/shared/src/utils/internal_name_constraint';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/product_catalog_columns';
+import { validateInternalNameCharacters } from '@pictaccio/shared/utils/internal_name_constraint';
 import { Component } from 'vue-facing-decorator';
 
 @Component({

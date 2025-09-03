@@ -1,5 +1,5 @@
-import { BreadcrumbItem } from '@pictaccio/admin-gui/src/core/types/breadcrumb_item';
-import { validateCapability } from '@pictaccio/admin-gui/src/utils/validate_capability';
+import { BreadcrumbItem } from '@pictaccio/admin-gui/core/types/breadcrumb_item';
+import { validateCapability } from '@pictaccio/admin-gui/utils/validate_capability';
 import { Store } from 'vuex';
 
 declare module '@vue/runtime-core' {

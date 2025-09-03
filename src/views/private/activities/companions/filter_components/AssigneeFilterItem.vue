@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/filter_popup.scss';
+@import '@pictaccio/admin-gui/scss/filter_popup.scss';
 
 .dropdown-assignee {
     position: relative;
@@ -99,17 +99,17 @@
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { isEmpty } from '@loufa/loufairy';
-import { FilterTypeAssignee } from '@pictaccio/admin-gui/src/core/types/filters/type_assignee';
-import { SerializedFilterItem } from '@pictaccio/admin-gui/src/core/types/serialized_params';
-import { UserInfo } from '@pictaccio/admin-gui/src/core/types/user_info';
-import userService from '@pictaccio/admin-gui/src/services/user_service';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import Badge from '@pictaccio/admin-gui/src/views/components/widgets/Badge.vue';
-import StickyLabel from '@pictaccio/admin-gui/src/views/components/widgets/StickyLabel.vue';
-import AssigneeDropdown from '@pictaccio/admin-gui/src/views/private/activities/companions/AssigneeDropdown.vue';
-import FilterItem from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/filter_item';
-import FilterPopup from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/FilterPopup.vue';
-import SelectAssignee from '@pictaccio/admin-gui/src/views/private/activities/companions/SelectAssignee.vue';
+import { FilterTypeAssignee } from '@pictaccio/admin-gui/core/types/filters/type_assignee';
+import { SerializedFilterItem } from '@pictaccio/admin-gui/core/types/serialized_params';
+import { UserInfo } from '@pictaccio/admin-gui/core/types/user_info';
+import userService from '@pictaccio/admin-gui/services/user_service';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import Badge from '@pictaccio/admin-gui/views/components/widgets/Badge.vue';
+import StickyLabel from '@pictaccio/admin-gui/views/components/widgets/StickyLabel.vue';
+import AssigneeDropdown from '@pictaccio/admin-gui/views/private/activities/companions/AssigneeDropdown.vue';
+import FilterItem from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/filter_item';
+import FilterPopup from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/FilterPopup.vue';
+import SelectAssignee from '@pictaccio/admin-gui/views/private/activities/companions/SelectAssignee.vue';
 import { Component } from 'vue-facing-decorator';
 
 @Component({

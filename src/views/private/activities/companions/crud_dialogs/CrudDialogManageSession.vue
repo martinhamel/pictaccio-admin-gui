@@ -17,20 +17,20 @@
 </template>
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { DataSourceOption } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { GenericDataSource } from '@pictaccio/admin-gui/src/datasources/generic_data_source';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { DbSession } from '@pictaccio/admin-gui/src/models/db_session';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
+import { DataSourceOption } from '@pictaccio/admin-gui/core/types/data_source';
+import { GenericDataSource } from '@pictaccio/admin-gui/datasources/generic_data_source';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { DbSession } from '@pictaccio/admin-gui/models/db_session';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
 import ActivityCrudDialog
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialogs/activity_crud_dialog';
-import CrudDialog from '@pictaccio/admin-gui/src/views/private/activities/companions/CrudDialog.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialogs/activity_crud_dialog';
+import CrudDialog from '@pictaccio/admin-gui/views/private/activities/companions/CrudDialog.vue';
 import {
     MANAGE_SESSIONS_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/manage_sessions_columns';
-import { SessionColor } from '@pictaccio/shared/src/types/session_color';
-import { SessionOptions } from '@pictaccio/shared/src/types/session_options';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/manage_sessions_columns';
+import { SessionColor } from '@pictaccio/shared/types/session_color';
+import { SessionOptions } from '@pictaccio/shared/types/session_options';
 import { DateTime } from 'luxon';
 import { Component } from 'vue-facing-decorator';
 

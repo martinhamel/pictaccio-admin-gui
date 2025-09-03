@@ -1,8 +1,8 @@
-import { i18n } from '@pictaccio/admin-gui/src/i18n';
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/src/utils/error';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import { StoreCustomizationColors } from '@pictaccio/shared/src/types/store_customization_colors';
+import { i18n } from '@pictaccio/admin-gui/i18n';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/utils/error';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import { StoreCustomizationColors } from '@pictaccio/shared/types/store_customization_colors';
 
 class StoreCustomizationService extends BaseService {
     public async readColors(): Promise<{ [key: string]: string }> {

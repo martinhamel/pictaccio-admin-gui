@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 .email-info-form,
 .phone-info-form,
 .update-address-form {
@@ -274,22 +274,22 @@
 </template>
 
 <script lang="ts">
-import { filterThirdPartyElements } from '@pictaccio/admin-gui/src/utils/filter_trash';
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
-import FormValidator from '@pictaccio/admin-gui/src/views/components/widgets/FormValidator.vue';
-import InformationBox from '@pictaccio/admin-gui/src/views/components/widgets/InformationBox.vue';
-import StateDropdown from '@pictaccio/admin-gui/src/views/components/widgets/StateDropdown.vue';
-import StateSelector from '@pictaccio/admin-gui/src/views/components/widgets/StateSelector.vue';
+import { filterThirdPartyElements } from '@pictaccio/admin-gui/utils/filter_trash';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
+import FormValidator from '@pictaccio/admin-gui/views/components/widgets/FormValidator.vue';
+import InformationBox from '@pictaccio/admin-gui/views/components/widgets/InformationBox.vue';
+import StateDropdown from '@pictaccio/admin-gui/views/components/widgets/StateDropdown.vue';
+import StateSelector from '@pictaccio/admin-gui/views/components/widgets/StateSelector.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { createValidator, getFormInputValues, parseHtml } from '@loufa/loufairy-client';
 import { Component } from 'vue-facing-decorator';
-import { Address } from '@pictaccio/admin-gui/src/models/address';
-import { NamedEmail } from '@pictaccio/admin-gui/src/models/named_email';
-import { NamedPhone } from '@pictaccio/admin-gui/src/models/named_phone';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import PaneContainer from '@pictaccio/admin-gui/src/views/components/PaneContainer.vue';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
-import DocsLink from '@pictaccio/admin-gui/src/views/private/activities/companions/DocsLink.vue';
+import { Address } from '@pictaccio/admin-gui/models/address';
+import { NamedEmail } from '@pictaccio/admin-gui/models/named_email';
+import { NamedPhone } from '@pictaccio/admin-gui/models/named_phone';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import PaneContainer from '@pictaccio/admin-gui/views/components/PaneContainer.vue';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
+import DocsLink from '@pictaccio/admin-gui/views/private/activities/companions/DocsLink.vue';
 
 @Component({
     name: 'Manage Contact Info',

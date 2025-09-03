@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/public.scss';
+@import '@pictaccio/admin-gui/scss/public.scss';
 </style>
 
 <template>
@@ -24,7 +24,7 @@
 </template>
 
 <script lang="ts">
-import InformationBox from '@pictaccio/admin-gui/src/views/components/widgets/InformationBox.vue';
+import InformationBox from '@pictaccio/admin-gui/views/components/widgets/InformationBox.vue';
 import { Component, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 

@@ -1,8 +1,8 @@
-import { CRUDStatus } from '@pictaccio/admin-gui/src/core/types/crud_status';
-import { RemoteStore } from '@pictaccio/admin-gui/src/utils/remote_store';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import { StoreLanguageItem } from '@pictaccio/shared/src/types/store_language_item';
-import { validateInternalNameCharacters } from '@pictaccio/shared/src/utils/internal_name_constraint';
+import { CRUDStatus } from '@pictaccio/admin-gui/core/types/crud_status';
+import { RemoteStore } from '@pictaccio/admin-gui/utils/remote_store';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import { StoreLanguageItem } from '@pictaccio/shared/types/store_language_item';
+import { validateInternalNameCharacters } from '@pictaccio/shared/utils/internal_name_constraint';
 import { ComponentBase, Vue } from 'vue-facing-decorator';
 //TODO: PSFCA-2739 remove duplicate code from files that dose not need it
 @ComponentBase({

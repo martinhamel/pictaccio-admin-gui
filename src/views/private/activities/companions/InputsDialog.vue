@@ -125,7 +125,7 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { getCoords } from '@pictaccio/admin-gui/src/utils/get_coords';
+import { getCoords } from '@pictaccio/admin-gui/utils/get_coords';
 
 export type InputsDialogColors = {
     trigger: string,

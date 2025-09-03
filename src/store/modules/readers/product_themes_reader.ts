@@ -1,8 +1,8 @@
 import { Module as Mod } from 'vuex';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
-import { ReaderResponse } from '@pictaccio/admin-gui/src/core/reader_response';
-import { createDataTableService, DataTableService } from '@pictaccio/admin-gui/src/services/data_table_service';
-import { DbProductThemeSet } from '@pictaccio/admin-gui/src/models/db_product_theme_set';
+import { ReaderResponse } from '@pictaccio/admin-gui/core/reader_response';
+import { createDataTableService, DataTableService } from '@pictaccio/admin-gui/services/data_table_service';
+import { DbProductThemeSet } from '@pictaccio/admin-gui/models/db_product_theme_set';
 
 
 @Module({ namespaced: true })

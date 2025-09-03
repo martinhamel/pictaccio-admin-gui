@@ -19,11 +19,11 @@
 </template>
 
 <script lang="ts">
-import { DeliveryOptionExtra } from '@pictaccio/admin-gui/src/models/db_delivery_option';
+import { DeliveryOptionExtra } from '@pictaccio/admin-gui/models/db_delivery_option';
 import MethodOptionInputField
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/MethodOptionInputField.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/MethodOptionInputField.vue';
 import ShippingMethod
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/shipping_method_options/shipping_method';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/shipping_method_options/shipping_method';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { Component, Prop } from 'vue-facing-decorator';
 

@@ -466,11 +466,11 @@ li a,
 </template>
 
 <script lang="ts">
-import { environment } from '@pictaccio/admin-gui/src/environment/environment';
+import { environment } from '@pictaccio/admin-gui/environment/environment';
 import { Component, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import Logo from '@pictaccio/admin-gui/src/views/components/Logo.vue';
-import SettingDialog from '@pictaccio/admin-gui/src/views/components/layout/SettingDialog.vue';
+import Logo from '@pictaccio/admin-gui/views/components/Logo.vue';
+import SettingDialog from '@pictaccio/admin-gui/views/components/layout/SettingDialog.vue';
 
 @Component({
     name: 'Side Bar Nav',

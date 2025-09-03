@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 .overlay-ui {
     position: absolute;
@@ -196,13 +196,13 @@
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { deepCompare } from '@loufa/loufairy';
 import { createValidator, getFormInputValues } from '@loufa/loufairy-client';
-import { i18n } from '@pictaccio/admin-gui/src/i18n';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import { isFile } from '@pictaccio/admin-gui/src/utils/is_file';
-import ImageUpload from '@pictaccio/admin-gui/src/views/components/widgets/ImageUpload.vue';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
-import DocsLink from '@pictaccio/admin-gui/src/views/private/activities/companions/DocsLink.vue';
-import { CssStyleTransactional } from '@pictaccio/shared/src/types/css_color_descriptor';
+import { i18n } from '@pictaccio/admin-gui/i18n';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import { isFile } from '@pictaccio/admin-gui/utils/is_file';
+import ImageUpload from '@pictaccio/admin-gui/views/components/widgets/ImageUpload.vue';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
+import DocsLink from '@pictaccio/admin-gui/views/private/activities/companions/DocsLink.vue';
+import { CssStyleTransactional } from '@pictaccio/shared/types/css_color_descriptor';
 import { toRaw } from 'vue';
 import { Component } from 'vue-facing-decorator';
 

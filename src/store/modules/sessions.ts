@@ -1,10 +1,10 @@
-import { DbSession } from '@pictaccio/admin-gui/src/models/db_session';
-import { SessionGeneralInfo } from '@pictaccio/admin-gui/src/models/session_general_info';
-import { SessionOptions } from '@pictaccio/admin-gui/src/models/session_options';
-import { SessionSubjects } from '@pictaccio/admin-gui/src/models/session_subjects';
-import { createDataTableService } from '@pictaccio/admin-gui/src/services/data_table_service';
-import sessionService from '@pictaccio/admin-gui/src/services/session_service';
-import { BaseDataTable } from '@pictaccio/admin-gui/src/store/modules/base_data_table';
+import { DbSession } from '@pictaccio/admin-gui/models/db_session';
+import { SessionGeneralInfo } from '@pictaccio/admin-gui/models/session_general_info';
+import { SessionOptions } from '@pictaccio/admin-gui/models/session_options';
+import { SessionSubjects } from '@pictaccio/admin-gui/models/session_subjects';
+import { createDataTableService } from '@pictaccio/admin-gui/services/data_table_service';
+import sessionService from '@pictaccio/admin-gui/services/session_service';
+import { BaseDataTable } from '@pictaccio/admin-gui/store/modules/base_data_table';
 import { Module as Mod } from 'vuex';
 import { Action, Module, Mutation } from 'vuex-module-decorators';
 

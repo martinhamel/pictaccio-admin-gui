@@ -1,5 +1,5 @@
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
-import { VirtualProduct } from '@pictaccio/shared/src/types/virtual_product';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
+import { VirtualProduct } from '@pictaccio/shared/types/virtual_product';
 
 
 export default class BaseOrder extends AdminActivities {

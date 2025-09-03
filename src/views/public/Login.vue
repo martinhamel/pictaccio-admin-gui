@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import "@pictaccio/admin-gui/src/scss/public.scss";
+@import "@pictaccio/admin-gui/scss/public.scss";
 
 .logout-reason {
     font-size: 1.8rem;
@@ -39,14 +39,14 @@
 </template>
 
 <script lang="ts">
-import { LogoutReason } from '@pictaccio/admin-gui/src/core/types/logout_reason';
+import { LogoutReason } from '@pictaccio/admin-gui/core/types/logout_reason';
 import { Component, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import Logo from '@pictaccio/admin-gui/src/views/components/Logo.vue';
-import LocaleSelector from '@pictaccio/admin-gui/src/views/components/widgets/LocaleSelector.vue';
-import LoginInterface from '@pictaccio/admin-gui/src/views/components/login/LoginInterface.vue';
-import AuthenticatorInterface from '@pictaccio/admin-gui/src/views/components/login/AuthenticatorInterface.vue';
-import LoggingInterface from '@pictaccio/admin-gui/src/views/components/login/LoggingInterface.vue';
+import Logo from '@pictaccio/admin-gui/views/components/Logo.vue';
+import LocaleSelector from '@pictaccio/admin-gui/views/components/widgets/LocaleSelector.vue';
+import LoginInterface from '@pictaccio/admin-gui/views/components/login/LoginInterface.vue';
+import AuthenticatorInterface from '@pictaccio/admin-gui/views/components/login/AuthenticatorInterface.vue';
+import LoggingInterface from '@pictaccio/admin-gui/views/components/login/LoggingInterface.vue';
 
 const STEPS_INTERFACE: {[key: string]: string} = {
     authenticator: 'authenticator-interface',

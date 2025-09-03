@@ -18,23 +18,23 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { DataSource, DataSourceOption } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { DataSourceEventListeners } from '@pictaccio/admin-gui/src/core/types/data_source_event_listeners';
-import { GenericDataSource } from '@pictaccio/admin-gui/src/datasources/generic_data_source';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { DbProduct } from '@pictaccio/admin-gui/src/models/db_product';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
+import { DataSource, DataSourceOption } from '@pictaccio/admin-gui/core/types/data_source';
+import { DataSourceEventListeners } from '@pictaccio/admin-gui/core/types/data_source_event_listeners';
+import { GenericDataSource } from '@pictaccio/admin-gui/datasources/generic_data_source';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { DbProduct } from '@pictaccio/admin-gui/models/db_product';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
 import ActivityCrudDialog
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialogs/activity_crud_dialog';
-import CrudDialog from '@pictaccio/admin-gui/src/views/private/activities/companions/CrudDialog.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialogs/activity_crud_dialog';
+import CrudDialog from '@pictaccio/admin-gui/views/private/activities/companions/CrudDialog.vue';
 import {
     PRODUCT_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/product_columns';
-import { LocalizedString } from '@pictaccio/shared/src/types/localized_string';
-import { ProductOptions } from '@pictaccio/shared/src/types/product_options';
-import { ProductType } from '@pictaccio/shared/src/types/product_type';
-import { Tag } from '@pictaccio/shared/src/types/tags';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/product_columns';
+import { LocalizedString } from '@pictaccio/shared/types/localized_string';
+import { ProductOptions } from '@pictaccio/shared/types/product_options';
+import { ProductType } from '@pictaccio/shared/types/product_type';
+import { Tag } from '@pictaccio/shared/types/tags';
 import { isEmpty } from '@loufa/loufairy';
 import { Component } from 'vue-facing-decorator';
 

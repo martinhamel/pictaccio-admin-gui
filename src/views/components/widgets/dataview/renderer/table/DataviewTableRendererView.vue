@@ -157,18 +157,18 @@
 </template>
 
 <script lang="ts">
-import { DataType } from '@pictaccio/admin-gui/src/datasources/data_definitions';
-import { getCoords } from '@pictaccio/admin-gui/src/utils/get_coords';
-import NestedContainer from '@pictaccio/admin-gui/src/views/components/NestedContainer.vue';
-import { createFormatter } from '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/formatter';
+import { DataType } from '@pictaccio/admin-gui/datasources/data_definitions';
+import { getCoords } from '@pictaccio/admin-gui/utils/get_coords';
+import NestedContainer from '@pictaccio/admin-gui/views/components/NestedContainer.vue';
+import { createFormatter } from '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/formatter';
 import DataviewRendererStringFormatter
-    from '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/formatter/DataviewRendererStringFormatter.vue';
+    from '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/formatter/DataviewRendererStringFormatter.vue';
 import {
     DataviewTableRendererColumn
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/table/dataview_table_renderer_column';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/table/dataview_table_renderer_column';
 import {
     DataviewTableRendererHost
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/table/dataview_table_renderer_host';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/table/dataview_table_renderer_host';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 export type DataviewTableRendererColumnMeta = DataviewTableRendererColumn & {

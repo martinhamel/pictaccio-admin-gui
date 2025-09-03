@@ -37,7 +37,7 @@ module.exports = {
         resolve: {
             extensions: ['.js', '.ts', '.vue', '.json'],
             alias: {
-                '@pictaccio/admin-gui': resolve(__dirname, '.')
+                '@pictaccio/admin-gui': resolve(__dirname, 'src')
             }
         },
     },

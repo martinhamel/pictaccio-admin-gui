@@ -1,4 +1,4 @@
-import { LocalizedString } from '@pictaccio/admin-gui/src/core/types/localized_string';
+import { LocalizedString } from '@pictaccio/admin-gui/core/types/localized_string';
 
 export type OrderPhotoItem = {
     image: {

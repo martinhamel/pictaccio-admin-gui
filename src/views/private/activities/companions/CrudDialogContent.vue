@@ -149,40 +149,40 @@
 </template>
 
 <script lang="ts">
-import { DataSource } from '@pictaccio/admin-gui/src/core/types/data_source';
-import CrudBadgeInput from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/CrudBadgeInput.vue';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
+import { DataSource } from '@pictaccio/admin-gui/core/types/data_source';
+import CrudBadgeInput from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/CrudBadgeInput.vue';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import CrudListSelect
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/CrudListSelect.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/CrudListSelect.vue';
 import SeparatorDecorator
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/SeparatorDecorator.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/SeparatorDecorator.vue';
 import VirtualDigitalOptions
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/VirtualDigitalOptions.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/VirtualDigitalOptions.vue';
 import VirtualTouchupOptions
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/VirtualTouchupOptions.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/VirtualTouchupOptions.vue';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
-import { CrudComponentInterface } from '@pictaccio/admin-gui/src/core/types/crud_component_interface';
-import { CRUDStatus } from '@pictaccio/admin-gui/src/core/types/crud_status';
-import CrudDropdown from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/CrudDropdown.vue';
-import Id from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/Id.vue';
-import CampaignOptions from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/CampaignOptions.vue';
-import TextLocalizedList from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/TextLocalizedList.vue';
-import TextLocalizedLong from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/TextLocalizedLong.vue';
-import CrudMethodOptions from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/CrudMethodOptions.vue';
-import TextGeneric from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/TextGeneric.vue';
-import TextLocalizedShort from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/TextLocalizedShort.vue';
-import NumberDecimal from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/NumberDecimal.vue';
-import NumberGeneric from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/NumberGeneric.vue';
-import CrudImage from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/CrudImage.vue';
-import CrudList from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/CrudList.vue';
-import CustomProductOptions from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/CustomProductOptions.vue';
-import BooleanGeneric from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/BooleanGeneric.vue';
-import { DataSourceMap } from '@pictaccio/admin-gui/src/core/types/data_source_map';
-import ThemeImage from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/ThemeImage.vue';
-import CrudColor from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/CrudColor.vue';
-import DateGeneric from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/DateGeneric.vue';
-import FormValidator from '@pictaccio/admin-gui/src/views/components/widgets/FormValidator.vue';
+import { CrudComponentInterface } from '@pictaccio/admin-gui/core/types/crud_component_interface';
+import { CRUDStatus } from '@pictaccio/admin-gui/core/types/crud_status';
+import CrudDropdown from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/CrudDropdown.vue';
+import Id from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/Id.vue';
+import CampaignOptions from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/CampaignOptions.vue';
+import TextLocalizedList from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/TextLocalizedList.vue';
+import TextLocalizedLong from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/TextLocalizedLong.vue';
+import CrudMethodOptions from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/CrudMethodOptions.vue';
+import TextGeneric from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/TextGeneric.vue';
+import TextLocalizedShort from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/TextLocalizedShort.vue';
+import NumberDecimal from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/NumberDecimal.vue';
+import NumberGeneric from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/NumberGeneric.vue';
+import CrudImage from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/CrudImage.vue';
+import CrudList from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/CrudList.vue';
+import CustomProductOptions from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/CustomProductOptions.vue';
+import BooleanGeneric from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/BooleanGeneric.vue';
+import { DataSourceMap } from '@pictaccio/admin-gui/core/types/data_source_map';
+import ThemeImage from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/ThemeImage.vue';
+import CrudColor from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/CrudColor.vue';
+import DateGeneric from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/DateGeneric.vue';
+import FormValidator from '@pictaccio/admin-gui/views/components/widgets/FormValidator.vue';
 
 @Component({
     name: 'CRUD Dialog Content',

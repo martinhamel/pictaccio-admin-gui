@@ -1,9 +1,9 @@
-import { UserCapabilities } from '@pictaccio/admin-gui/src/core/types/user_capabilities';
-import { UserInfo } from '@pictaccio/admin-gui/src/core/types/user_info';
-import { UserPermissions } from '@pictaccio/admin-gui/src/core/types/user_permissions';
-import { UserRole } from '@pictaccio/admin-gui/src/core/types/user_role';
+import { UserCapabilities } from '@pictaccio/admin-gui/core/types/user_capabilities';
+import { UserInfo } from '@pictaccio/admin-gui/core/types/user_info';
+import { UserPermissions } from '@pictaccio/admin-gui/core/types/user_permissions';
+import { UserRole } from '@pictaccio/admin-gui/core/types/user_role';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
-import userService from '@pictaccio/admin-gui/src/services/user_service';
+import userService from '@pictaccio/admin-gui/services/user_service';
 
 @Module({ namespaced: true })
 export default class User extends VuexModule {

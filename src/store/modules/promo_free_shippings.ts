@@ -1,6 +1,6 @@
-import { ShippingPromoDescriptor } from '@pictaccio/shared/src/types/shipping_promo_descriptor';
+import { ShippingPromoDescriptor } from '@pictaccio/shared/types/shipping_promo_descriptor';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
-import shippingPromoService from '@pictaccio/admin-gui/src/services/shipping_promo_service';
+import shippingPromoService from '@pictaccio/admin-gui/services/shipping_promo_service';
 
 @Module({ namespaced: true })
 export default class ShippingPromo extends VuexModule {

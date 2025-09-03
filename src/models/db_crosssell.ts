@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 
-import { DbBaseModel } from '@pictaccio/admin-gui/src/models/db_base_model';
-import { DbProduct } from '@pictaccio/admin-gui/src/models/db_product';
+import { DbBaseModel } from '@pictaccio/admin-gui/models/db_base_model';
+import { DbProduct } from '@pictaccio/admin-gui/models/db_product';
 
 export type ProductCrosssellOptions = {
 }

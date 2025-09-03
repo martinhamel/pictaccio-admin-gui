@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/public.scss';
+@import '@pictaccio/admin-gui/scss/public.scss';
 </style>
 
 <template>
@@ -13,10 +13,10 @@
 </template>
 
 <script lang="ts">
-import PasswordForm from '@pictaccio/admin-gui/src/views/components/widgets/PasswordForm.vue';
+import PasswordForm from '@pictaccio/admin-gui/views/components/widgets/PasswordForm.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
-import PasswordRequirements from '@pictaccio/admin-gui/src/views/components/PasswordRequirements.vue';
+import PasswordRequirements from '@pictaccio/admin-gui/views/components/PasswordRequirements.vue';
 
 @Component({
     name: 'CompleteInvite',

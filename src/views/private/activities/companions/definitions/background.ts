@@ -1,13 +1,13 @@
-import { IdFilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/id_filter_function';
+import { IdFilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/id_filter_function';
 import {
     FilterDefinition
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/params/dataview_filtersholder_params';
-import { createFormatter } from '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/formatter';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/params/dataview_filtersholder_params';
+import { createFormatter } from '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/formatter';
 import {
     DataviewTableRendererColumn
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/table/dataview_table_renderer_column';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/table/dataview_table_renderer_column';
 import MainTextFilterItem
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/MainTextFilterItem.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/MainTextFilterItem.vue';
 
 export const columns: DataviewTableRendererColumn[] = [
     {

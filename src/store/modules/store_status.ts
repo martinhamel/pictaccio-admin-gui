@@ -1,6 +1,6 @@
-import { StoreStatusObject } from '@pictaccio/admin-gui/src/core/types/store_status';
-import storeConfigService from '@pictaccio/admin-gui/src/services/store_config_service';
-import { StoreConfigurationStatus } from '@pictaccio/shared/src/types/store_status';
+import { StoreStatusObject } from '@pictaccio/admin-gui/core/types/store_status';
+import storeConfigService from '@pictaccio/admin-gui/services/store_config_service';
+import { StoreConfigurationStatus } from '@pictaccio/shared/types/store_status';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
 
 @Module({ namespaced: true })

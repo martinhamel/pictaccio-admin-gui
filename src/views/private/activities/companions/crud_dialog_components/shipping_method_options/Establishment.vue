@@ -47,14 +47,14 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { DeliveryOptionExtra } from '@pictaccio/admin-gui/src/models/db_delivery_option';
-import TimelineForm from '@pictaccio/admin-gui/src/views/components/widgets/TimelineForm.vue';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
-import UnitDecorator from '@pictaccio/admin-gui/src/views/components/widgets/UnitDecorator.vue';
+import { DeliveryOptionExtra } from '@pictaccio/admin-gui/models/db_delivery_option';
+import TimelineForm from '@pictaccio/admin-gui/views/components/widgets/TimelineForm.vue';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
+import UnitDecorator from '@pictaccio/admin-gui/views/components/widgets/UnitDecorator.vue';
 import MethodOptionInputField
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/MethodOptionInputField.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/MethodOptionInputField.vue';
 import ShippingMethod
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/shipping_method_options/shipping_method';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/shipping_method_options/shipping_method';
 import { DateTime } from 'luxon';
 import { Component, Prop } from 'vue-facing-decorator';
 

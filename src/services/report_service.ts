@@ -1,6 +1,6 @@
-import { i18n } from '@pictaccio/admin-gui/src/i18n';
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { ReportSeriesParams, ReportType } from '@pictaccio/shared/src/types/report';
+import { i18n } from '@pictaccio/admin-gui/i18n';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { ReportSeriesParams, ReportType } from '@pictaccio/shared/types/report';
 
 class ReportService extends BaseService {
     public async queryJson(report: ReportType, params: ReportSeriesParams): Promise<any> {

@@ -1,6 +1,6 @@
-import { DataSource } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { FilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/filter_function';
-import FilterItem from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/filter_item';
+import { DataSource } from '@pictaccio/admin-gui/core/types/data_source';
+import { FilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/filter_function';
+import FilterItem from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/filter_item';
 
 export type FilterDescriptor = {
     pop: boolean,

@@ -1,5 +1,5 @@
 import { globalToast } from '../../utils/global_toast';
-import { AppIntegrationApp, AppIntegrationApps } from '@pictaccio/shared/src/types/app_integration_app';
+import { AppIntegrationApp, AppIntegrationApps } from '@pictaccio/shared/types/app_integration_app';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
 import { SaveError } from '../../errors/save_error';
 import { LoadError } from '../../errors/load_error';
@@ -7,7 +7,7 @@ import appIntegrationService from '../../services/app_integration_service';
 import {
     AppIntegrationConfiguration,
     AppIntegrationConfigurations
-} from '@pictaccio/shared/src/types/app_integration_configuration';
+} from '@pictaccio/shared/types/app_integration_configuration';
 
 @Module({ namespaced: true })
 export default class AppIntegration extends VuexModule {

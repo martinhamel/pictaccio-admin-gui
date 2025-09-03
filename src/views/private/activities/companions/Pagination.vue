@@ -161,8 +161,8 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
-import localStorageService from '@pictaccio/admin-gui/src/services/local_storage_service';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
+import localStorageService from '@pictaccio/admin-gui/services/local_storage_service';
 
 
 @Component({

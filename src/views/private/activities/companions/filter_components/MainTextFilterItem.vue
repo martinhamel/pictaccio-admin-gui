@@ -58,13 +58,13 @@
     </div>
 </template>
 <script lang="ts">
-import { FilterType } from '@pictaccio/admin-gui/src/core/types/filters/filter_type';
-import { FilterTypeMainText } from '@pictaccio/admin-gui/src/core/types/filters/type_main_text';
-import { SerializedFilterItem } from '@pictaccio/admin-gui/src/core/types/serialized_params';
-import StickyLabel from '@pictaccio/admin-gui/src/views/components/widgets/StickyLabel.vue';
+import { FilterType } from '@pictaccio/admin-gui/core/types/filters/filter_type';
+import { FilterTypeMainText } from '@pictaccio/admin-gui/core/types/filters/type_main_text';
+import { SerializedFilterItem } from '@pictaccio/admin-gui/core/types/serialized_params';
+import StickyLabel from '@pictaccio/admin-gui/views/components/widgets/StickyLabel.vue';
 import { Component, Prop } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import FilterItem from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/filter_item';
+import FilterItem from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/filter_item';
 import { isEmpty } from '@loufa/loufairy';
 
 @Component({

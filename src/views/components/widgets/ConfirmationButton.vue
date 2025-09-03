@@ -37,7 +37,7 @@
 </template>
 
 <script lang="ts">
-import Spinner from '@pictaccio/admin-gui/src/views/components/widgets/Spinner.vue';
+import Spinner from '@pictaccio/admin-gui/views/components/widgets/Spinner.vue';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 type ButtonClass = 'btn-primary' | 'btn-secondary';

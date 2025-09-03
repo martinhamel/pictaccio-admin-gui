@@ -1,6 +1,6 @@
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/src/utils/error';
-import { ClientConfigSchema } from '@pictaccio/shared/src/types/client_config_schema';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/utils/error';
+import { ClientConfigSchema } from '@pictaccio/shared/types/client_config_schema';
 
 class ConfigService extends BaseService {
     /**

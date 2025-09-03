@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import { Nestable, NestedParameter } from '@pictaccio/admin-gui/src/views/components/nested_container';
+import { Nestable, NestedParameter } from '@pictaccio/admin-gui/views/components/nested_container';
 import { Component, Prop, Vue, VueCons } from 'vue-facing-decorator';
 
 @Component({

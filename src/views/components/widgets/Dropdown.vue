@@ -381,11 +381,11 @@
 
 <script lang="ts">
 import { isEmpty } from '@loufa/loufairy';
-import Badge from '@pictaccio/admin-gui/src/views/components/widgets/Badge.vue';
-import BadgeInput from '@pictaccio/admin-gui/src/views/components/widgets/BadgeInput.vue';
+import Badge from '@pictaccio/admin-gui/views/components/widgets/Badge.vue';
+import BadgeInput from '@pictaccio/admin-gui/views/components/widgets/BadgeInput.vue';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { getCoords } from '@pictaccio/admin-gui/src/utils/get_coords';
+import { getCoords } from '@pictaccio/admin-gui/utils/get_coords';
 
 const CLOSING_TIMEOUT = 300;
 

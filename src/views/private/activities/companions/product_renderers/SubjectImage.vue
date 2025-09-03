@@ -112,9 +112,9 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import { PhotoSelection } from '@pictaccio/shared/src/types/photo_selection';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import { PhotoSelection } from '@pictaccio/shared/types/photo_selection';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 @Component({

@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 .current-subscription {
     grid-column: span 7 / auto;
@@ -146,9 +146,9 @@
 import { Component } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { camelize } from '@loufa/loufairy';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
-import DocsLink from '@pictaccio/admin-gui/src/views/private/activities/companions/DocsLink.vue';
-import PlanCard from '@pictaccio/admin-gui/src/views/private/activities/companions/PlanCard.vue';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
+import DocsLink from '@pictaccio/admin-gui/views/private/activities/companions/DocsLink.vue';
+import PlanCard from '@pictaccio/admin-gui/views/private/activities/companions/PlanCard.vue';
 
 @Component({
     name: 'Subscription Status',

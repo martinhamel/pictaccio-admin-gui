@@ -16,21 +16,21 @@
 </template>
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { DataSource, DataSourceOption } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { DataSourceEventListeners } from '@pictaccio/admin-gui/src/core/types/data_source_event_listeners';
-import { GenericDataSource } from '@pictaccio/admin-gui/src/datasources/generic_data_source';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { DbProductCategory } from '@pictaccio/admin-gui/src/models/db_product_category';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
+import { DataSource, DataSourceOption } from '@pictaccio/admin-gui/core/types/data_source';
+import { DataSourceEventListeners } from '@pictaccio/admin-gui/core/types/data_source_event_listeners';
+import { GenericDataSource } from '@pictaccio/admin-gui/datasources/generic_data_source';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { DbProductCategory } from '@pictaccio/admin-gui/models/db_product_category';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
 import ActivityCrudDialog
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialogs/activity_crud_dialog';
-import CrudDialog from '@pictaccio/admin-gui/src/views/private/activities/companions/CrudDialog.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialogs/activity_crud_dialog';
+import CrudDialog from '@pictaccio/admin-gui/views/private/activities/companions/CrudDialog.vue';
 import {
     PRODUCT_CATEGORIES_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/product_categories_columns';
-import { LocalizedString } from '@pictaccio/shared/src/types/localized_string';
-import { validateInternalNameCharacters } from '@pictaccio/shared/src/utils/internal_name_constraint';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/product_categories_columns';
+import { LocalizedString } from '@pictaccio/shared/types/localized_string';
+import { validateInternalNameCharacters } from '@pictaccio/shared/utils/internal_name_constraint';
 import { Component } from 'vue-facing-decorator';
 
 @Component({

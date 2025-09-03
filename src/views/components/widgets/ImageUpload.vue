@@ -309,14 +309,14 @@
 </template>
 
 <script lang="ts">
-import { fileAsDataURL } from '@pictaccio/admin-gui/src/core/file_as_data_url';
-import { ProductSelectionRangeItem } from '@pictaccio/admin-gui/src/core/types/product_selection_range_item';
-import { generateRandomId } from '@pictaccio/admin-gui/src/utils/generate_uuid';
+import { fileAsDataURL } from '@pictaccio/admin-gui/core/file_as_data_url';
+import { ProductSelectionRangeItem } from '@pictaccio/admin-gui/core/types/product_selection_range_item';
+import { generateRandomId } from '@pictaccio/admin-gui/utils/generate_uuid';
 import { isEmpty } from '@loufa/loufairy';
-import { isFile } from '@pictaccio/admin-gui/src/utils/is_file';
+import { isFile } from '@pictaccio/admin-gui/utils/is_file';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { environment } from '@pictaccio/admin-gui/src/environment';
+import { environment } from '@pictaccio/admin-gui/environment';
 
 export type SelectRange = 'one' | 'many' | 'none'; // Add number for a max selection range?
 

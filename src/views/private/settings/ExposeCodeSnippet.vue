@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 .expose-code-snippet {
     grid-column: 1 / -1;
@@ -43,9 +43,9 @@
 import { Component } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { camelize } from '@loufa/loufairy';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
-import CodeSnippet from '@pictaccio/admin-gui/src/views/private/activities/companions/CodeSnippet.vue';
-import DocsLink from '@pictaccio/admin-gui/src/views/private/activities/companions/DocsLink.vue';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
+import CodeSnippet from '@pictaccio/admin-gui/views/private/activities/companions/CodeSnippet.vue';
+import DocsLink from '@pictaccio/admin-gui/views/private/activities/companions/DocsLink.vue';
 
 @Component({
     name: 'Expose Code Snippet',

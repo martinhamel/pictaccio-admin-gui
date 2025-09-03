@@ -1,5 +1,5 @@
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { store } from '@pictaccio/admin-gui/src/store';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { store } from '@pictaccio/admin-gui/store';
 
 const PING_INTERVAL = 10000;
 

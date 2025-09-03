@@ -83,7 +83,7 @@
 </template>
 
 <script lang="ts">
-import { SelectionCheckboxStatus } from '@pictaccio/admin-gui/src/core/types/selection_checkbox_status';
+import { SelectionCheckboxStatus } from '@pictaccio/admin-gui/core/types/selection_checkbox_status';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 

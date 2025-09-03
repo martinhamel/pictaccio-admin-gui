@@ -32,13 +32,13 @@
 </template>
 
 <script lang="ts">
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
-import TimelineForm from '@pictaccio/admin-gui/src/views/components/widgets/TimelineForm.vue';
-import UnitDecorator from '@pictaccio/admin-gui/src/views/components/widgets/UnitDecorator.vue';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
+import TimelineForm from '@pictaccio/admin-gui/views/components/widgets/TimelineForm.vue';
+import UnitDecorator from '@pictaccio/admin-gui/views/components/widgets/UnitDecorator.vue';
 import {
     CrudComponents
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/CrudComponents';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
+} from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/CrudComponents';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
 import { camelize } from 'lib/loufairy';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 

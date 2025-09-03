@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 .activity-control {
     grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr)) !important;
@@ -181,18 +181,18 @@
 </template>
 
 <script lang="ts">
-import { SubjectCodeList } from '@pictaccio/admin-gui/src/types/subject_code_list';
-import { pushBreadcrumb } from '@pictaccio/admin-gui/src/utils/global_breadcrumb';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import InformationBox from '@pictaccio/admin-gui/src/views/components/widgets/InformationBox.vue';
-import CodeSnippet from '@pictaccio/admin-gui/src/views/private/activities/companions/CodeSnippet.vue';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
+import { SubjectCodeList } from '@pictaccio/admin-gui/types/subject_code_list';
+import { pushBreadcrumb } from '@pictaccio/admin-gui/utils/global_breadcrumb';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import InformationBox from '@pictaccio/admin-gui/views/components/widgets/InformationBox.vue';
+import CodeSnippet from '@pictaccio/admin-gui/views/private/activities/companions/CodeSnippet.vue';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
 import { Component } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
-import DocsLink from '@pictaccio/admin-gui/src/views/private/activities/companions/DocsLink.vue';
-import { SubjectCodeGenerateQuery } from '@pictaccio/admin-gui/src/models/subject_code_generate_query';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
+import DocsLink from '@pictaccio/admin-gui/views/private/activities/companions/DocsLink.vue';
+import { SubjectCodeGenerateQuery } from '@pictaccio/admin-gui/models/subject_code_generate_query';
 
 @Component({
     name: 'Free Shipping',

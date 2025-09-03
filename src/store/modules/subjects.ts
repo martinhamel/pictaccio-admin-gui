@@ -1,8 +1,8 @@
-import { DbSubject } from '@pictaccio/admin-gui/src/models/db_subject';
-import { createDataTableService } from '@pictaccio/admin-gui/src/services/data_table_service';
-import subjectsService from '@pictaccio/admin-gui/src/services/subjects_service';
-import { BaseDataTable } from '@pictaccio/admin-gui/src/store/modules/base_data_table';
-import { AddVersionRequest, RemoveVersionRequest } from '@pictaccio/shared/src/types/request/version_request';
+import { DbSubject } from '@pictaccio/admin-gui/models/db_subject';
+import { createDataTableService } from '@pictaccio/admin-gui/services/data_table_service';
+import subjectsService from '@pictaccio/admin-gui/services/subjects_service';
+import { BaseDataTable } from '@pictaccio/admin-gui/store/modules/base_data_table';
+import { AddVersionRequest, RemoveVersionRequest } from '@pictaccio/shared/types/request/version_request';
 import { Module as Mod } from 'vuex';
 import { Action, Module } from 'vuex-module-decorators';
 

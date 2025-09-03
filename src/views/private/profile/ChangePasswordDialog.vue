@@ -89,13 +89,13 @@
 </template>
 
 <script lang="ts">
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import ChangePassword from '@pictaccio/admin-gui/src/views/components/forgot/ChangePassword.vue';
-import CollectEmail from '@pictaccio/admin-gui/src/views/components/forgot/CollectEmail.vue';
-import ValidateCode from '@pictaccio/admin-gui/src/views/components/forgot/ValidateCode.vue';
-import DialogBox from '@pictaccio/admin-gui/src/views/components/layout/DialogBox.vue';
-import PasswordRequirements from '@pictaccio/admin-gui/src/views/components/PasswordRequirements.vue';
-import Secret from '@pictaccio/admin-gui/src/views/components/widgets/Secret.vue';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import ChangePassword from '@pictaccio/admin-gui/views/components/forgot/ChangePassword.vue';
+import CollectEmail from '@pictaccio/admin-gui/views/components/forgot/CollectEmail.vue';
+import ValidateCode from '@pictaccio/admin-gui/views/components/forgot/ValidateCode.vue';
+import DialogBox from '@pictaccio/admin-gui/views/components/layout/DialogBox.vue';
+import PasswordRequirements from '@pictaccio/admin-gui/views/components/PasswordRequirements.vue';
+import Secret from '@pictaccio/admin-gui/views/components/widgets/Secret.vue';
 import { Component, Vue } from 'vue-facing-decorator';
 
 @Component({

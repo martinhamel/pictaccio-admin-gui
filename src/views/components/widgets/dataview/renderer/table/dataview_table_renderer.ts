@@ -1,21 +1,21 @@
-import { DataType } from '@pictaccio/admin-gui/src/datasources/data_definitions';
+import { DataType } from '@pictaccio/admin-gui/datasources/data_definitions';
 import {
     DataviewComponentConfiguration
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/dataview_component';
-import { DataviewHost } from '@pictaccio/admin-gui/src/views/components/widgets/dataview/dataview_host';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/dataview_component';
+import { DataviewHost } from '@pictaccio/admin-gui/views/components/widgets/dataview/dataview_host';
 import {
     DataviewEventKey,
     DataviewEventListener
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/event_types';
-import { DataviewRenderer } from '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/dataview_renderer';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/event_types';
+import { DataviewRenderer } from '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/dataview_renderer';
 import {
     DataviewTableRendererColumn, DataviewTableRendererColumnType
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/table/dataview_table_renderer_column';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/table/dataview_table_renderer_column';
 import {
     DataviewTableRendererHost
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/table/dataview_table_renderer_host';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/table/dataview_table_renderer_host';
 import DataviewTableRendererView
-    from '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/table/DataviewTableRendererView.vue';
+    from '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/table/DataviewTableRendererView.vue';
 import { createVNode, VNode } from 'vue';
 
 export class DataviewTableRenderer<Tdata, HasStreams extends boolean = false>

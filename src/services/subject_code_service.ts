@@ -1,8 +1,8 @@
-import { SubjectCodeGenerateQuery } from '@pictaccio/admin-gui/src/models/subject_code_generate_query';
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { SubjectCodeList } from '@pictaccio/admin-gui/src/types/subject_code_list';
-import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/src/utils/error';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
+import { SubjectCodeGenerateQuery } from '@pictaccio/admin-gui/models/subject_code_generate_query';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { SubjectCodeList } from '@pictaccio/admin-gui/types/subject_code_list';
+import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/utils/error';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
 
 class SubjectCodeService extends BaseService {
     public async createBulkSubjectCodes(subjectCodeQuery: SubjectCodeGenerateQuery): Promise<SubjectCodeList> {

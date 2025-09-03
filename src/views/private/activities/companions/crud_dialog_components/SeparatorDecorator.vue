@@ -20,13 +20,13 @@
 </template>
 
 <script lang="ts">
-import { CrudComponentInterface } from '@pictaccio/admin-gui/src/core/types/crud_component_interface';
-import { CRUDStatus } from '@pictaccio/admin-gui/src/core/types/crud_status';
-import { DataSource } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { UpdateState } from '@pictaccio/admin-gui/src/core/types/update_state';
+import { CrudComponentInterface } from '@pictaccio/admin-gui/core/types/crud_component_interface';
+import { CRUDStatus } from '@pictaccio/admin-gui/core/types/crud_status';
+import { DataSource } from '@pictaccio/admin-gui/core/types/data_source';
+import { UpdateState } from '@pictaccio/admin-gui/core/types/update_state';
 import {
     CrudComponents
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/CrudComponents';
+} from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/CrudComponents';
 import { Component, Prop } from 'vue-facing-decorator';
 
 @Component({

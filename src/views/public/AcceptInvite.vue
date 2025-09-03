@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import "@pictaccio/admin-gui/src/scss/public.scss";
+@import "@pictaccio/admin-gui/scss/public.scss";
 </style>
 
 <template>
@@ -34,14 +34,14 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import CompleteInvite from '@pictaccio/admin-gui/src/views/components/invite/CompleteInvite.vue';
-import SetupAuthenticator from '@pictaccio/admin-gui/src/views/components/invite/SetupAuthenticator.vue';
-import Welcome from '@pictaccio/admin-gui/src/views/components/invite/Welcome.vue';
-import Working from '@pictaccio/admin-gui/src/views/components/invite/Working.vue';
-import Logo from '@pictaccio/admin-gui/src/views/components/Logo.vue';
-import LocaleSelector from '@pictaccio/admin-gui/src/views/components/widgets/LocaleSelector.vue';
-import { User } from '@pictaccio/shared/src/types/user';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import CompleteInvite from '@pictaccio/admin-gui/views/components/invite/CompleteInvite.vue';
+import SetupAuthenticator from '@pictaccio/admin-gui/views/components/invite/SetupAuthenticator.vue';
+import Welcome from '@pictaccio/admin-gui/views/components/invite/Welcome.vue';
+import Working from '@pictaccio/admin-gui/views/components/invite/Working.vue';
+import Logo from '@pictaccio/admin-gui/views/components/Logo.vue';
+import LocaleSelector from '@pictaccio/admin-gui/views/components/widgets/LocaleSelector.vue';
+import { User } from '@pictaccio/shared/types/user';
 import QRCode from 'qrcode';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 

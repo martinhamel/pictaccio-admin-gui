@@ -676,20 +676,20 @@ import { getFormInputValues } from '@loufa/loufairy-client';
 import {
     SelectionCheckboxStatus,
     SelectionCheckboxStatusEmit
-} from '@pictaccio/admin-gui/src/core/types/selection_checkbox_status';
-import { FilterBuilder } from '@pictaccio/admin-gui/src/utils/filter_builder';
-import { FilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/filter_function';
-import { getCoords } from '@pictaccio/admin-gui/src/utils/get_coords';
-import { RemoteStore } from '@pictaccio/admin-gui/src/utils/remote_store';
-import LoadingSplash from '@pictaccio/admin-gui/src/views/App.vue';
-import SelectionCheckbox from '@pictaccio/admin-gui/src/views/components/widgets/SelectionCheckbox.vue';
-import Spinner from '@pictaccio/admin-gui/src/views/components/widgets/Spinner.vue';
-import StickyLabel from '@pictaccio/admin-gui/src/views/components/widgets/StickyLabel.vue';
-import DataColumnSorter from '@pictaccio/admin-gui/src/views/private/activities/companions/DataColumnSorter.vue';
-import InputsDialog from '@pictaccio/admin-gui/src/views/private/activities/companions/InputsDialog.vue';
-import Pagination from '@pictaccio/admin-gui/src/views/private/activities/companions/Pagination.vue';
-import TutorialOverlay from '@pictaccio/admin-gui/src/views/private/activities/companions/TutorialOverlay.vue';
-import { Id } from '@pictaccio/shared/src/types/id';
+} from '@pictaccio/admin-gui/core/types/selection_checkbox_status';
+import { FilterBuilder } from '@pictaccio/admin-gui/utils/filter_builder';
+import { FilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/filter_function';
+import { getCoords } from '@pictaccio/admin-gui/utils/get_coords';
+import { RemoteStore } from '@pictaccio/admin-gui/utils/remote_store';
+import LoadingSplash from '@pictaccio/admin-gui/views/App.vue';
+import SelectionCheckbox from '@pictaccio/admin-gui/views/components/widgets/SelectionCheckbox.vue';
+import Spinner from '@pictaccio/admin-gui/views/components/widgets/Spinner.vue';
+import StickyLabel from '@pictaccio/admin-gui/views/components/widgets/StickyLabel.vue';
+import DataColumnSorter from '@pictaccio/admin-gui/views/private/activities/companions/DataColumnSorter.vue';
+import InputsDialog from '@pictaccio/admin-gui/views/private/activities/companions/InputsDialog.vue';
+import Pagination from '@pictaccio/admin-gui/views/private/activities/companions/Pagination.vue';
+import TutorialOverlay from '@pictaccio/admin-gui/views/private/activities/companions/TutorialOverlay.vue';
+import { Id } from '@pictaccio/shared/types/id';
 import { useSlots } from 'vue';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 

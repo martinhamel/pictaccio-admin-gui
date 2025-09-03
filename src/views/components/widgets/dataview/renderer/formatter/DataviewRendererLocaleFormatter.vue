@@ -18,10 +18,10 @@ span {
 <script lang="ts">
 import {
     DataviewRendererFormatter
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/formatter/dataview_renderer_formatter';
-import LocaleDisplay from '@pictaccio/admin-gui/src/views/components/widgets/LocaleDisplay.vue';
-import { LocalizedString } from '@pictaccio/shared/src/types/localized_string';
-import { StoreLanguageItem } from '@pictaccio/shared/src/types/store_language_item';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/formatter/dataview_renderer_formatter';
+import LocaleDisplay from '@pictaccio/admin-gui/views/components/widgets/LocaleDisplay.vue';
+import { LocalizedString } from '@pictaccio/shared/types/localized_string';
+import { StoreLanguageItem } from '@pictaccio/shared/types/store_language_item';
 import { Component, Prop } from 'vue-facing-decorator';
 
 @Component({

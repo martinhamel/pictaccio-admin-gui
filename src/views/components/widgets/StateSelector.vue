@@ -49,7 +49,7 @@
 </template>
 
 <script lang="ts">
-import StateDropdown from '@pictaccio/admin-gui/src/views/components/widgets/StateDropdown.vue';
+import StateDropdown from '@pictaccio/admin-gui/views/components/widgets/StateDropdown.vue';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 

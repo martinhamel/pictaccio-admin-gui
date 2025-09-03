@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 .filter-container {
     padding: 1rem 0 0 0;
     grid-column: 1 / -1;
@@ -16,25 +16,25 @@
 </template>
 
 <script lang="ts">
-import { SalesReportStreams } from '@pictaccio/admin-gui/src/core/types/report';
-import { pushBreadcrumb } from '@pictaccio/admin-gui/src/utils/global_breadcrumb';
+import { SalesReportStreams } from '@pictaccio/admin-gui/core/types/report';
+import { pushBreadcrumb } from '@pictaccio/admin-gui/utils/global_breadcrumb';
 import {
     DataviewReportDatasource
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/datasource/dataview_report_datasource';
-import Dataview from '@pictaccio/admin-gui/src/views/components/widgets/dataview/Dataview.vue';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/datasource/dataview_report_datasource';
+import Dataview from '@pictaccio/admin-gui/views/components/widgets/dataview/Dataview.vue';
 import {
     DataviewComponent,
     DataviewComponentConfiguration
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/dataview_component';
-import { DataviewHost } from '@pictaccio/admin-gui/src/views/components/widgets/dataview/dataview_host';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/dataview_component';
+import { DataviewHost } from '@pictaccio/admin-gui/views/components/widgets/dataview/dataview_host';
 import {
     DataviewFiltersHolderParams
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/params/dataview_filtersholder_params';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/params/dataview_filtersholder_params';
 import {
     DataviewTableRenderer
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/table/dataview_table_renderer';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
-import { filters, salesColumns } from '@pictaccio/admin-gui/src/views/private/activities/companions/definitions/report';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/table/dataview_table_renderer';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
+import { filters, salesColumns } from '@pictaccio/admin-gui/views/private/activities/companions/definitions/report';
 import { Component } from 'vue-facing-decorator';
 
 @Component({

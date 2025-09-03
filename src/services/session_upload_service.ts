@@ -1,8 +1,8 @@
-import { GroupTransfer } from '@pictaccio/admin-gui/src/core/types/group_transfer';
-import { SubjectData } from '@pictaccio/admin-gui/src/core/types/subject_data';
-import { SubjectTransfer } from '@pictaccio/admin-gui/src/core/types/subject_transfer';
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/src/utils/error';
+import { GroupTransfer } from '@pictaccio/admin-gui/core/types/group_transfer';
+import { SubjectData } from '@pictaccio/admin-gui/core/types/subject_data';
+import { SubjectTransfer } from '@pictaccio/admin-gui/core/types/subject_transfer';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/utils/error';
 
 class SessionUploadService extends BaseService {
     public async uploadGroup(sessionId: number, transfer: GroupTransfer, files: Blob[]): Promise<boolean> {

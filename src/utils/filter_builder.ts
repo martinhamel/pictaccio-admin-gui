@@ -1,4 +1,4 @@
-import { FilterOption } from '@pictaccio/admin-gui/src/services/data_table_service';
+import { FilterOption } from '@pictaccio/admin-gui/services/data_table_service';
 
 type OrFilters = FilterOption[];
 type AndFilters = { [key: string]: OrFilters };

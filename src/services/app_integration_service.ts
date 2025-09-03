@@ -1,6 +1,6 @@
 import BaseService from '../services/base_service';
 import { checkForResponseError, handleResponseError } from '../utils/error';
-import { AppIntegrationConfigurations } from '@pictaccio/shared/src/types/app_integration_configuration';
+import { AppIntegrationConfigurations } from '@pictaccio/shared/types/app_integration_configuration';
 import { NotAuthenticatedError } from '../errors/not_authenticated_error';
 import { globalToast } from '../utils/global_toast';
 

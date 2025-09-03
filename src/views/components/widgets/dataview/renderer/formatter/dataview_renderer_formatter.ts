@@ -1,4 +1,4 @@
-import { Nestable } from '@pictaccio/admin-gui/src/views/components/nested_container';
+import { Nestable } from '@pictaccio/admin-gui/views/components/nested_container';
 import { ComponentBase, Vue } from 'vue-facing-decorator';
 
 @ComponentBase({

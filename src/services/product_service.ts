@@ -1,6 +1,6 @@
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/src/utils/error';
-import { Tag } from '@pictaccio/shared/src/types/tags';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/utils/error';
+import { Tag } from '@pictaccio/shared/types/tags';
 
 class ProductService extends BaseService {
     public async getProductTags(): Promise<Tag[]> {

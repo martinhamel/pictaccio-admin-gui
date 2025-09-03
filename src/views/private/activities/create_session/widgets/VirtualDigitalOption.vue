@@ -115,12 +115,12 @@
 </template>
 
 <script lang="ts">
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
-import OptionBlock from '@pictaccio/admin-gui/src/views/components/widgets/OptionBlock.vue';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
-import UnitDecorator from '@pictaccio/admin-gui/src/views/components/widgets/UnitDecorator.vue';
-import UnitDecoratorWrapper from '@pictaccio/admin-gui/src/views/components/widgets/UnitDecoratorWrapper.vue';
+import { environment } from '@pictaccio/admin-gui/environment';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
+import OptionBlock from '@pictaccio/admin-gui/views/components/widgets/OptionBlock.vue';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
+import UnitDecorator from '@pictaccio/admin-gui/views/components/widgets/UnitDecorator.vue';
+import UnitDecoratorWrapper from '@pictaccio/admin-gui/views/components/widgets/UnitDecoratorWrapper.vue';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 export type VirtualDigitalOptionSelection = {

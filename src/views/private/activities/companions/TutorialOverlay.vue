@@ -19,11 +19,11 @@
 </template>
 
 <script lang="ts">
-import { getCoords } from '@pictaccio/admin-gui/src/utils/get_coords';
-import TutorialText from '@pictaccio/admin-gui/src/views/private/activities/companions/TutorialText.vue';
+import { getCoords } from '@pictaccio/admin-gui/utils/get_coords';
+import TutorialText from '@pictaccio/admin-gui/views/private/activities/companions/TutorialText.vue';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import localStorageService from '@pictaccio/admin-gui/src/services/local_storage_service';
+import localStorageService from '@pictaccio/admin-gui/services/local_storage_service';
 
 
 @Component({

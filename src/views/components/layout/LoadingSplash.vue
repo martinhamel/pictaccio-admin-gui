@@ -52,10 +52,10 @@
 </template>
 
 <script lang="ts">
-import Logo from '@pictaccio/admin-gui/src/views/components/Logo.vue';
+import Logo from '@pictaccio/admin-gui/views/components/Logo.vue';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import Spinner from '@pictaccio/admin-gui/src/views/components/widgets/Spinner.vue';
+import Spinner from '@pictaccio/admin-gui/views/components/widgets/Spinner.vue';
 
 @Component({
     name: 'Loading Splash',

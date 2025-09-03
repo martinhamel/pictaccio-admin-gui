@@ -167,17 +167,17 @@
 </template>
 
 <script lang="ts">
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import Breadcrumbs from '@pictaccio/admin-gui/src/views/components/widgets/Breadcrumbs.vue';
-import FallbackImage from '@pictaccio/admin-gui/src/views/components/widgets/FallbackImage.vue';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import { environment } from '@pictaccio/admin-gui/environment';
+import Breadcrumbs from '@pictaccio/admin-gui/views/components/widgets/Breadcrumbs.vue';
+import FallbackImage from '@pictaccio/admin-gui/views/components/widgets/FallbackImage.vue';
 import { Component, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import HeaderDropdown from '@pictaccio/admin-gui/src/views/components/layout/HeaderDropdown.vue';
-import LocaleSelector from '@pictaccio/admin-gui/src/views/components/widgets/LocaleSelector.vue';
-import NotificationContainer from '@pictaccio/admin-gui/src/views/components/NotificationContainer.vue';
-import ThemeSelector from '@pictaccio/admin-gui/src/views/components/widgets/ThemeSelector.vue';
-import UserProfile from '@pictaccio/admin-gui/src/views/private/profile/UserProfile.vue';
+import HeaderDropdown from '@pictaccio/admin-gui/views/components/layout/HeaderDropdown.vue';
+import LocaleSelector from '@pictaccio/admin-gui/views/components/widgets/LocaleSelector.vue';
+import NotificationContainer from '@pictaccio/admin-gui/views/components/NotificationContainer.vue';
+import ThemeSelector from '@pictaccio/admin-gui/views/components/widgets/ThemeSelector.vue';
+import UserProfile from '@pictaccio/admin-gui/views/private/profile/UserProfile.vue';
 
 const CLOSING_TIMEOUT = 300;
 

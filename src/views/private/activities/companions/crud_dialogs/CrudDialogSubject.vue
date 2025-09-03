@@ -16,18 +16,18 @@
 </template>
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { DataSource, DataSourceOption } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { GenericDataSource } from '@pictaccio/admin-gui/src/datasources/generic_data_source';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { DbSubject } from '@pictaccio/admin-gui/src/models/db_subject';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
+import { DataSource, DataSourceOption } from '@pictaccio/admin-gui/core/types/data_source';
+import { GenericDataSource } from '@pictaccio/admin-gui/datasources/generic_data_source';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { DbSubject } from '@pictaccio/admin-gui/models/db_subject';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
 import ActivityCrudDialog
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialogs/activity_crud_dialog';
-import CrudDialog from '@pictaccio/admin-gui/src/views/private/activities/companions/CrudDialog.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialogs/activity_crud_dialog';
+import CrudDialog from '@pictaccio/admin-gui/views/private/activities/companions/CrudDialog.vue';
 import {
     MANAGE_SUBJECTS_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/manage_subjects_columns';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/manage_subjects_columns';
 import { Component } from 'vue-facing-decorator';
 
 @Component({

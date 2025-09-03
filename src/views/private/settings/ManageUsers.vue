@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 .activity-wrapper {
     padding-left: 2rem;
@@ -287,23 +287,23 @@ input {
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { camelize } from '@loufa/loufairy';
-import { UserInfo } from '@pictaccio/admin-gui/src/core/types/user_info';
-import { UserStatus } from '@pictaccio/admin-gui/src/core/types/user_status';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
-import { formatDateForUser } from '@pictaccio/admin-gui/src/utils/user_date';
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
-import FormValidator from '@pictaccio/admin-gui/src/views/components/widgets/FormValidator.vue';
-import InformationBox from '@pictaccio/admin-gui/src/views/components/widgets/InformationBox.vue';
-import SelectionCheckbox from '@pictaccio/admin-gui/src/views/components/widgets/SelectionCheckbox.vue';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
-import TooltipBubble from '@pictaccio/admin-gui/src/views/components/widgets/TooltipBubble.vue';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
-import DataTable from '@pictaccio/admin-gui/src/views/private/activities/companions/DataTable.vue';
-import DocsLink from '@pictaccio/admin-gui/src/views/private/activities/companions/DocsLink.vue';
-import Filters from '@pictaccio/admin-gui/src/views/private/activities/companions/Filters.vue';
-import InputsDialog from '@pictaccio/admin-gui/src/views/private/activities/companions/InputsDialog.vue';
+import { UserInfo } from '@pictaccio/admin-gui/core/types/user_info';
+import { UserStatus } from '@pictaccio/admin-gui/core/types/user_status';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
+import { formatDateForUser } from '@pictaccio/admin-gui/utils/user_date';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
+import FormValidator from '@pictaccio/admin-gui/views/components/widgets/FormValidator.vue';
+import InformationBox from '@pictaccio/admin-gui/views/components/widgets/InformationBox.vue';
+import SelectionCheckbox from '@pictaccio/admin-gui/views/components/widgets/SelectionCheckbox.vue';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
+import TooltipBubble from '@pictaccio/admin-gui/views/components/widgets/TooltipBubble.vue';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
+import DataTable from '@pictaccio/admin-gui/views/private/activities/companions/DataTable.vue';
+import DocsLink from '@pictaccio/admin-gui/views/private/activities/companions/DocsLink.vue';
+import Filters from '@pictaccio/admin-gui/views/private/activities/companions/Filters.vue';
+import InputsDialog from '@pictaccio/admin-gui/views/private/activities/companions/InputsDialog.vue';
 import { Component } from 'vue-facing-decorator';
 
 interface Role {

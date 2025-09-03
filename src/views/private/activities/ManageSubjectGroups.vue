@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 .upload-notice {
     grid-column: 1 / -1;
@@ -104,33 +104,33 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { FilterDescriptor } from '@pictaccio/admin-gui/src/core/types/filter_descriptors';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { DbSubjectGroup } from '@pictaccio/admin-gui/src/models/db_group';
-import { FilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/filter_function';
-import { IdFilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/id_filter_function';
-import { StringFilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/string_filter_function';
-import { pushBreadcrumb } from '@pictaccio/admin-gui/src/utils/global_breadcrumb';
-import { RemoteStore } from '@pictaccio/admin-gui/src/utils/remote_store';
-import { formatExtraKey, shouldExtraSilenceRead } from '@pictaccio/admin-gui/src/utils/route_extra';
-import ActivitiesTabs from '@pictaccio/admin-gui/src/views/components/widgets/ActivitiesTabs.vue';
-import InformationBox from '@pictaccio/admin-gui/src/views/components/widgets/InformationBox.vue';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
+import { FilterDescriptor } from '@pictaccio/admin-gui/core/types/filter_descriptors';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { DbSubjectGroup } from '@pictaccio/admin-gui/models/db_group';
+import { FilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/filter_function';
+import { IdFilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/id_filter_function';
+import { StringFilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/string_filter_function';
+import { pushBreadcrumb } from '@pictaccio/admin-gui/utils/global_breadcrumb';
+import { RemoteStore } from '@pictaccio/admin-gui/utils/remote_store';
+import { formatExtraKey, shouldExtraSilenceRead } from '@pictaccio/admin-gui/utils/route_extra';
+import ActivitiesTabs from '@pictaccio/admin-gui/views/components/widgets/ActivitiesTabs.vue';
+import InformationBox from '@pictaccio/admin-gui/views/components/widgets/InformationBox.vue';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
 import CrudDialogSubjectGroup
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialogs/CrudDialogSubjectGroup.vue';
-import CrudDialogContent from '@pictaccio/admin-gui/src/views/private/activities/companions/CrudDialogContent.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialogs/CrudDialogSubjectGroup.vue';
+import CrudDialogContent from '@pictaccio/admin-gui/views/private/activities/companions/CrudDialogContent.vue';
 import {
     MANAGE_SUBJECT_GROUPS_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/manage_subject_groups_columns';
-import DataTable from '@pictaccio/admin-gui/src/views/private/activities/companions/DataTable.vue';
-import DocsLink from '@pictaccio/admin-gui/src/views/private/activities/companions/DocsLink.vue';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/manage_subject_groups_columns';
+import DataTable from '@pictaccio/admin-gui/views/private/activities/companions/DataTable.vue';
+import DocsLink from '@pictaccio/admin-gui/views/private/activities/companions/DocsLink.vue';
 import MainTextFilterItem
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/MainTextFilterItem.vue';
-import Filters from '@pictaccio/admin-gui/src/views/private/activities/companions/Filters.vue';
-import InputsDialog from '@pictaccio/admin-gui/src/views/private/activities/companions/InputsDialog.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/MainTextFilterItem.vue';
+import Filters from '@pictaccio/admin-gui/views/private/activities/companions/Filters.vue';
+import InputsDialog from '@pictaccio/admin-gui/views/private/activities/companions/InputsDialog.vue';
 import PlaceholderDataTable
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/placeholders/PlaceholderDataTable.vue';
-import TutorialText from '@pictaccio/admin-gui/src/views/private/activities/companions/TutorialText.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/placeholders/PlaceholderDataTable.vue';
+import TutorialText from '@pictaccio/admin-gui/views/private/activities/companions/TutorialText.vue';
 import { Component, Hook, Prop } from 'vue-facing-decorator';
 
 @Component({

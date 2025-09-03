@@ -1,7 +1,7 @@
-import SessionUploadService from '@pictaccio/admin-gui/src/services/session_upload_service';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
+import SessionUploadService from '@pictaccio/admin-gui/services/session_upload_service';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
-import { SubjectData } from '@pictaccio/admin-gui/src/core/types/subject_data';
+import { SubjectData } from '@pictaccio/admin-gui/core/types/subject_data';
 
 @Module({ namespaced: true })
 export default class SessionSubjectData extends VuexModule {

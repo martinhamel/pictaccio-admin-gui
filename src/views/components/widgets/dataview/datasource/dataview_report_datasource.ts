@@ -1,9 +1,9 @@
-import { ReportDatasource } from '@pictaccio/admin-gui/src/datasources/report_datasource';
+import { ReportDatasource } from '@pictaccio/admin-gui/datasources/report_datasource';
 import {
     DataviewComponent,
     DataviewComponentConfiguration
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/dataview_component';
-import { DataviewHost } from '@pictaccio/admin-gui/src/views/components/widgets/dataview/dataview_host';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/dataview_component';
+import { DataviewHost } from '@pictaccio/admin-gui/views/components/widgets/dataview/dataview_host';
 
 export class DataviewReportDatasource<Tdata>
     extends ReportDatasource<Tdata, true>

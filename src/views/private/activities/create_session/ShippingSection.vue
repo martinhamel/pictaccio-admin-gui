@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 $color-highlights:
     hsl(330, 65%, 59%),
@@ -197,20 +197,20 @@ $color-highlights:
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { generateIterativeName } from '@loufa/loufairy';
 import { getFormInputValues } from '@loufa/loufairy-client';
-import { DbDeliveryGroup } from '@pictaccio/admin-gui/src/models/db_delivery_group';
-import { DbDeliveryOption } from '@pictaccio/admin-gui/src/models/db_delivery_option';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import ConfirmationButton from '@pictaccio/admin-gui/src/views/components/widgets/ConfirmationButton.vue';
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
-import ListSelector from '@pictaccio/admin-gui/src/views/components/widgets/ListSelector.vue';
-import TimelineForm from '@pictaccio/admin-gui/src/views/components/widgets/TimelineForm.vue';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
-import UnitDecorator from '@pictaccio/admin-gui/src/views/components/widgets/UnitDecorator.vue';
+import { DbDeliveryGroup } from '@pictaccio/admin-gui/models/db_delivery_group';
+import { DbDeliveryOption } from '@pictaccio/admin-gui/models/db_delivery_option';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import ConfirmationButton from '@pictaccio/admin-gui/views/components/widgets/ConfirmationButton.vue';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
+import ListSelector from '@pictaccio/admin-gui/views/components/widgets/ListSelector.vue';
+import TimelineForm from '@pictaccio/admin-gui/views/components/widgets/TimelineForm.vue';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
+import UnitDecorator from '@pictaccio/admin-gui/views/components/widgets/UnitDecorator.vue';
 import Establishment
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/shipping_method_options/Establishment.vue';
-import CreateSessionsSteps from '@pictaccio/admin-gui/src/views/private/activities/create_session/create_sessions_steps';
-import ListShippingGroup from '@pictaccio/admin-gui/src/views/private/activities/create_session/ListShippingGroup.vue';
-import { removeDiacritics } from '@pictaccio/shared/src/utils/diacritics';
+    from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/shipping_method_options/Establishment.vue';
+import CreateSessionsSteps from '@pictaccio/admin-gui/views/private/activities/create_session/create_sessions_steps';
+import ListShippingGroup from '@pictaccio/admin-gui/views/private/activities/create_session/ListShippingGroup.vue';
+import { removeDiacritics } from '@pictaccio/shared/utils/diacritics';
 import { DateTime } from 'luxon';
 import { Component } from 'vue-facing-decorator';
 

@@ -1,5 +1,5 @@
-import { CRUDStatus } from '@pictaccio/admin-gui/src/core/types/crud_status';
-import { LocalizedString } from '@pictaccio/admin-gui/src/core/types/localized_string';
+import { CRUDStatus } from '@pictaccio/admin-gui/core/types/crud_status';
+import { LocalizedString } from '@pictaccio/admin-gui/core/types/localized_string';
 
 export type ValueKeyOf<Tvalue> = Tvalue extends object ? keyof Tvalue : never;
 

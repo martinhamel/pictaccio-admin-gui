@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 .pane-status {
     --border-size: 0.3rem;
@@ -379,24 +379,24 @@
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { createValidator, getFormInputValues } from '@loufa/loufairy-client';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { NotAuthenticatedError } from '@pictaccio/admin-gui/src/errors/not_authenticated_error';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import PaneContainer from '@pictaccio/admin-gui/src/views/components/PaneContainer.vue';
-import InformationBox from '@pictaccio/admin-gui/src/views/components/widgets/InformationBox.vue';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
-import DocsLink from '@pictaccio/admin-gui/src/views/private/activities/companions/DocsLink.vue';
-import TutorialOverlay from '@pictaccio/admin-gui/src/views/private/activities/companions/TutorialOverlay.vue';
-import TutorialText from '@pictaccio/admin-gui/src/views/private/activities/companions/TutorialText.vue';
-import { AppIntegrationApp } from '@pictaccio/shared/src/types/app_integration_app';
-import { AppIntegrationCategories } from '@pictaccio/shared/src/types/app_integration_categories';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { NotAuthenticatedError } from '@pictaccio/admin-gui/errors/not_authenticated_error';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import PaneContainer from '@pictaccio/admin-gui/views/components/PaneContainer.vue';
+import InformationBox from '@pictaccio/admin-gui/views/components/widgets/InformationBox.vue';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
+import DocsLink from '@pictaccio/admin-gui/views/private/activities/companions/DocsLink.vue';
+import TutorialOverlay from '@pictaccio/admin-gui/views/private/activities/companions/TutorialOverlay.vue';
+import TutorialText from '@pictaccio/admin-gui/views/private/activities/companions/TutorialText.vue';
+import { AppIntegrationApp } from '@pictaccio/shared/types/app_integration_app';
+import { AppIntegrationCategories } from '@pictaccio/shared/types/app_integration_categories';
 import {
     AppIntegrationConfigurationCanadaPost,
     AppIntegrationConfigurationElavon,
     AppIntegrationConfigurationPaypal, AppIntegrationConfigurations, AppIntegrationSharedConfiguration
-} from '@pictaccio/shared/src/types/app_integration_configuration';
+} from '@pictaccio/shared/types/app_integration_configuration';
 import { Component } from 'vue-facing-decorator';
 
 @Component({

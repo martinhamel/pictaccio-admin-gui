@@ -276,27 +276,27 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import appService from '@pictaccio/admin-gui/src/services/app_service';
-import localStorageService from '@pictaccio/admin-gui/src/services/local_storage_service';
-import notificationService from '@pictaccio/admin-gui/src/services/notification_service';
-import websocketService from '@pictaccio/admin-gui/src/services/websocket_service';
-import { store } from '@pictaccio/admin-gui/src/store';
-import { Currency } from '@pictaccio/admin-gui/src/utils/constraint_behaviors/currency';
-import { GenericConstraint } from '@pictaccio/admin-gui/src/utils/generic_constraint';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import { JobWorker } from '@pictaccio/admin-gui/src/utils/job_worker';
-import BadgeInput from '@pictaccio/admin-gui/src/views/components/widgets/BadgeInput.vue';
-import DateInput from '@pictaccio/admin-gui/src/views/components/widgets/DateInput.vue';
-import DateLabel from '@pictaccio/admin-gui/src/views/components/widgets/DateLabel.vue';
-import DateTimeInput from '@pictaccio/admin-gui/src/views/components/widgets/DateTimeInput.vue';
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
-import TimelineForm from '@pictaccio/admin-gui/src/views/components/widgets/TimelineForm.vue';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
-import UnitDecorator from '@pictaccio/admin-gui/src/views/components/widgets/UnitDecorator.vue';
+import appService from '@pictaccio/admin-gui/services/app_service';
+import localStorageService from '@pictaccio/admin-gui/services/local_storage_service';
+import notificationService from '@pictaccio/admin-gui/services/notification_service';
+import websocketService from '@pictaccio/admin-gui/services/websocket_service';
+import { store } from '@pictaccio/admin-gui/store';
+import { Currency } from '@pictaccio/admin-gui/utils/constraint_behaviors/currency';
+import { GenericConstraint } from '@pictaccio/admin-gui/utils/generic_constraint';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import { JobWorker } from '@pictaccio/admin-gui/utils/job_worker';
+import BadgeInput from '@pictaccio/admin-gui/views/components/widgets/BadgeInput.vue';
+import DateInput from '@pictaccio/admin-gui/views/components/widgets/DateInput.vue';
+import DateLabel from '@pictaccio/admin-gui/views/components/widgets/DateLabel.vue';
+import DateTimeInput from '@pictaccio/admin-gui/views/components/widgets/DateTimeInput.vue';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
+import TimelineForm from '@pictaccio/admin-gui/views/components/widgets/TimelineForm.vue';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
+import UnitDecorator from '@pictaccio/admin-gui/views/components/widgets/UnitDecorator.vue';
 import Color from 'colorjs.io';
 import { Component, Vue } from 'vue-facing-decorator';
-import PrepareSessionAndUpload from 'worker-loader!@pictaccio/admin-gui/src/jobs/workers/prepare_session_and_upload.worker';
+import PrepareSessionAndUpload from 'worker-loader!@pictaccio/admin-gui/jobs/workers/prepare_session_and_upload.worker';
 
 @Component({
     name: 'DebugPage',

@@ -1,8 +1,8 @@
-import { Language } from '@pictaccio/admin-gui/src/core/types/languages';
-import configService from '@pictaccio/admin-gui/src/services/config_service';
-import localStorageService from '@pictaccio/admin-gui/src/services/local_storage_service';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import { ClientConfigSchema } from '@pictaccio/shared/src/types/client_config_schema';
+import { Language } from '@pictaccio/admin-gui/core/types/languages';
+import configService from '@pictaccio/admin-gui/services/config_service';
+import localStorageService from '@pictaccio/admin-gui/services/local_storage_service';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import { ClientConfigSchema } from '@pictaccio/shared/types/client_config_schema';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
 
 @Module({ namespaced: true })

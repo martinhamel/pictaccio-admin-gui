@@ -1,6 +1,6 @@
-import { USER_LOCAL_STORAGE_KEY } from '@pictaccio/admin-gui/src/core/user_local_storage_key';
-import localStorageService from '@pictaccio/admin-gui/src/services/local_storage_service';
-import { store } from '@pictaccio/admin-gui/src/store';
+import { USER_LOCAL_STORAGE_KEY } from '@pictaccio/admin-gui/core/user_local_storage_key';
+import localStorageService from '@pictaccio/admin-gui/services/local_storage_service';
+import { store } from '@pictaccio/admin-gui/store';
 
 export type JobWorkerCallback = (...args: any[]) => void;
 type EventListeners = { [key: string]: JobWorkerCallback[] };

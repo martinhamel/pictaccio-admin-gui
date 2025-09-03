@@ -12,25 +12,25 @@
 import {
     DatasourceDefinitionType,
     DatasourceDefinitionValueSubType, DataType
-} from '@pictaccio/admin-gui/src/datasources/data_definitions';
-import { renderVueNode } from '@pictaccio/admin-gui/src/utils/render_vue_node';
+} from '@pictaccio/admin-gui/datasources/data_definitions';
+import { renderVueNode } from '@pictaccio/admin-gui/utils/render_vue_node';
 import {
     DataviewComponent,
     DataviewComponentConfiguration
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/dataview_component';
-import { DataviewDatasource } from '@pictaccio/admin-gui/src/views/components/widgets/dataview/datasource/dataview_datasource';
-import { DataviewHost } from '@pictaccio/admin-gui/src/views/components/widgets/dataview/dataview_host';
-import { DataviewRenderer } from '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/dataview_renderer';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/dataview_component';
+import { DataviewDatasource } from '@pictaccio/admin-gui/views/components/widgets/dataview/datasource/dataview_datasource';
+import { DataviewHost } from '@pictaccio/admin-gui/views/components/widgets/dataview/dataview_host';
+import { DataviewRenderer } from '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/dataview_renderer';
 import {
     DataviewEventKey,
     DataviewEventListener,
     DataviewEventValueTypeMap
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/event_types';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/event_types';
 import {
     DataviewStoreKey,
     DataviewStoreValueTypeMap,
     DataviewStoreValueTypeTypes
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/store_keys';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/store_keys';
 import mitt from 'mitt';
 import { Component, Vue } from 'vue-facing-decorator';
 

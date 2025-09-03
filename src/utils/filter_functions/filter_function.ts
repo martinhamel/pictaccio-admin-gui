@@ -1,5 +1,5 @@
-import { FilterType } from '@pictaccio/admin-gui/src/core/types/filters/filter_type';
-import { FilterBuilder } from '@pictaccio/admin-gui/src/utils/filter_builder';
+import { FilterType } from '@pictaccio/admin-gui/core/types/filters/filter_type';
+import { FilterBuilder } from '@pictaccio/admin-gui/utils/filter_builder';
 
 export class FilterFunction<T = any> {
     public readonly column: string;

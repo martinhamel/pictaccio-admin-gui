@@ -47,18 +47,18 @@
 </template>
 
 <script lang="ts">
-import { Theme, ThemeColors } from '@pictaccio/admin-gui/src/core/types/color_theme';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import SvgFilters from '@pictaccio/admin-gui/src/views/components/SvgFilters.vue';
+import { Theme, ThemeColors } from '@pictaccio/admin-gui/core/types/color_theme';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import SvgFilters from '@pictaccio/admin-gui/views/components/SvgFilters.vue';
 import { Component, Vue } from 'vue-facing-decorator';
-import LoadingSplash from '@pictaccio/admin-gui/src/views/components/layout/LoadingSplash.vue';
-import Offline from '@pictaccio/admin-gui/src/views/components/layout/Offline.vue';
-import SideBarNav from '@pictaccio/admin-gui/src/views/components/layout/SideBarNav.vue';
-import Toast from '@pictaccio/admin-gui/src/views/components/Toast.vue';
-import HeaderMenu from '@pictaccio/admin-gui/src/views/components/layout/HeaderMenu.vue';
-import Prompt from '@pictaccio/admin-gui/src/views/components/Prompt.vue';
-import appService from '@pictaccio/admin-gui/src/services/app_service';
+import LoadingSplash from '@pictaccio/admin-gui/views/components/layout/LoadingSplash.vue';
+import Offline from '@pictaccio/admin-gui/views/components/layout/Offline.vue';
+import SideBarNav from '@pictaccio/admin-gui/views/components/layout/SideBarNav.vue';
+import Toast from '@pictaccio/admin-gui/views/components/Toast.vue';
+import HeaderMenu from '@pictaccio/admin-gui/views/components/layout/HeaderMenu.vue';
+import Prompt from '@pictaccio/admin-gui/views/components/Prompt.vue';
+import appService from '@pictaccio/admin-gui/services/app_service';
 
 @Component({
     name: 'App',

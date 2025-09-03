@@ -152,7 +152,7 @@
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { camelize, dasherize } from '@loufa/loufairy';
-import { activitiesTabs } from '@pictaccio/admin-gui/src/core/activities_tabs';
+import { activitiesTabs } from '@pictaccio/admin-gui/core/activities_tabs';
 
 @Component({
     name: 'Activities Tabs',

@@ -45,8 +45,8 @@
 </template>
 
 <script lang="ts">
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import TextGeneric from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/TextGeneric.vue';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import TextGeneric from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/TextGeneric.vue';
 import { Component, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 

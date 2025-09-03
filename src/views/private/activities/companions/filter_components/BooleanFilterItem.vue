@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/filter_popup.scss';
+@import '@pictaccio/admin-gui/scss/filter_popup.scss';
 </style>
 
 <template>
@@ -55,14 +55,14 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { BooleanValue } from '@pictaccio/admin-gui/src/core/types/filters/boolean_value';
-import { FilterTypeBoolean } from '@pictaccio/admin-gui/src/core/types/filters/type_boolean';
-import { SerializedFilterItem } from '@pictaccio/admin-gui/src/core/types/serialized_params';
-import Badge from '@pictaccio/admin-gui/src/views/components/widgets/Badge.vue';
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
-import StickyLabel from '@pictaccio/admin-gui/src/views/components/widgets/StickyLabel.vue';
-import FilterItem from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/filter_item';
-import FilterPopup from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/FilterPopup.vue';
+import { BooleanValue } from '@pictaccio/admin-gui/core/types/filters/boolean_value';
+import { FilterTypeBoolean } from '@pictaccio/admin-gui/core/types/filters/type_boolean';
+import { SerializedFilterItem } from '@pictaccio/admin-gui/core/types/serialized_params';
+import Badge from '@pictaccio/admin-gui/views/components/widgets/Badge.vue';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
+import StickyLabel from '@pictaccio/admin-gui/views/components/widgets/StickyLabel.vue';
+import FilterItem from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/filter_item';
+import FilterPopup from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/FilterPopup.vue';
 import { Component } from 'vue-facing-decorator';
 
 @Component({

@@ -95,8 +95,8 @@
 </template>
 
 <script lang="ts">
-import Badge from '@pictaccio/admin-gui/src/views/components/widgets/Badge.vue';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
+import Badge from '@pictaccio/admin-gui/views/components/widgets/Badge.vue';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 

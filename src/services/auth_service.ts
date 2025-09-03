@@ -1,19 +1,19 @@
-import { AccountCreatedDataInterface } from '@pictaccio/admin-gui/src/core/types/account_created_data_interface';
-import { UserName } from '@pictaccio/admin-gui/src/core/types/user_name';
-import { ValidateInviteTokenDataInterface } from '@pictaccio/admin-gui/src/core/types/validate_invite_token_data_interface';
-import { ValidateInviteTokenDataResponse } from '@pictaccio/admin-gui/src/core/types/validate_invite_token_data_response';
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/src/utils/error';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import { CompleteInviteResponse } from '@pictaccio/shared/src/types/responses/complete_invite_response';
-import { CompletePasswordResetResponse } from '@pictaccio/shared/src/types/responses/complete_password_reset_response';
-import { LoginResponse } from '@pictaccio/shared/src/types/responses/login_response';
-import { ResetAuthenticatorResponse } from '@pictaccio/shared/src/types/responses/reset-authenticator-response';
-import { ValidatePasswordResponse } from '@pictaccio/shared/src/types/responses/validate_password_response';
+import { AccountCreatedDataInterface } from '@pictaccio/admin-gui/core/types/account_created_data_interface';
+import { UserName } from '@pictaccio/admin-gui/core/types/user_name';
+import { ValidateInviteTokenDataInterface } from '@pictaccio/admin-gui/core/types/validate_invite_token_data_interface';
+import { ValidateInviteTokenDataResponse } from '@pictaccio/admin-gui/core/types/validate_invite_token_data_response';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/utils/error';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import { CompleteInviteResponse } from '@pictaccio/shared/types/responses/complete_invite_response';
+import { CompletePasswordResetResponse } from '@pictaccio/shared/types/responses/complete_password_reset_response';
+import { LoginResponse } from '@pictaccio/shared/types/responses/login_response';
+import { ResetAuthenticatorResponse } from '@pictaccio/shared/types/responses/reset-authenticator-response';
+import { ValidatePasswordResponse } from '@pictaccio/shared/types/responses/validate_password_response';
 import {
     ValidateResetPasswordCodeResponse
-} from '@pictaccio/shared/src/types/responses/validate_reset_password_code_response';
-import { VerifyAuthenticatorResponse } from '@pictaccio/shared/src/types/responses/verify_authenticator_response';
+} from '@pictaccio/shared/types/responses/validate_reset_password_code_response';
+import { VerifyAuthenticatorResponse } from '@pictaccio/shared/types/responses/verify_authenticator_response';
 
 class AuthService extends BaseService {
     public async changePassword(secret: string): Promise<void> {

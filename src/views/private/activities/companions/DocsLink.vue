@@ -53,7 +53,7 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import TooltipBubble from '@pictaccio/admin-gui/src/views/components/widgets/TooltipBubble.vue';
+import TooltipBubble from '@pictaccio/admin-gui/views/components/widgets/TooltipBubble.vue';
 
 @Component({
     name: 'Docs link',

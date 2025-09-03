@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
-import { DbBaseModel } from '@pictaccio/admin-gui/src/models/db_base_model';
-import { LocalizedString } from '@pictaccio/shared/src/types/localized_string';
-import { Tag } from '@pictaccio/shared/src/types/tags';
+import { DbBaseModel } from '@pictaccio/admin-gui/models/db_base_model';
+import { LocalizedString } from '@pictaccio/shared/types/localized_string';
+import { Tag } from '@pictaccio/shared/types/tags';
 
 export class DbBackground extends DbBaseModel<number> {
     public production_identifier?: number

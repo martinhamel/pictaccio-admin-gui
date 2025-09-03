@@ -1,8 +1,8 @@
-import { FilterType } from '@pictaccio/admin-gui/src/core/types/filters/filter_type';
-import { FilterBuilder } from '@pictaccio/admin-gui/src/utils/filter_builder';
-import { OrderStatus } from '@pictaccio/shared/src/types/order_status';
-import { isOrderStatus } from '@pictaccio/shared/src/utils/guards/is_order_status';
-import { FilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/filter_function';
+import { FilterType } from '@pictaccio/admin-gui/core/types/filters/filter_type';
+import { FilterBuilder } from '@pictaccio/admin-gui/utils/filter_builder';
+import { OrderStatus } from '@pictaccio/shared/types/order_status';
+import { isOrderStatus } from '@pictaccio/shared/utils/guards/is_order_status';
+import { FilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/filter_function';
 
 /**
  * Will check if the value in the column 'status' is identical to the provided value

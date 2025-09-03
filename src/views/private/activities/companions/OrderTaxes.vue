@@ -16,8 +16,8 @@
 </template>
 
 <script lang="ts">
-import { SaleTaxes } from '@pictaccio/shared/src/types/sale_taxes';
-import { getTaxesForLocality } from '@pictaccio/shared/src/utils/taxes';
+import { SaleTaxes } from '@pictaccio/shared/types/sale_taxes';
+import { getTaxesForLocality } from '@pictaccio/shared/utils/taxes';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 type DisplayTax = {

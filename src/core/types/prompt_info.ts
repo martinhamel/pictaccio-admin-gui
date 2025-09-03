@@ -1,4 +1,4 @@
-import { PromptButtonType } from '@pictaccio/admin-gui/src/core/types/prompt_button_type';
+import { PromptButtonType } from '@pictaccio/admin-gui/core/types/prompt_button_type';
 
 export type PromptInfo = {
     buttonType: PromptButtonType,

@@ -1,4 +1,4 @@
-import { VK_CODES } from '@pictaccio/admin-gui/src/utils/vk_codes';
+import { VK_CODES } from '@pictaccio/admin-gui/utils/vk_codes';
 
 export function fromKeyCode(keyCode) {
     if (keyCode >= VK_CODES['NUMPAD0'] && keyCode <= VK_CODES['NUMPAD9']) {

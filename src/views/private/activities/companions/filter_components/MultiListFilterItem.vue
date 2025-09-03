@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/filter_popup.scss';
+@import '@pictaccio/admin-gui/scss/filter_popup.scss';
 
 .multi-list-filter {
     :deep(.dropdown-selector-option) {
@@ -66,16 +66,16 @@
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { isEmpty } from '@loufa/loufairy';
-import { DataSourceOption } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { FilterType } from '@pictaccio/admin-gui/src/core/types/filters/filter_type';
-import { FilterTypeMultiList } from '@pictaccio/admin-gui/src/core/types/filters/type_multi_list';
-import { SerializedFilterItem } from '@pictaccio/admin-gui/src/core/types/serialized_params';
-import Badge from '@pictaccio/admin-gui/src/views/components/widgets/Badge.vue';
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
-import ListSelector from '@pictaccio/admin-gui/src/views/components/widgets/ListSelector.vue';
-import StickyLabel from '@pictaccio/admin-gui/src/views/components/widgets/StickyLabel.vue';
-import FilterItem from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/filter_item';
-import FilterPopup from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/FilterPopup.vue';
+import { DataSourceOption } from '@pictaccio/admin-gui/core/types/data_source';
+import { FilterType } from '@pictaccio/admin-gui/core/types/filters/filter_type';
+import { FilterTypeMultiList } from '@pictaccio/admin-gui/core/types/filters/type_multi_list';
+import { SerializedFilterItem } from '@pictaccio/admin-gui/core/types/serialized_params';
+import Badge from '@pictaccio/admin-gui/views/components/widgets/Badge.vue';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
+import ListSelector from '@pictaccio/admin-gui/views/components/widgets/ListSelector.vue';
+import StickyLabel from '@pictaccio/admin-gui/views/components/widgets/StickyLabel.vue';
+import FilterItem from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/filter_item';
+import FilterPopup from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/FilterPopup.vue';
 import { unref } from 'vue';
 import { Component } from 'vue-facing-decorator';
 

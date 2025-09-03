@@ -1,4 +1,4 @@
-import { DataSource, DataSourceOption, ValueKeyOf } from '@pictaccio/admin-gui/src/core/types/data_source';
+import { DataSource, DataSourceOption, ValueKeyOf } from '@pictaccio/admin-gui/core/types/data_source';
 
 export class GenericDataSource<Tmodel, Tvalue, ToptionId, ToptionValue>
     implements DataSource<Tmodel, Tvalue, ToptionId, ToptionValue> {

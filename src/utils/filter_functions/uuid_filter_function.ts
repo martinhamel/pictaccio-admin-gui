@@ -1,9 +1,9 @@
 import { isInteger } from '@loufa/loufairy';
-import { FilterType } from '@pictaccio/admin-gui/src/core/types/filters/filter_type';
-import { FilterOption } from '@pictaccio/admin-gui/src/services/data_table_service';
-import { FilterBuilder } from '@pictaccio/admin-gui/src/utils/filter_builder';
-import { Operator } from '@pictaccio/shared/src/types/operator';
-import { FilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/filter_function';
+import { FilterType } from '@pictaccio/admin-gui/core/types/filters/filter_type';
+import { FilterOption } from '@pictaccio/admin-gui/services/data_table_service';
+import { FilterBuilder } from '@pictaccio/admin-gui/utils/filter_builder';
+import { Operator } from '@pictaccio/shared/types/operator';
+import { FilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/filter_function';
 
 /**
  * Will check if the value in the column 'id' is identical to the provided value

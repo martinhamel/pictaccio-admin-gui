@@ -1,6 +1,6 @@
-import { UserInfo } from '@pictaccio/admin-gui/src/core/types/user_info';
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/src/utils/error';
+import { UserInfo } from '@pictaccio/admin-gui/core/types/user_info';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/utils/error';
 
 class UserSessionsService extends BaseService {
     public async readUserSessions(): Promise<UserInfo> {

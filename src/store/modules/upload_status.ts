@@ -1,4 +1,4 @@
-import { NotificationItem } from '@pictaccio/admin-gui/src/core/types/notification_item';
+import { NotificationItem } from '@pictaccio/admin-gui/core/types/notification_item';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
 
 export type UploadItem = {

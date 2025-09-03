@@ -51,11 +51,11 @@
 </template>
 
 <script lang="ts">
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import DialogBox from '@pictaccio/admin-gui/src/views/components/layout/DialogBox.vue';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import DialogBox from '@pictaccio/admin-gui/views/components/layout/DialogBox.vue';
 import QRCode from 'qrcode';
 import { Component, Vue } from 'vue-facing-decorator';
-import AuthenticatorInput from '@pictaccio/admin-gui/src/views/components/widgets/AuthenticatorInput.vue';
+import AuthenticatorInput from '@pictaccio/admin-gui/views/components/widgets/AuthenticatorInput.vue';
 
 @Component({
     name: 'Totp dialog',

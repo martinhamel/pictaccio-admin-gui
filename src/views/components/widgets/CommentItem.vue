@@ -228,13 +228,13 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { CommentItemData } from '@pictaccio/admin-gui/src/core/types/comment_item_data';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
-import { formatDateForUser, jsDateFromUserInput } from '@pictaccio/admin-gui/src/utils/user_date';
-import Badge from '@pictaccio/admin-gui/src/views/components/widgets/Badge.vue';
-import FallbackImage from '@pictaccio/admin-gui/src/views/components/widgets/FallbackImage.vue';
-import Separator from '@pictaccio/admin-gui/src/views/components/widgets/Separator.vue';
+import { CommentItemData } from '@pictaccio/admin-gui/core/types/comment_item_data';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
+import { formatDateForUser, jsDateFromUserInput } from '@pictaccio/admin-gui/utils/user_date';
+import Badge from '@pictaccio/admin-gui/views/components/widgets/Badge.vue';
+import FallbackImage from '@pictaccio/admin-gui/views/components/widgets/FallbackImage.vue';
+import Separator from '@pictaccio/admin-gui/views/components/widgets/Separator.vue';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 @Component({

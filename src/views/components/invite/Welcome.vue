@@ -47,7 +47,7 @@
 </template>
 
 <script lang="ts">
-import Logo from '@pictaccio/admin-gui/src/views/components/Logo.vue';
+import Logo from '@pictaccio/admin-gui/views/components/Logo.vue';
 import { Component, Vue } from 'vue-facing-decorator';
 
 @Component({

@@ -1,4 +1,4 @@
-import { GenericConstraint } from '@pictaccio/admin-gui/src/utils/generic_constraint';
+import { GenericConstraint } from '@pictaccio/admin-gui/utils/generic_constraint';
 
 export class ConstraintBehavior {
     protected target: HTMLElement | HTMLInputElement;

@@ -1,4 +1,4 @@
-import { localesData } from '@pictaccio/admin-gui/src/utils/datatable_column_renderers/locales_data';
+import { localesData } from '@pictaccio/admin-gui/utils/datatable_column_renderers/locales_data';
 
 export const CROSSSELL_COLUMNS = {
     headers: [

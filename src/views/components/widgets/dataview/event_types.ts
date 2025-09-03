@@ -1,4 +1,4 @@
-import { DataviewStoreKey } from '@pictaccio/admin-gui/src/views/components/widgets/dataview/store_keys';
+import { DataviewStoreKey } from '@pictaccio/admin-gui/views/components/widgets/dataview/store_keys';
 
 export type DataviewStoreAfterUpdateEvent = {
     key: DataviewStoreKey;

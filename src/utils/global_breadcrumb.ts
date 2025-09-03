@@ -1,5 +1,5 @@
-import { BreadcrumbItem } from '@pictaccio/admin-gui/src/core/types/breadcrumb_item';
-import { store } from '@pictaccio/admin-gui/src/store';
+import { BreadcrumbItem } from '@pictaccio/admin-gui/core/types/breadcrumb_item';
+import { store } from '@pictaccio/admin-gui/store';
 
 export function pushBreadcrumb(breadcrumb: BreadcrumbItem): void {
     const breadcrumbs: BreadcrumbItem[] = store.getters['GlobalBreadcrumb/breadcrumbs'];

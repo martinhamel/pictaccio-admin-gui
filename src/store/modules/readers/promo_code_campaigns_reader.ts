@@ -1,8 +1,8 @@
-import { DbPromoCodeCampaign } from '@pictaccio/admin-gui/src/models/db_promo_code_campaign';
+import { DbPromoCodeCampaign } from '@pictaccio/admin-gui/models/db_promo_code_campaign';
 import { Module as Mod } from 'vuex';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
-import { ReaderResponse } from '@pictaccio/admin-gui/src/core/reader_response';
-import { createDataTableService, DataTableService } from '@pictaccio/admin-gui/src/services/data_table_service';
+import { ReaderResponse } from '@pictaccio/admin-gui/core/reader_response';
+import { createDataTableService, DataTableService } from '@pictaccio/admin-gui/services/data_table_service';
 
 @Module({ namespaced: true })
 export default class PromoCodeCampaignsReader extends VuexModule {

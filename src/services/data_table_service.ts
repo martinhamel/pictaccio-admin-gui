@@ -1,11 +1,11 @@
-import { datatableErrorMap, DatatableErrorType } from '@pictaccio/admin-gui/src/errors/datatable_error_map';
-import { ServerError } from '@pictaccio/admin-gui/src/errors/server_error';
-import { ApiResponse } from '@pictaccio/admin-gui/src/models/api_response';
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { handleResponseError } from '@pictaccio/admin-gui/src/utils/error';
-import { isFile } from '@pictaccio/admin-gui/src/utils/is_file';
-import { Id } from '@pictaccio/shared/src/types/id';
-import { Operator } from '@pictaccio/shared/src/types/operator';
+import { datatableErrorMap, DatatableErrorType } from '@pictaccio/admin-gui/errors/datatable_error_map';
+import { ServerError } from '@pictaccio/admin-gui/errors/server_error';
+import { ApiResponse } from '@pictaccio/admin-gui/models/api_response';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { handleResponseError } from '@pictaccio/admin-gui/utils/error';
+import { isFile } from '@pictaccio/admin-gui/utils/is_file';
+import { Id } from '@pictaccio/shared/types/id';
+import { Operator } from '@pictaccio/shared/types/operator';
 
 function checkForResponseError(data: ApiResponse, endpoint: DatatableErrorType) {
     if (data.status === 'error') {

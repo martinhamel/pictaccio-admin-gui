@@ -256,18 +256,18 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
-import DialogBox from '@pictaccio/admin-gui/src/views/components/layout/DialogBox.vue';
-import VersionString from '@pictaccio/admin-gui/src/views/components/VersionString.vue';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
-import AppIntegration from '@pictaccio/admin-gui/src/views/private/settings/AppIntegration.vue';
-import ExposeCodeSnippet from '@pictaccio/admin-gui/src/views/private/settings/ExposeCodeSnippet.vue';
-import ManageContactInfo from '@pictaccio/admin-gui/src/views/private/settings/ManageContactInfo.vue';
-import ManageUsers from '@pictaccio/admin-gui/src/views/private/settings/ManageUsers.vue';
-import StoreCustomization from '@pictaccio/admin-gui/src/views/private/settings/StoreCustomization.vue';
-import StoreLanguages from '@pictaccio/admin-gui/src/views/private/settings/StoreLanguages.vue';
-import StoreStatus from '@pictaccio/admin-gui/src/views/private/settings/StoreStatus.vue';
-import TaxId from '@pictaccio/admin-gui/src/views/private/settings/TaxId.vue';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
+import DialogBox from '@pictaccio/admin-gui/views/components/layout/DialogBox.vue';
+import VersionString from '@pictaccio/admin-gui/views/components/VersionString.vue';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
+import AppIntegration from '@pictaccio/admin-gui/views/private/settings/AppIntegration.vue';
+import ExposeCodeSnippet from '@pictaccio/admin-gui/views/private/settings/ExposeCodeSnippet.vue';
+import ManageContactInfo from '@pictaccio/admin-gui/views/private/settings/ManageContactInfo.vue';
+import ManageUsers from '@pictaccio/admin-gui/views/private/settings/ManageUsers.vue';
+import StoreCustomization from '@pictaccio/admin-gui/views/private/settings/StoreCustomization.vue';
+import StoreLanguages from '@pictaccio/admin-gui/views/private/settings/StoreLanguages.vue';
+import StoreStatus from '@pictaccio/admin-gui/views/private/settings/StoreStatus.vue';
+import TaxId from '@pictaccio/admin-gui/views/private/settings/TaxId.vue';
 import { Component, Vue } from 'vue-facing-decorator';
 
 @Component({

@@ -332,8 +332,8 @@
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { dasherize } from '@loufa/loufairy';
-import { resetBreadcrumb } from '@pictaccio/admin-gui/src/utils/global_breadcrumb';
-import ProgressBar from '@pictaccio/admin-gui/src/views/components/widgets/ProgressBar.vue';
+import { resetBreadcrumb } from '@pictaccio/admin-gui/utils/global_breadcrumb';
+import ProgressBar from '@pictaccio/admin-gui/views/components/widgets/ProgressBar.vue';
 import { Component, Vue } from 'vue-facing-decorator';
 
 @Component({

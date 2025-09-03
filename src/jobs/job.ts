@@ -1,5 +1,5 @@
 import { camelize } from '@loufa/loufairy';
-import { environment } from '@pictaccio/admin-gui/src/environment';
+import { environment } from '@pictaccio/admin-gui/environment';
 
 const context: Worker = self as any;
 

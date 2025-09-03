@@ -1,7 +1,7 @@
-import { FilterOption, SortOption } from '@pictaccio/admin-gui/src/services/data_table_service';
-import { store } from '@pictaccio/admin-gui/src/store';
-import { Page } from '@pictaccio/admin-gui/src/store/modules/base_data_table';
-import { Id } from '@pictaccio/shared/src/types/id';
+import { FilterOption, SortOption } from '@pictaccio/admin-gui/services/data_table_service';
+import { store } from '@pictaccio/admin-gui/store';
+import { Page } from '@pictaccio/admin-gui/store/modules/base_data_table';
+import { Id } from '@pictaccio/shared/types/id';
 
 export class RemoteStore<T> {
     constructor(private storeNamespace: string) {

@@ -1,8 +1,8 @@
-import { CommonDatasource } from '@pictaccio/admin-gui/src/datasources/common_datasource';
-import { DatasourceReportParamsDefinition, DataType } from '@pictaccio/admin-gui/src/datasources/data_definitions';
-import { Datasource, NewDataCallback } from '@pictaccio/admin-gui/src/datasources/datasource';
-import reportService from '@pictaccio/admin-gui/src/services/report_service';
-import { ReportType } from '@pictaccio/shared/src/types/report';
+import { CommonDatasource } from '@pictaccio/admin-gui/datasources/common_datasource';
+import { DatasourceReportParamsDefinition, DataType } from '@pictaccio/admin-gui/datasources/data_definitions';
+import { Datasource, NewDataCallback } from '@pictaccio/admin-gui/datasources/datasource';
+import reportService from '@pictaccio/admin-gui/services/report_service';
+import { ReportType } from '@pictaccio/shared/types/report';
 
 export class ReportDatasource<Tdata, HasStreams extends boolean = false>
     extends CommonDatasource<Tdata, HasStreams>

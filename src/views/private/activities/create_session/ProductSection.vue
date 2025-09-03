@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 #session-info.step-interface {
     display: grid;
@@ -200,31 +200,31 @@
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { getFormInputValues } from '@loufa/loufairy-client';
-import { ReaderResponse } from '@pictaccio/admin-gui/src/core/reader_response';
-import { CRUDStatus } from '@pictaccio/admin-gui/src/core/types/crud_status';
-import { GenericDataSource } from '@pictaccio/admin-gui/src/datasources/generic_data_source';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { DbCrosssell } from '@pictaccio/admin-gui/src/models/db_crosssell';
-import { SessionOptions } from '@pictaccio/admin-gui/src/models/session_options';
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import Dropdown from '@pictaccio/admin-gui/src/views/components/widgets/Dropdown.vue';
-import Tooltip from '@pictaccio/admin-gui/src/views/components/widgets/Tooltip.vue';
-import UnitDecorator from '@pictaccio/admin-gui/src/views/components/widgets/UnitDecorator.vue';
-import CrudDialog from '@pictaccio/admin-gui/src/views/private/activities/companions/CrudDialog.vue';
+import { ReaderResponse } from '@pictaccio/admin-gui/core/reader_response';
+import { CRUDStatus } from '@pictaccio/admin-gui/core/types/crud_status';
+import { GenericDataSource } from '@pictaccio/admin-gui/datasources/generic_data_source';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { DbCrosssell } from '@pictaccio/admin-gui/models/db_crosssell';
+import { SessionOptions } from '@pictaccio/admin-gui/models/session_options';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import Dropdown from '@pictaccio/admin-gui/views/components/widgets/Dropdown.vue';
+import Tooltip from '@pictaccio/admin-gui/views/components/widgets/Tooltip.vue';
+import UnitDecorator from '@pictaccio/admin-gui/views/components/widgets/UnitDecorator.vue';
+import CrudDialog from '@pictaccio/admin-gui/views/private/activities/companions/CrudDialog.vue';
 import {
     CROSSSELL_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/crosssell_columns';
-import CreateSessionsSteps from '@pictaccio/admin-gui/src/views/private/activities/create_session/create_sessions_steps';
-import ListProductCatalog from '@pictaccio/admin-gui/src/views/private/activities/create_session/ListProductCatalog.vue';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/crosssell_columns';
+import CreateSessionsSteps from '@pictaccio/admin-gui/views/private/activities/create_session/create_sessions_steps';
+import ListProductCatalog from '@pictaccio/admin-gui/views/private/activities/create_session/ListProductCatalog.vue';
 import VirtualDigitalDiscount, {
     VirtualDigitalDiscountSelection
-} from '@pictaccio/admin-gui/src/views/private/activities/create_session/widgets/VirtualDigitalDiscount.vue';
+} from '@pictaccio/admin-gui/views/private/activities/create_session/widgets/VirtualDigitalDiscount.vue';
 import VirtualDigitalOption, {
     VirtualDigitalOptionSelection
-} from '@pictaccio/admin-gui/src/views/private/activities/create_session/widgets/VirtualDigitalOption.vue';
+} from '@pictaccio/admin-gui/views/private/activities/create_session/widgets/VirtualDigitalOption.vue';
 import VirtualTouchupOption
-    from '@pictaccio/admin-gui/src/views/private/activities/create_session/widgets/VirtualTouchupOption.vue';
+    from '@pictaccio/admin-gui/views/private/activities/create_session/widgets/VirtualTouchupOption.vue';
 import { Component } from 'vue-facing-decorator';
 
 @Component({

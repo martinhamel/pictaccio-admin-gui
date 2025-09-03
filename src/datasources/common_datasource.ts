@@ -8,8 +8,8 @@ import {
     isDatasourceFilterGroup,
     isDatasourceFilterLeaf,
     isDatasourceFilterNesting
-} from '@pictaccio/admin-gui/src/datasources/data_definitions';
-import { Datasource, NewDataCallback } from '@pictaccio/admin-gui/src/datasources/datasource';
+} from '@pictaccio/admin-gui/datasources/data_definitions';
+import { Datasource, NewDataCallback } from '@pictaccio/admin-gui/datasources/datasource';
 
 type DataDefinitionNode = {
     name: string;

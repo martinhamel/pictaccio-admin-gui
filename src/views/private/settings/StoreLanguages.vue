@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 .overlay-ui {
     position: absolute;
@@ -74,13 +74,13 @@
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { shallowCompare } from '@loufa/loufairy';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import InformationBox from '@pictaccio/admin-gui/src/views/components/widgets/InformationBox.vue';
-import ListSelector from '@pictaccio/admin-gui/src/views/components/widgets/ListSelector.vue';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
-import DocsLink from '@pictaccio/admin-gui/src/views/private/activities/companions/DocsLink.vue';
-import { Language } from '@pictaccio/shared/src/types/language';
-import { StoreLanguageItem } from '@pictaccio/shared/src/types/store_language_item';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import InformationBox from '@pictaccio/admin-gui/views/components/widgets/InformationBox.vue';
+import ListSelector from '@pictaccio/admin-gui/views/components/widgets/ListSelector.vue';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
+import DocsLink from '@pictaccio/admin-gui/views/private/activities/companions/DocsLink.vue';
+import { Language } from '@pictaccio/shared/types/language';
+import { StoreLanguageItem } from '@pictaccio/shared/types/store_language_item';
 import { toRaw } from 'vue';
 import { Component } from 'vue-facing-decorator';
 

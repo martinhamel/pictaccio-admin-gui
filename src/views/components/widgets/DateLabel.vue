@@ -8,7 +8,7 @@
 
 <script lang="ts">
 
-import { DatePart, formatDateForUser } from '@pictaccio/admin-gui/src/utils/user_date';
+import { DatePart, formatDateForUser } from '@pictaccio/admin-gui/utils/user_date';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 @Component({

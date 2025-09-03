@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/filter_popup.scss';
+@import '@pictaccio/admin-gui/scss/filter_popup.scss';
 </style>
 
 <template>
@@ -52,14 +52,14 @@
 </template>
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { FilterTypeDate } from '@pictaccio/admin-gui/src/core/types/filters/type_date';
-import { SerializedFilterItem } from '@pictaccio/admin-gui/src/core/types/serialized_params';
-import { DateRange } from '@pictaccio/admin-gui/src/models/date_range';
-import StickyLabel from '@pictaccio/admin-gui/src/views/components/widgets/StickyLabel.vue';
-import FilterItem from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/filter_item';
-import FilterPopup from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/FilterPopup.vue';
+import { FilterTypeDate } from '@pictaccio/admin-gui/core/types/filters/type_date';
+import { SerializedFilterItem } from '@pictaccio/admin-gui/core/types/serialized_params';
+import { DateRange } from '@pictaccio/admin-gui/models/date_range';
+import StickyLabel from '@pictaccio/admin-gui/views/components/widgets/StickyLabel.vue';
+import FilterItem from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/filter_item';
+import FilterPopup from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/FilterPopup.vue';
 import FilterPopupButton
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/FilterPopupButton.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/FilterPopupButton.vue';
 import { DateTime } from 'luxon';
 import { Component } from 'vue-facing-decorator';
 

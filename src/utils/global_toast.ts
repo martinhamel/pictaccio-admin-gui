@@ -1,5 +1,5 @@
-import { store } from '@pictaccio/admin-gui/src/store';
-import { Bus } from '@pictaccio/admin-gui/src/utils/bus';
+import { store } from '@pictaccio/admin-gui/store';
+import { Bus } from '@pictaccio/admin-gui/utils/bus';
 
 export const GlobalToastLevels = [
     'error',

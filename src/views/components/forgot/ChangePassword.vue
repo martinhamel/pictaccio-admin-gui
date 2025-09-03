@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/public.scss';
+@import '@pictaccio/admin-gui/scss/public.scss';
 .new-password-label {
     margin: 0 0 -1.4rem !important;
 }
@@ -20,10 +20,10 @@
 </template>
 
 <script lang="ts">
-import PasswordForm from '@pictaccio/admin-gui/src/views/components/widgets/PasswordForm.vue';
+import PasswordForm from '@pictaccio/admin-gui/views/components/widgets/PasswordForm.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { Component, Vue } from 'vue-facing-decorator';
-import PasswordRequirements from '@pictaccio/admin-gui/src/views/components/PasswordRequirements.vue';
+import PasswordRequirements from '@pictaccio/admin-gui/views/components/PasswordRequirements.vue';
 
 @Component({
     name: 'Forgot Password',

@@ -1,11 +1,11 @@
-import { DbBaseModel } from '@pictaccio/admin-gui/src/models/db_base_model';
+import { DbBaseModel } from '@pictaccio/admin-gui/models/db_base_model';
 import {
     DataTableService,
     FilterOption,
     ReadResult,
     SortOption
-} from '@pictaccio/admin-gui/src/services/data_table_service';
-import { Id } from '@pictaccio/shared/src/types/id';
+} from '@pictaccio/admin-gui/services/data_table_service';
+import { Id } from '@pictaccio/shared/types/id';
 import { Action, Mutation, VuexModule } from 'vuex-module-decorators';
 
 function findHoles<T>(internalItems: T[], from: number, size: number): Range[] {

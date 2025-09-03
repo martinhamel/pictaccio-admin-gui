@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 #filters-box {
     position: relative;
     display: flex;
@@ -144,22 +144,22 @@
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { deepCompare } from '@loufa/loufairy';
-import { FilterDescriptor } from '@pictaccio/admin-gui/src/core/types/filter_descriptors';
-import { AllFilterTypes } from '@pictaccio/admin-gui/src/core/types/filters/all_filter_types';
-import { SerializedFilterItem, SerializedParams } from '@pictaccio/admin-gui/src/core/types/serialized_params';
-import { FilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/filter_function';
+import { FilterDescriptor } from '@pictaccio/admin-gui/core/types/filter_descriptors';
+import { AllFilterTypes } from '@pictaccio/admin-gui/core/types/filters/all_filter_types';
+import { SerializedFilterItem, SerializedParams } from '@pictaccio/admin-gui/core/types/serialized_params';
+import { FilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/filter_function';
 import AssigneeFilterItem
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/AssigneeFilterItem.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/AssigneeFilterItem.vue';
 import BooleanFilterItem
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/BooleanFilterItem.vue';
-import DateFilterItem from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/DateFilterItem.vue';
-import FilterItem from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/filter_item';
-import FilterPopup from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/FilterPopup.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/BooleanFilterItem.vue';
+import DateFilterItem from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/DateFilterItem.vue';
+import FilterItem from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/filter_item';
+import FilterPopup from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/FilterPopup.vue';
 import DropdownFilter
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/MultiListFilterItem.vue';
-import SliderFilterItem from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/SliderFilterItem.vue';
-import TextFilterItem from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/TextFilterItem.vue';
-import InputsDialog from '@pictaccio/admin-gui/src/views/private/activities/companions/InputsDialog.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/MultiListFilterItem.vue';
+import SliderFilterItem from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/SliderFilterItem.vue';
+import TextFilterItem from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/TextFilterItem.vue';
+import InputsDialog from '@pictaccio/admin-gui/views/private/activities/companions/InputsDialog.vue';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { unref } from 'vue';
 

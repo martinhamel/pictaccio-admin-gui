@@ -1,4 +1,4 @@
-import { i18n } from '@pictaccio/admin-gui/src/i18n';
+import { i18n } from '@pictaccio/admin-gui/i18n';
 
 export const CUSTOM_PRODUCT_COLUMNS = {
     headers: [

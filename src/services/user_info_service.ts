@@ -1,7 +1,7 @@
-import { UserName } from '@pictaccio/admin-gui/src/core/types/user_name';
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/src/utils/error';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
+import { UserName } from '@pictaccio/admin-gui/core/types/user_name';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/utils/error';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
 
 class UserInfoService extends BaseService {
     public async changeUserName(name: UserName): Promise<void> {

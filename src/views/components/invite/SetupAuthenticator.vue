@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/public.scss';
+@import '@pictaccio/admin-gui/scss/public.scss';
 </style>
 
 <template>
@@ -34,11 +34,11 @@
 </template>
 
 <script lang="ts">
-import InformationBox from '@pictaccio/admin-gui/src/views/components/widgets/InformationBox.vue';
+import InformationBox from '@pictaccio/admin-gui/views/components/widgets/InformationBox.vue';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
-import { ValidateAuthenticatorInterface } from '@pictaccio/admin-gui/src/core/types/validate_authenticator_interface';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import AuthenticatorInput from '@pictaccio/admin-gui/src/views/components/widgets/AuthenticatorInput.vue';
+import { ValidateAuthenticatorInterface } from '@pictaccio/admin-gui/core/types/validate_authenticator_interface';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import AuthenticatorInput from '@pictaccio/admin-gui/views/components/widgets/AuthenticatorInput.vue';
 
 @Component({
     name: 'Setup Authenticator',

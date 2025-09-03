@@ -1,4 +1,4 @@
-import { ReaderResponse } from '@pictaccio/admin-gui/src/core/reader_response';
+import { ReaderResponse } from '@pictaccio/admin-gui/core/reader_response';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
 
 interface RemoveDirtyOptions {

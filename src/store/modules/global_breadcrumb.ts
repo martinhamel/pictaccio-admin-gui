@@ -1,4 +1,4 @@
-import { BreadcrumbItem } from '@pictaccio/admin-gui/src/core/types/breadcrumb_item';
+import { BreadcrumbItem } from '@pictaccio/admin-gui/core/types/breadcrumb_item';
 import { Module, Mutation, VuexModule } from 'vuex-module-decorators';
 
 @Module({ namespaced: true })

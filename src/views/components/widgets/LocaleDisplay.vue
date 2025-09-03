@@ -39,8 +39,8 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { LocalizedString } from '@pictaccio/shared/src/types/localized_string';
-import { StoreLanguageItem } from '@pictaccio/shared/src/types/store_language_item';
+import { LocalizedString } from '@pictaccio/shared/types/localized_string';
+import { StoreLanguageItem } from '@pictaccio/shared/types/store_language_item';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 @Component({

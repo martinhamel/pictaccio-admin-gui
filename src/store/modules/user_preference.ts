@@ -1,6 +1,6 @@
-import { UserInfo } from '@pictaccio/admin-gui/src/core/types/user_info';
-import localStorageService from '@pictaccio/admin-gui/src/services/local_storage_service';
-import userSessionService from '@pictaccio/admin-gui/src/services/user_sessions_service';
+import { UserInfo } from '@pictaccio/admin-gui/core/types/user_info';
+import localStorageService from '@pictaccio/admin-gui/services/local_storage_service';
+import userSessionService from '@pictaccio/admin-gui/services/user_sessions_service';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
 
 const STORAGE_DATETIME_KEY = 'date-time-info';

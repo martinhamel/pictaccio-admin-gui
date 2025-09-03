@@ -1,11 +1,11 @@
-import { SessionGeneralInfo } from '@pictaccio/admin-gui/src/models/session_general_info';
-import { SessionOptions } from '@pictaccio/admin-gui/src/models/session_options';
-import { SessionProductAndShipping } from '@pictaccio/admin-gui/src/models/session_product_and_shipping';
-import { SessionSubjects } from '@pictaccio/admin-gui/src/models/session_subjects';
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/src/utils/error';
-import { CreateSessionResponse } from '@pictaccio/shared/src/types/responses/create_session_response';
-import { removeDiacritics } from '@pictaccio/shared/src/utils/diacritics';
+import { SessionGeneralInfo } from '@pictaccio/admin-gui/models/session_general_info';
+import { SessionOptions } from '@pictaccio/admin-gui/models/session_options';
+import { SessionProductAndShipping } from '@pictaccio/admin-gui/models/session_product_and_shipping';
+import { SessionSubjects } from '@pictaccio/admin-gui/models/session_subjects';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/utils/error';
+import { CreateSessionResponse } from '@pictaccio/shared/types/responses/create_session_response';
+import { removeDiacritics } from '@pictaccio/shared/utils/diacritics';
 
 class SessionService extends BaseService {
     public async archive(sessionId: number): Promise<void> {

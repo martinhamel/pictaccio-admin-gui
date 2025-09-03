@@ -1,13 +1,13 @@
-import { NotifyCustomerStatus } from '@pictaccio/admin-gui/src/core/types/notify_customer_status';
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { ContactInfo } from '@pictaccio/admin-gui/src/models/contact_info';
-import { Order } from '@pictaccio/admin-gui/src/models/order';
-import { OrderPhotoCheckResult } from '@pictaccio/admin-gui/src/store/modules/orders';
-import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/src/utils/error';
-import { Language } from '@pictaccio/shared/src/types/language';
-import { PhotoPublish } from '@pictaccio/shared/src/types/photo_publish';
-import { OrderStatus } from '@pictaccio/shared/src/types/order_status';
-import { SpreadsheetExportFormat } from '@pictaccio/shared/src/types/spreadsheet_export_type';
+import { NotifyCustomerStatus } from '@pictaccio/admin-gui/core/types/notify_customer_status';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { ContactInfo } from '@pictaccio/admin-gui/models/contact_info';
+import { Order } from '@pictaccio/admin-gui/models/order';
+import { OrderPhotoCheckResult } from '@pictaccio/admin-gui/store/modules/orders';
+import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/utils/error';
+import { Language } from '@pictaccio/shared/types/language';
+import { PhotoPublish } from '@pictaccio/shared/types/photo_publish';
+import { OrderStatus } from '@pictaccio/shared/types/order_status';
+import { SpreadsheetExportFormat } from '@pictaccio/shared/types/spreadsheet_export_type';
 
 class OrderService extends BaseService {
     public async applyCheck(orderId: number,

@@ -1,9 +1,9 @@
-import { UserCapabilities } from '@pictaccio/admin-gui/src/core/types/user_capabilities';
-import { UserInfo } from '@pictaccio/admin-gui/src/core/types/user_info';
-import { UserPermissions } from '@pictaccio/admin-gui/src/core/types/user_permissions';
-import BaseService from '@pictaccio/admin-gui/src/services/base_service';
-import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/src/utils/error';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
+import { UserCapabilities } from '@pictaccio/admin-gui/core/types/user_capabilities';
+import { UserInfo } from '@pictaccio/admin-gui/core/types/user_info';
+import { UserPermissions } from '@pictaccio/admin-gui/core/types/user_permissions';
+import BaseService from '@pictaccio/admin-gui/services/base_service';
+import { checkForResponseError, handleResponseError } from '@pictaccio/admin-gui/utils/error';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
 
 class UserService extends BaseService {
     public async archiveUser(id: string, toggle: boolean): Promise<void> {

@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon';
-import { store } from '@pictaccio/admin-gui/src/store';
+import { store } from '@pictaccio/admin-gui/store';
 
 export type DatePart =
     'full' |

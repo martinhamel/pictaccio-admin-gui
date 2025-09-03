@@ -34,19 +34,19 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import Separator from '@pictaccio/admin-gui/src/views/components/widgets/Separator.vue';
+import Separator from '@pictaccio/admin-gui/views/components/widgets/Separator.vue';
 import CustomProductRenderer
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/product_renderers/CustomProductRenderer.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/product_renderers/CustomProductRenderer.vue';
 import DigitalProductRenderer
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/product_renderers/DigitalProductRenderer.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/product_renderers/DigitalProductRenderer.vue';
 import NormalProductRenderer
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/product_renderers/NormalProductRenderer.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/product_renderers/NormalProductRenderer.vue';
 import ThemedProductRenderer
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/product_renderers/ThemedProductRenderer.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/product_renderers/ThemedProductRenderer.vue';
 import TouchupProductRenderer
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/product_renderers/TouchupProductRenderer.vue';
-import { CartItem } from '@pictaccio/shared/src/types/cart_item';
-import { PhotoSelections } from '@pictaccio/shared/src/types/photo_selections';
+    from '@pictaccio/admin-gui/views/private/activities/companions/product_renderers/TouchupProductRenderer.vue';
+import { CartItem } from '@pictaccio/shared/types/cart_item';
+import { PhotoSelections } from '@pictaccio/shared/types/photo_selections';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 @Component({

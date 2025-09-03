@@ -144,7 +144,7 @@
 </template>
 
 <script lang="ts">
-import { ColorObject } from '@pictaccio/admin-gui/src/core/types/color_object';
+import { ColorObject } from '@pictaccio/admin-gui/core/types/color_object';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 

@@ -223,17 +223,17 @@
 
 <script lang="ts">
 
-import { TotalReports } from '@pictaccio/admin-gui/src/core/types/total_reports';
-import Badge from '@pictaccio/admin-gui/src/views/components/widgets/Badge.vue';
-import TooltipBubble from '@pictaccio/admin-gui/src/views/components/widgets/TooltipBubble.vue';
+import { TotalReports } from '@pictaccio/admin-gui/core/types/total_reports';
+import Badge from '@pictaccio/admin-gui/views/components/widgets/Badge.vue';
+import TooltipBubble from '@pictaccio/admin-gui/views/components/widgets/TooltipBubble.vue';
 import { Vue, Component } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { renderHtml } from '@loufa/loufairy-client';
-import { GroupPhotos } from '@pictaccio/admin-gui/src/core/types/group_photos';
-import { ProcessedPhotos } from '@pictaccio/admin-gui/src/core/types/processed_photos';
-import { SubjectPhotos } from '@pictaccio/admin-gui/src/core/types/subject_photos';
-import { UnmatchedReports } from '@pictaccio/admin-gui/src/core/types/unmatched_reports';
-import { fileAsDataURL, FileLoader } from '@pictaccio/admin-gui/src/core/file_as_data_url';
+import { GroupPhotos } from '@pictaccio/admin-gui/core/types/group_photos';
+import { ProcessedPhotos } from '@pictaccio/admin-gui/core/types/processed_photos';
+import { SubjectPhotos } from '@pictaccio/admin-gui/core/types/subject_photos';
+import { UnmatchedReports } from '@pictaccio/admin-gui/core/types/unmatched_reports';
+import { fileAsDataURL, FileLoader } from '@pictaccio/admin-gui/core/file_as_data_url';
 
 const IMG_SIZE = 14;
 const GAP = 1;

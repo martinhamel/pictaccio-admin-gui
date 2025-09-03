@@ -25,7 +25,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-facing-decorator';
-import Spinner from '@pictaccio/admin-gui/src/views/components/widgets/Spinner.vue';
+import Spinner from '@pictaccio/admin-gui/views/components/widgets/Spinner.vue';
 
 @Component({
     name: 'Working',

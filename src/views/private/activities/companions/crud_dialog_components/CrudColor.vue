@@ -14,15 +14,15 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { CrudComponentInterface } from '@pictaccio/admin-gui/src/core/types/crud_component_interface';
-import { CRUDStatus } from '@pictaccio/admin-gui/src/core/types/crud_status';
-import { DataSource } from '@pictaccio/admin-gui/src/core/types/data_source';
-import { UpdateState } from '@pictaccio/admin-gui/src/core/types/update_state';
-import { SessionColor } from '@pictaccio/admin-gui/src/models/session_color';
+import { CrudComponentInterface } from '@pictaccio/admin-gui/core/types/crud_component_interface';
+import { CRUDStatus } from '@pictaccio/admin-gui/core/types/crud_status';
+import { DataSource } from '@pictaccio/admin-gui/core/types/data_source';
+import { UpdateState } from '@pictaccio/admin-gui/core/types/update_state';
+import { SessionColor } from '@pictaccio/admin-gui/models/session_color';
 import {
     CrudComponents
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/crud_dialog_components/CrudComponents';
-import ColorSelector from '@pictaccio/admin-gui/src/views/private/activities/create_session/widgets/ColorSelector.vue';
+} from '@pictaccio/admin-gui/views/private/activities/companions/crud_dialog_components/CrudComponents';
+import ColorSelector from '@pictaccio/admin-gui/views/private/activities/create_session/widgets/ColorSelector.vue';
 import { get } from 'fetch-mock';
 import { Component, Prop } from 'vue-facing-decorator';
 

@@ -1,5 +1,5 @@
-import { ConstraintBehavior } from '@pictaccio/admin-gui/src/utils/constraint_behaviors/constraint_behavior';
-import { isInputElement } from '@pictaccio/admin-gui/src/utils/is_input_element';
+import { ConstraintBehavior } from '@pictaccio/admin-gui/utils/constraint_behaviors/constraint_behavior';
+import { isInputElement } from '@pictaccio/admin-gui/utils/is_input_element';
 
 export class Currency extends ConstraintBehavior {
     private oldValue: string;

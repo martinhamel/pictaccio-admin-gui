@@ -1,5 +1,5 @@
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { localesData } from '@pictaccio/admin-gui/src/utils/datatable_column_renderers/locales_data';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { localesData } from '@pictaccio/admin-gui/utils/datatable_column_renderers/locales_data';
 
 export const BACKGROUND_COLUMNS = {
     headers: [

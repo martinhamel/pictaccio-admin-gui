@@ -1,8 +1,8 @@
-import { BooleanValue } from '@pictaccio/admin-gui/src/core/types/filters/boolean_value';
-import { FilterType } from '@pictaccio/admin-gui/src/core/types/filters/filter_type';
-import { FilterBuilder } from '@pictaccio/admin-gui/src/utils/filter_builder';
-import { FilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/filter_function';
-import { Operator } from '@pictaccio/shared/src/types/operator';
+import { BooleanValue } from '@pictaccio/admin-gui/core/types/filters/boolean_value';
+import { FilterType } from '@pictaccio/admin-gui/core/types/filters/filter_type';
+import { FilterBuilder } from '@pictaccio/admin-gui/utils/filter_builder';
+import { FilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/filter_function';
+import { Operator } from '@pictaccio/shared/types/operator';
 
 /**
  * Will check if the value in the column 'category' is identical to the provided value

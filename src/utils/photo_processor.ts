@@ -1,11 +1,11 @@
-import { NamedContextIndex } from '@pictaccio/admin-gui/src/core/types/named_context_index';
-import { NamedGroupPhotos } from '@pictaccio/admin-gui/src/core/types/named_group_photos';
-import { NamedSubjectPhotos } from '@pictaccio/admin-gui/src/core/types/named_subject_photos';
-import { ProcessedPhotos } from '@pictaccio/admin-gui/src/core/types/processed_photos';
-import { SubjectData } from '@pictaccio/admin-gui/src/core/types/subject_data';
-import { TotalReports } from '@pictaccio/admin-gui/src/core/types/total_reports';
-import { UnmatchedReports } from '@pictaccio/admin-gui/src/core/types/unmatched_reports';
-import { store } from '@pictaccio/admin-gui/src/store';
+import { NamedContextIndex } from '@pictaccio/admin-gui/core/types/named_context_index';
+import { NamedGroupPhotos } from '@pictaccio/admin-gui/core/types/named_group_photos';
+import { NamedSubjectPhotos } from '@pictaccio/admin-gui/core/types/named_subject_photos';
+import { ProcessedPhotos } from '@pictaccio/admin-gui/core/types/processed_photos';
+import { SubjectData } from '@pictaccio/admin-gui/core/types/subject_data';
+import { TotalReports } from '@pictaccio/admin-gui/core/types/total_reports';
+import { UnmatchedReports } from '@pictaccio/admin-gui/core/types/unmatched_reports';
+import { store } from '@pictaccio/admin-gui/store';
 
 export class PhotoProcessor {
     private processedPhotos: ProcessedPhotos;

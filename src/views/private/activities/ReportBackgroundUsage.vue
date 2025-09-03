@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 
 </style>
 
@@ -12,20 +12,20 @@
 </template>
 
 <script lang="ts">
-import { DbBackground } from '@pictaccio/admin-gui/src/models/db_background';
-import { pushBreadcrumb } from '@pictaccio/admin-gui/src/utils/global_breadcrumb';
+import { DbBackground } from '@pictaccio/admin-gui/models/db_background';
+import { pushBreadcrumb } from '@pictaccio/admin-gui/utils/global_breadcrumb';
 import {
     DataviewDatatableDatasource
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/datasource/dataview_datatable_datasource';
-import Dataview from '@pictaccio/admin-gui/src/views/components/widgets/dataview/Dataview.vue';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/datasource/dataview_datatable_datasource';
+import Dataview from '@pictaccio/admin-gui/views/components/widgets/dataview/Dataview.vue';
 import {
     DataviewFiltersHolderParams
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/params/dataview_filtersholder_params';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/params/dataview_filtersholder_params';
 import {
     DataviewTableRenderer
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/table/dataview_table_renderer';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
-import { columns, filters } from '@pictaccio/admin-gui/src/views/private/activities/companions/definitions/background';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/table/dataview_table_renderer';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
+import { columns, filters } from '@pictaccio/admin-gui/views/private/activities/companions/definitions/background';
 import { Component } from 'vue-facing-decorator';
 
 @Component({

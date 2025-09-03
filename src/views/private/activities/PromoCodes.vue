@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/activities';
+@import '@pictaccio/admin-gui/scss/activities';
 .form-group {
     label {
         margin: 0;
@@ -109,26 +109,26 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { FilterDescriptor } from '@pictaccio/admin-gui/src/core/types/filter_descriptors';
-import { DbPromoCode } from '@pictaccio/admin-gui/src/models/db_promo_code';
-import promoService from '@pictaccio/admin-gui/src/services/promo_service';
-import { FilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/filter_function';
-import { IdFilterFunction } from '@pictaccio/admin-gui/src/utils/filter_functions/id_filter_function';
-import { updateBreadcrumb } from '@pictaccio/admin-gui/src/utils/global_breadcrumb';
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
-import { RemoteStore } from '@pictaccio/admin-gui/src/utils/remote_store';
-import { formatExtraKey, shouldExtraSilenceRead } from '@pictaccio/admin-gui/src/utils/route_extra';
-import DialogBox from '@pictaccio/admin-gui/src/views/components/layout/DialogBox.vue';
-import PaneContainer from '@pictaccio/admin-gui/src/views/components/PaneContainer.vue';
-import ActivitiesTabs from '@pictaccio/admin-gui/src/views/components/widgets/ActivitiesTabs.vue';
-import AdminActivities from '@pictaccio/admin-gui/src/views/private/activities/companions/admin_activities';
+import { FilterDescriptor } from '@pictaccio/admin-gui/core/types/filter_descriptors';
+import { DbPromoCode } from '@pictaccio/admin-gui/models/db_promo_code';
+import promoService from '@pictaccio/admin-gui/services/promo_service';
+import { FilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/filter_function';
+import { IdFilterFunction } from '@pictaccio/admin-gui/utils/filter_functions/id_filter_function';
+import { updateBreadcrumb } from '@pictaccio/admin-gui/utils/global_breadcrumb';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
+import { RemoteStore } from '@pictaccio/admin-gui/utils/remote_store';
+import { formatExtraKey, shouldExtraSilenceRead } from '@pictaccio/admin-gui/utils/route_extra';
+import DialogBox from '@pictaccio/admin-gui/views/components/layout/DialogBox.vue';
+import PaneContainer from '@pictaccio/admin-gui/views/components/PaneContainer.vue';
+import ActivitiesTabs from '@pictaccio/admin-gui/views/components/widgets/ActivitiesTabs.vue';
+import AdminActivities from '@pictaccio/admin-gui/views/private/activities/companions/admin_activities';
 import {
     PROMO_CODES_COLUMNS
-} from '@pictaccio/admin-gui/src/views/private/activities/companions/data_table_columns/promo_codes_columns';
-import DataTable from '@pictaccio/admin-gui/src/views/private/activities/companions/DataTable.vue';
-import Filters from '@pictaccio/admin-gui/src/views/private/activities/companions/Filters.vue';
+} from '@pictaccio/admin-gui/views/private/activities/companions/data_table_columns/promo_codes_columns';
+import DataTable from '@pictaccio/admin-gui/views/private/activities/companions/DataTable.vue';
+import Filters from '@pictaccio/admin-gui/views/private/activities/companions/Filters.vue';
 import PlaceholderDataTable
-    from '@pictaccio/admin-gui/src/views/private/activities/companions/placeholders/PlaceholderDataTable.vue';
+    from '@pictaccio/admin-gui/views/private/activities/companions/placeholders/PlaceholderDataTable.vue';
 import { Component, Hook, Prop } from 'vue-facing-decorator';
 
 @Component({

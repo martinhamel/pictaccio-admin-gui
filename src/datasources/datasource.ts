@@ -1,7 +1,7 @@
 import {
     DatasourceDefinitionType,
     DatasourceDefinitionValueSubType, DataType
-} from '@pictaccio/admin-gui/src/datasources/data_definitions';
+} from '@pictaccio/admin-gui/datasources/data_definitions';
 
 export type NewDataCallback = () => void;
 

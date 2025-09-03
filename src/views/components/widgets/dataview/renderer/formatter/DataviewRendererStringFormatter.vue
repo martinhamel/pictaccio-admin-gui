@@ -11,7 +11,7 @@ span {
 <script lang="ts">
 import {
     DataviewRendererFormatter
-} from '@pictaccio/admin-gui/src/views/components/widgets/dataview/renderer/formatter/dataview_renderer_formatter';
+} from '@pictaccio/admin-gui/views/components/widgets/dataview/renderer/formatter/dataview_renderer_formatter';
 import { Component } from 'vue-facing-decorator';
 
 @Component({

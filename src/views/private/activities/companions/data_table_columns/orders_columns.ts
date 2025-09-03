@@ -1,7 +1,7 @@
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { i18n } from '@pictaccio/admin-gui/src/i18n';
-import { store } from '@pictaccio/admin-gui/src/store';
-import { formatDateForUser } from '@pictaccio/admin-gui/src/utils/user_date';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { i18n } from '@pictaccio/admin-gui/i18n';
+import { store } from '@pictaccio/admin-gui/store';
+import { formatDateForUser } from '@pictaccio/admin-gui/utils/user_date';
 
 export const ORDERS_COLUMNS = {
     headers: [

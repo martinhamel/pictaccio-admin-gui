@@ -1,14 +1,14 @@
-import { Order } from '@pictaccio/admin-gui/src/models/order';
-import { createDataTableService } from '@pictaccio/admin-gui/src/services/data_table_service';
-import orderService from '@pictaccio/admin-gui/src/services/order_service';
-import { BaseDataTable } from '@pictaccio/admin-gui/src/store/modules/base_data_table';
-import { CartItem } from '@pictaccio/shared/src/types/cart_item';
-import { ContactInfo } from '@pictaccio/shared/src/types/contact_info';
-import { OrderDeliveryOption } from '@pictaccio/shared/src/types/order_delivery_option';
-import { OrderStatus } from '@pictaccio/shared/src/types/order_status';
-import { PhotoSelections } from '@pictaccio/shared/src/types/photo_selections';
-import { Subject } from '@pictaccio/shared/src/types/subject';
-import { Transaction } from '@pictaccio/shared/src/types/transaction';
+import { Order } from '@pictaccio/admin-gui/models/order';
+import { createDataTableService } from '@pictaccio/admin-gui/services/data_table_service';
+import orderService from '@pictaccio/admin-gui/services/order_service';
+import { BaseDataTable } from '@pictaccio/admin-gui/store/modules/base_data_table';
+import { CartItem } from '@pictaccio/shared/types/cart_item';
+import { ContactInfo } from '@pictaccio/shared/types/contact_info';
+import { OrderDeliveryOption } from '@pictaccio/shared/types/order_delivery_option';
+import { OrderStatus } from '@pictaccio/shared/types/order_status';
+import { PhotoSelections } from '@pictaccio/shared/types/photo_selections';
+import { Subject } from '@pictaccio/shared/types/subject';
+import { Transaction } from '@pictaccio/shared/types/transaction';
 import { Module as Mod } from 'vuex';
 import { Action, Module, Mutation } from 'vuex-module-decorators';
 

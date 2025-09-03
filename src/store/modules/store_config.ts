@@ -1,9 +1,9 @@
 import { mergeObjects } from '@loufa/loufairy';
-import { LoadError } from '@pictaccio/admin-gui/src/errors/load_error';
-import { SaveError } from '@pictaccio/admin-gui/src/errors/save_error';
-import { StoreConfig as StoreConfigModel } from '@pictaccio/admin-gui/src/models/store_config';
-import storeConfigService from '@pictaccio/admin-gui/src/services/store_config_service';
-import { StoreLanguageItem } from '@pictaccio/shared/src/types/store_language_item';
+import { LoadError } from '@pictaccio/admin-gui/errors/load_error';
+import { SaveError } from '@pictaccio/admin-gui/errors/save_error';
+import { StoreConfig as StoreConfigModel } from '@pictaccio/admin-gui/models/store_config';
+import storeConfigService from '@pictaccio/admin-gui/services/store_config_service';
+import { StoreLanguageItem } from '@pictaccio/shared/types/store_language_item';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
 
 function filterUndefined(obj: any): any {

@@ -346,8 +346,8 @@
 </template>
 
 <script lang="ts">
-import { LocalizedString } from '@pictaccio/admin-gui/src/core/types/localized_string';
-import { environment } from '@pictaccio/admin-gui/src/environment';
+import { LocalizedString } from '@pictaccio/admin-gui/core/types/localized_string';
+import { environment } from '@pictaccio/admin-gui/environment';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 

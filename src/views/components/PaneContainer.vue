@@ -39,7 +39,7 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import Pane from '@pictaccio/admin-gui/src/views/components/Pane.vue';
+import Pane from '@pictaccio/admin-gui/views/components/Pane.vue';
 
 @Component({
     name: 'Pane Container',

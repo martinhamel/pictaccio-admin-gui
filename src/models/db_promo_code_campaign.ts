@@ -1,8 +1,8 @@
 /* eslint-disable camelcase */
 
-import { DbBaseModel } from '@pictaccio/admin-gui/src/models/db_base_model';
-import { DbSession } from '@pictaccio/admin-gui/src/models/db_session';
-import { DbWorkflow } from '@pictaccio/admin-gui/src/models/db_workflow';
+import { DbBaseModel } from '@pictaccio/admin-gui/models/db_base_model';
+import { DbSession } from '@pictaccio/admin-gui/models/db_session';
+import { DbWorkflow } from '@pictaccio/admin-gui/models/db_workflow';
 
 export class CampaignOptions {
 }

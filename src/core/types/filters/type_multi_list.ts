@@ -1,4 +1,4 @@
-import { FilterType } from '@pictaccio/admin-gui/src/core/types/filters/filter_type';
+import { FilterType } from '@pictaccio/admin-gui/core/types/filters/filter_type';
 
 export type FilterTypeMultiList = {
     values: string[];

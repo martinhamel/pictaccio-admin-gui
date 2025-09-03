@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@import '@pictaccio/admin-gui/src/scss/product_renderer.scss';
+@import '@pictaccio/admin-gui/scss/product_renderer.scss';
 </style>
 
 <template>
@@ -74,12 +74,12 @@
 
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { environment } from '@pictaccio/admin-gui/src/environment';
-import { CartItem } from '@pictaccio/admin-gui/src/models/cart_item';
-import CurrencyLabel from '@pictaccio/admin-gui/src/views/components/widgets/CurrencyLabel.vue';
-import MultiColumns from '@pictaccio/admin-gui/src/views/components/widgets/MultiColumns.vue';
-import SubjectImage from '@pictaccio/admin-gui/src/views/private/activities/companions/product_renderers/SubjectImage.vue';
-import { calculatePriceByQuantity } from '@pictaccio/shared/src/utils/price_calculator';
+import { environment } from '@pictaccio/admin-gui/environment';
+import { CartItem } from '@pictaccio/admin-gui/models/cart_item';
+import CurrencyLabel from '@pictaccio/admin-gui/views/components/widgets/CurrencyLabel.vue';
+import MultiColumns from '@pictaccio/admin-gui/views/components/widgets/MultiColumns.vue';
+import SubjectImage from '@pictaccio/admin-gui/views/private/activities/companions/product_renderers/SubjectImage.vue';
+import { calculatePriceByQuantity } from '@pictaccio/shared/utils/price_calculator';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 
 @Component({

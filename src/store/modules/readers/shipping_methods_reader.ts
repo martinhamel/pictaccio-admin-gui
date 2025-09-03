@@ -1,10 +1,10 @@
-import { globalToast } from '@pictaccio/admin-gui/src/utils/global_toast';
+import { globalToast } from '@pictaccio/admin-gui/utils/global_toast';
 import { isEmpty } from '@loufa/loufairy';
 import { Module as Mod } from 'vuex';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
-import { ReaderResponse } from '@pictaccio/admin-gui/src/core/reader_response';
-import { createDataTableService, DataTableService } from '@pictaccio/admin-gui/src/services/data_table_service';
-import { ShippingMethod } from '@pictaccio/admin-gui/src/models/shipping_method';
+import { ReaderResponse } from '@pictaccio/admin-gui/core/reader_response';
+import { createDataTableService, DataTableService } from '@pictaccio/admin-gui/services/data_table_service';
+import { ShippingMethod } from '@pictaccio/admin-gui/models/shipping_method';
 
 @Module({ namespaced: true })
 export default class ShippingMethodsReader extends VuexModule {

@@ -1,5 +1,5 @@
-import { PromptButton, PromptButtonType } from '@pictaccio/admin-gui/src/core/types/prompt_button_type';
-import { PromptInfo } from '@pictaccio/admin-gui/src/core/types/prompt_info';
+import { PromptButton, PromptButtonType } from '@pictaccio/admin-gui/core/types/prompt_button_type';
+import { PromptInfo } from '@pictaccio/admin-gui/core/types/prompt_info';
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
 
 @Module({ namespaced: true })

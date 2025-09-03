@@ -1,13 +1,13 @@
 /* eslint-disable camelcase */
-import { DbBaseModel } from '@pictaccio/admin-gui/src/models/db_base_model';
-import { DbProductCatalog } from '@pictaccio/admin-gui/src/models/db_product_catalog';
-import { DbProductCategory } from '@pictaccio/admin-gui/src/models/db_product_category';
-import { DbProductTypeCustom } from '@pictaccio/admin-gui/src/models/db_product_type_custom';
-import { DbProductTypeTheme } from '@pictaccio/admin-gui/src/models/db_product_type_theme';
-import { LocalizedString } from '@pictaccio/shared/src/types/localized_string';
-import { ProductOptions } from '@pictaccio/shared/src/types/product_options';
-import { ProductType } from '@pictaccio/shared/src/types/product_type';
-import { Tag } from '@pictaccio/shared/src/types/tags';
+import { DbBaseModel } from '@pictaccio/admin-gui/models/db_base_model';
+import { DbProductCatalog } from '@pictaccio/admin-gui/models/db_product_catalog';
+import { DbProductCategory } from '@pictaccio/admin-gui/models/db_product_category';
+import { DbProductTypeCustom } from '@pictaccio/admin-gui/models/db_product_type_custom';
+import { DbProductTypeTheme } from '@pictaccio/admin-gui/models/db_product_type_theme';
+import { LocalizedString } from '@pictaccio/shared/types/localized_string';
+import { ProductOptions } from '@pictaccio/shared/types/product_options';
+import { ProductType } from '@pictaccio/shared/types/product_type';
+import { Tag } from '@pictaccio/shared/types/tags';
 
 export class DbProduct extends DbBaseModel<number> {
     internal_name?: string;

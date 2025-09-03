@@ -275,7 +275,7 @@ label {
 </template>
 
 <script lang="ts">
-import { globalPrompt } from '@pictaccio/admin-gui/src/utils/global_prompt';
+import { globalPrompt } from '@pictaccio/admin-gui/utils/global_prompt';
 import { Component, Prop, Vue } from 'vue-facing-decorator';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 

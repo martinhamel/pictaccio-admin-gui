@@ -7,11 +7,11 @@
 <script lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { isEmpty } from '@loufa/loufairy';
-import { FilterType } from '@pictaccio/admin-gui/src/core/types/filters/filter_type';
-import { FilterTypeSlider, SliderMode } from '@pictaccio/admin-gui/src/core/types/filters/type_slider';
-import { FilterTypeText } from '@pictaccio/admin-gui/src/core/types/filters/type_text';
-import { SerializedFilterItem } from '@pictaccio/admin-gui/src/core/types/serialized_params';
-import FilterItem from '@pictaccio/admin-gui/src/views/private/activities/companions/filter_components/filter_item';
+import { FilterType } from '@pictaccio/admin-gui/core/types/filters/filter_type';
+import { FilterTypeSlider, SliderMode } from '@pictaccio/admin-gui/core/types/filters/type_slider';
+import { FilterTypeText } from '@pictaccio/admin-gui/core/types/filters/type_text';
+import { SerializedFilterItem } from '@pictaccio/admin-gui/core/types/serialized_params';
+import FilterItem from '@pictaccio/admin-gui/views/private/activities/companions/filter_components/filter_item';
 import { Component } from 'vue-facing-decorator';
 
 @Component({

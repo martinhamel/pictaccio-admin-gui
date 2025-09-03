@@ -1,7 +1,7 @@
-import { CommonDatasource } from '@pictaccio/admin-gui/src/datasources/common_datasource';
-import { DataType } from '@pictaccio/admin-gui/src/datasources/data_definitions';
-import { Datasource, NewDataCallback } from '@pictaccio/admin-gui/src/datasources/datasource';
-import { store } from '@pictaccio/admin-gui/src/store';
+import { CommonDatasource } from '@pictaccio/admin-gui/datasources/common_datasource';
+import { DataType } from '@pictaccio/admin-gui/datasources/data_definitions';
+import { Datasource, NewDataCallback } from '@pictaccio/admin-gui/datasources/datasource';
+import { store } from '@pictaccio/admin-gui/store';
 
 export class DatatableDatasource<Tdata, HasStreams extends false = false>
     extends CommonDatasource<Tdata>
