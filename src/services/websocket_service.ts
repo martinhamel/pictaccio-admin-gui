@@ -7,7 +7,7 @@ import { store } from '../store';
 import { io, Socket } from 'socket.io-client';
 
 class WebsocketService extends BaseService {
-    private socket: Socket;
+    private socket: Socket | undefined;
 
     constructor() {
         super();
@@ -20,12 +20,12 @@ class WebsocketService extends BaseService {
 
     public requestPushNotificationToUser(descriptor: LocalizedNotificationDescriptor, userId: string): void {
         const message: PushNotificationToUser = { descriptor, userId };
-        this.socket.emit('request-push-notification-to-user', message);
+        this.socket?.emit('request-push-notification-to-user', message);
     }
 
     public requestPushNotificationToRoles(descriptor: LocalizedNotificationDescriptor, roles: string[]): void {
         const message: PushNotificationToRoles = { descriptor, roles };
-        this.socket.emit('request-push-notification-to-roles', message);
+        this.socket?.emit('request-push-notification-to-roles', message);
     }
 
     /* MESSAGE HANDLER */
