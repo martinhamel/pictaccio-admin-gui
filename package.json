@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "concurrently --kill-others \"npm run watch\" \"npm run serve\"",
     "watch": "npx gulp watch",
-    "serve": "npx vue-cli-service serve",
+    "serve": "npx vue-cli-service serve --port ${HTTP_INTERNAL_PORT}",
     "build": "npx vue-cli-service build --mode development",
     "build:docker": "npx vue-cli-service build && docker build -t pictaccio-app-gui .",
     "build:docker:alpha": "npx gulp buildAlpha",
